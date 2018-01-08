@@ -11,7 +11,7 @@ class App extends Component {
     componentDidMount() {
         fetch('/api/test')
             .then(res => res.json())
-            .then(test => this.setState({ test }));
+            .then(jsonRes => this.setState({ test: jsonRes.world }));
     }
 
     render() {

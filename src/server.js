@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3003;
 
-app.get('/api/test', (req, res) => res.send({"test": "Hello World"}));
+app.get('/api/test', (req, res) => res.send({"world": "World"}));
 
-app.listen(3001, () => console.log('Server started on port 3001'));
+app.listen(port, () => console.log('Server started on port ' + port));
