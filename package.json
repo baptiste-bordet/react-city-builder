@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "config": { "port" : "3003" }
+  "proxy": "http://localhost:3003"
 }
