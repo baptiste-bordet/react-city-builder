@@ -37,4 +37,9 @@ describe('App', () => {
         expect(app.find('Menu')).toHaveLength(1);
     });
 
+    it('Should inject Header component', () => {
+        const app  = shallow(<App/>);
+        expect(app.find('Header')).toHaveLength(1);
+    });
+
 });

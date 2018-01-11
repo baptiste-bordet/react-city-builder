@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import Menu from './Components/Menu/Menu.js';
-import Header from './Components/Header/Header.js';
+import logo from '../../assets/logo.svg';
+import Menu from '../Menu/Menu';
+import Header from '../Header/Header';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-var data = require('./data/data.json');
+var data = require('../../data/data.json');
 
 class App extends Component {
 

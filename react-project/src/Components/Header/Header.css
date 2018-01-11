@@ -1,21 +1,4 @@
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-
-.navbar .navbar-collapse {
+.header-logo img {
+    width: 50%;
     text-align: center;
-}
-
-.navbar a{
-    transition: color 0.2s,padding 0.2s;
-    color: #e4e4e4;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navbar li a {
-    font-family: 'Quicksand', cursive;
-    font-size: 2rem;
-    font-weight: 500;
 }
