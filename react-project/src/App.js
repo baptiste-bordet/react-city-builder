@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
+import Menu from './Components/Menu/Menu.js';
 import Header from './Components/Header/Header.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,6 +20,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Menu />
                 <Header />
 
                 <img src={logo} className="App-logo" alt="logo"/>

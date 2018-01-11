@@ -5,18 +5,24 @@ class Header extends Component {
 
     render() {
         return (
-            <header className="App-header">
-                <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-                    <div class="container">
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                            </ul>
-                        </div>
+            <div id="header-bloc">
+
+                <div class="row header-row">
+                    <div class="col-md-6 header-image">
+                        {/*<img />*/}
+                        <h3>Contrôle - Expertise - Conseil</h3>
                     </div>
-                </nav>
-            </header>
+                    <div class="col-md-6 header-text">
+                        {/*<img />*/}
+                    </div>
+                </div>
+
+                <div class="row sentance">
+                    <h2>Spécialiste en mesure et analyse des comportements aérauliques</h2>
+                </div>
+
+            </div>
+
         );
     }
 }
