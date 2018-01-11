@@ -7,22 +7,22 @@ class Menu extends Component {
         return (
             <header className="App-Menu">
 
-                <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+                <nav className="navbar navbar-default navbar-fixed-top navbar-inverse">
 
-                    <div class="container-fluid">
+                    <div className="container-fluid">
 
-                        <div class="navbar-menu">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                        <div className="navbar-menu">
+                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                                <span className="sr-only">Toggle navigation</span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
                             </button>
                         </div>
 
-                        <div class="collapse navbar-collapse" id="navigationbar">
-                            <ul class="nav navbar-nav">
-                                <li class="active-elt">
+                        <div className="collapse navbar-collapse" id="navigationbar">
+                            <ul className="nav navbar-nav">
+                                <li className="active-elt">
                                     <a href="#reglementation-bloc">reglementation</a>
                                 </li>
                                 <li>
