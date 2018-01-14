@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from '../../assets/logo.svg';
 import Menu from '../Menu/Menu';
 import Header from '../Header/Header';
+import Sorbonne from '../Sorbonne/Sorbonne';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -22,6 +23,7 @@ class App extends Component {
             <div className="App">
                 <Menu />
                 <Header />
+                <Sorbonne />
 
                 <img src={logo} className="App-logo" alt="logo"/>
                 <h1 className="App-title">From JSON => {data.hello}</h1>
