@@ -5,7 +5,7 @@ class Sorbonne extends Component {
 
     render() {
         return (
-            <div class="container" id="sorbonne-bloc">
+            <div className="container" id="sorbonne-bloc">
 
                 <div className="row">
                     <h1>LA SORBONNE DE LABORATOIRE</h1>
