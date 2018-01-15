@@ -4,6 +4,7 @@ import Menu from '../Menu/Menu';
 import Header from '../Header/Header';
 import Sorbonne from '../Sorbonne/Sorbonne';
 import Reglementation from '../Reglementation/Reglementation';
+import Prestations from '../Prestations/Prestations';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -26,6 +27,7 @@ class App extends Component {
                 <Header />
                 <Sorbonne />
                 <Reglementation />
+                <Prestations />
 
                 <img src={logo} className="App-logo" alt="logo"/>
                 <h1 className="App-title">From JSON => {data.hello}</h1>
