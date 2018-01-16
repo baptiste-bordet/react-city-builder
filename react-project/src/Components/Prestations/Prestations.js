@@ -2,22 +2,28 @@ import React, {Component} from 'react';
 import Modal from 'react-modal';
 import './Prestations.css';
 import Table from './Table/Table';
+import ArmoireVentile from './Popins/ArmoireVentile';
+import BrasAspirant from './Popins/BrasAspirant';
+import HotteChimie from './Popins/HotteChimie';
+import SorbonneReception from './Popins/SorbonneReception';
+import SorbonneRecirculation from './Popins/SorbonneRecirculation';
+import SorbonneRoutine from './Popins/SorbonneRoutine';
 import prestationsData from './prestationsData.json';
 
 const customStyles = {
-    content : {
-        position                   : 'absolute',
-        top                        : '100px',
-        left                       : '25%',
-        right                      : '25%',
-        bottom                     : '40px',
-        border                     : '1px solid #ccc',
-        background                 : '#fff',
-        overflow                   : 'auto',
-        WebkitOverflowScrolling    : 'touch',
-        borderRadius               : '4px',
-        outline                    : 'none',
-        padding                    : '20px'
+    content: {
+        position: 'absolute',
+        top: '100px',
+        left: '25%',
+        right: '25%',
+        bottom: '40px',
+        border: '1px solid #ccc',
+        background: '#fff',
+        overflow: 'auto',
+        WebkitOverflowScrolling: 'touch',
+        borderRadius: '4px',
+        outline: 'none',
+        padding: '20px'
     }
 };
 
@@ -37,7 +43,7 @@ class Prestations extends Component {
     openModal(control) {
         this.setState({
             modalIsOpen: true,
-            modalContent: {__html: control.popin}
+            modalContent: control.code
         });
     }
 
@@ -69,7 +75,7 @@ class Prestations extends Component {
 
                         <thead>
                         <tr>
-                            <th colspan="4">Contrôle des équipements de protection collective ventilés</th>
+                            <th colSpan="4">Contrôle des équipements de protection collective ventilés</th>
                         </tr>
                         </thead>
 
@@ -77,7 +83,7 @@ class Prestations extends Component {
                         {prestationsData.prestations.map((prestation, index) => {
                             return prestation.controls.map((control, controlIndex) => {
                                 return (
-                                    <tr>
+                                    <tr key={control.code}>
                                         {
                                             controlIndex === 0 ?
                                                 <td rowSpan={this.buildRowspan(prestation, controlIndex)}
@@ -88,7 +94,8 @@ class Prestations extends Component {
                                         <td>{control.type}</td>
                                         <td className="prestation"
                                             onClick={() => this.openModal(control)}>En savoir plus
-                                            <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></td>
+                                            <span className="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                                        </td>
                                     </tr>
                                 );
                             });
@@ -169,7 +176,26 @@ class Prestations extends Component {
                     ariaHideApp={false}
                     contentLabel="Example Modal"
                 >
-                    <div dangerouslySetInnerHTML={this.state.modalContent}></div>
+                    {{
+                        armoireVentilee: (
+                            <ArmoireVentile />
+                        ),
+                        brasAspirant: (
+                            <BrasAspirant />
+                        ),
+                        hotteChimie: (
+                            <HotteChimie />
+                        ),
+                        sorbonneReception: (
+                            <SorbonneReception />
+                        ),
+                        sorbonneRecirculation: (
+                            <SorbonneRecirculation />
+                        ),
+                        sorbonneRoutine: (
+                            <SorbonneRoutine />
+                        )
+                    }[this.state.modalContent]}
                 </Modal>
 
             </div>

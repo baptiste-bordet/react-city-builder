@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from '../../assets/logo.svg';
 import Menu from '../Menu/Menu';
 import Header from '../Header/Header';
 import Sorbonne from '../Sorbonne/Sorbonne';
@@ -29,7 +28,6 @@ class App extends Component {
                 <Reglementation />
                 <Prestations />
 
-                <img src={logo} className="App-logo" alt="logo"/>
                 <h1 className="App-title">From JSON => {data.hello}</h1>
                 <h1 className="App-title">From server => {this.state.test}</h1>
 
