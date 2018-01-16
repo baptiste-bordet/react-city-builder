@@ -5,6 +5,9 @@ class SorbonneRecirculation extends Component {
     render() {
         return (
             <div className="row detailPrestationPopin">
+
+                <h2>Sorbonne de laboratoire - Essai de recirculation</h2>
+
                 <h5>Selon la norme NF X 15-211</h5>
                 <br/>
                 <ul>

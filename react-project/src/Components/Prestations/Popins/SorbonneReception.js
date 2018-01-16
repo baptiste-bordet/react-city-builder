@@ -11,6 +11,8 @@ class SorbonneReception extends Component {
         return (
             <div className="row detailPrestationPopin">
 
+                <h2>Sorbonne de laboratoire - Essai de réception</h2>
+
                 <h5>Selon les normes NF EN 14175 et NF X 15-206</h5>
 
                 <br/>

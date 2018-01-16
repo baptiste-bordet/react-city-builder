@@ -11,6 +11,14 @@ import SorbonneRoutine from './Popins/SorbonneRoutine';
 import prestationsData from './prestationsData.json';
 
 const customStyles = {
+    overlay : {
+        position          : 'fixed',
+        top               : 0,
+        left              : 0,
+        right             : 0,
+        bottom            : 0,
+        backgroundColor   : 'rgba(56, 56, 56, 1)'
+    },
     content: {
         position: 'absolute',
         top: '100px',

@@ -9,6 +9,8 @@ class SorbonneRoutine extends Component {
         return (
             <div className="row detailPrestationPopin">
 
+                <h2>Sorbonne de laboratoire - Essai de routine</h2>
+
                 <h5>Selon les normes NF EN 14175 ou XP X 15-203</h5>
 
                 <br/>
