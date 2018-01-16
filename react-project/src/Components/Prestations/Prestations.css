@@ -2,6 +2,14 @@
     background: #f1f1f1;
 }
 
+prestations-bloc table {
+    border: none;
+}
+
+#prestations-bloc table span {
+    float: right;
+}
+
 #prestations-bloc td {
     vertical-align: middle;
     padding: 10px;
@@ -73,4 +81,9 @@
 .detailPrestationPopin h4 {
     font-size: 16px;
     font-family: 'Roboto',Helvetica,Arial,sans-serif;
+}
+#prestations-bloc td.prestation:hover {
+    background: #0078d7;
+    color: #ffffff;
+    cursor: pointer;
 }

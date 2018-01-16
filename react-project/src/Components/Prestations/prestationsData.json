@@ -6,12 +6,14 @@
                 {
                   "code" : "sorbonneReception",
                   "type" : "Essai de réception",
-                  "detail" : "(selon les normes NF EN 14175 et NF X 15-206)"
+                  "detail" : "(selon les normes NF EN 14175 et NF X 15-206)",
+                  "popin": "<div class=\"row detailPrestationPopin\"><h5>Selon les normes NF EN 14175 et NF X 15-206</h5><br/><ul><li><h4>Examen visuel de l'état de la sorbonne de laboratoire</h4></li><li><h4>Descriptif de la configuration du local d'implantation de la sorbonne</h4></li><li><h4>Descriptif de la configuration de la sorbonne de laboratoire contrôlée</h4></li><li><h4>Relevé des paramètres ambiants du local</h4></li><li><h4>Visualisation du débit d'air par test fumigène visible</h4><div class=\"row\"><div class=\"col-md-6\"><p>Le test a pour objectif de visualiser de manière nette les flux d'air extrait par la sorbonne auniveau de la façade mobile afin de l'étudier et de collecter des informations qualitatives surle débit d'extraction d'air et d'étudier les interactions entre les débits d'air extrait par lasorbonne et les débits d'air issus de la compensation d'air du local.</p></div><div class=\"col-md-6\"><video width=\"369\" height=\"246\" controls><source src=\"./static/test_fumigene_visible.mp4\" type=\"video/mp4\">Your browser does not support the video tag.</video></div></div></li><li><h4>Mesure des vitesses d'air frontales</h4><div class=\"row\"><div class=\"col-md-6\"><img src=\"./static/mesure_vitesse_air_frontale_1.jpg\"/></div><div class=\"col-md-6\"><p>L'objectif de l'essai est d'évaluer l'homogénéité des mesures de vitesses d'air frontalesrelevées dans le plan de la façade mobile afin de s'assurer d'un débit d'air extrait convenableau bon fonctionnement de la sorbonne. Le positionnement des sondes de mesures se fait enfonction de la longueur d'ouverture de l'équipement.</p></div></div></li><li><h4>Mesure de la vitesse d'air ambiante</h4><div class=\"row\"><div class=\"col-md-6\"><p>L'objectif de l'essai est d'évaluer l'homogénéité des mesures de vitesses d'air frontalesrelevées dans le plan de la façade mobile afin de s'assurer d'un débit d'air extrait convenableau bon fonctionnement de la sorbonne. Le positionnement des sondes de mesures se fait enfonction de la longueur d'ouverture de l'équipement.</p></div><div class=\"col-md-6\"><img src=\"./static/mesure_vitesse_air_ambiante.jpg\"/></div></div></li><li><h4>Mesure de confinement au gaz traceur SF6</h4><div class=\"row\"><div class=\"col-md-6\"><p>Le test de confinement a pour objectif de s'assurer du bon fonctionnement de la sorbonne dans sonlocal d'implantation, en quantifiant le confinement en fonction des paramètres aérauliques dulocal d'implantation de l'équipement. Le positionnement des points de mesure est fonction de lalongueur d'ouverture de l'équipement.</p></div><div class=\"col-md-6\"><img src=\"./static/mesure_confinement_gaz_traceur_SF6.jpg\"/></div></div></li></ul></div>"
                 },
                 {
                   "code" : "sorbonneRoutine",
                   "type" : "Essai de routine",
-                  "detail" : "(selon les normes NF EN 14175 ou XPX 15-203)"
+                  "detail" : "(selon les normes NF EN 14175 ou XPX 15-203)",
+                  "popin" : "<div class=\"row detailPrestationPopin\">  <h5>Selon les normes NF EN 14175 ou XP X 15-203</h5>  <br/>  <ul>    <li><h4>Examen visuel de l'état de la sorbonne de laboratoire</h4></li>    <li><h4>Descriptif de la configuration du local d'implantation de la sorbonne</h4></li>    <li><h4>Descriptif de la configuration de la sorbonne de laboratoire contrôlée</h4></li>    <li><h4>Relevé des paramètres ambiants</h4></li>    <li>      <h4>Visualisation du débit d'air par test fumigène visible</h4>      <div class=\"row\">        <div class=\"col-md-6\">          <p>Le test a pour objectif de visualiser de manière nette les flux d'air extrait par la sorbonne au niveau de la façade mobile afin de l'étudier et de collecter des informations qualitatives sur le débit d'extraction d'air et d'étudier les interactions entre les débits d'air extrait par la sorbonne et les débits d'air issus de la compensation d'air du local.</p>        </div>        <div class=\"col-md-6\">          <img src=\"./static/essai_reception_1.png\"/>        </div>      </div>    </li>    <li>      <h4>Mesure des vitesses d'air frontales</h4>      <div class=\"row\">        <div class=\"col-md-6\">          <img src=\"./static/mesure_vitesse_air_frontale_1.jpg\"/>        </div>        <div class=\"col-md-6\">          <h5>Norme NF EN 14175 (Sorbonne installée après 2005)</h5>          <p>L'objectif des mesures lors du contrôle de routine est de déterminer tous écarts de valeurs des vitesses d'air frontales par rapport aux mesures relevées lors de l'essai de réception pour se rendre compte de l'évolution dans le temps des performances de l'équipement.</p>          <h5>Norme XP X 15-203 (Sorbonne installée avant 2005)</h5>          <p>L'objectif des mesures lors du contrôle de routine est de comparer les valeurs des vitesses d'air frontales par rapport à une valeur seuil de référence de 0,4 m/s en tous points de mesure.</p>        </div>      </div>    </li>  </ul></div>"
                 }
             ]
         },
@@ -21,7 +23,8 @@
                 {
                   "code" : "sorbonneRecirculation",
                   "type" : "Essai de routine",
-                  "detail" : "(selon la norme NF X 15-211)"
+                  "detail" : "(selon la norme NF X 15-211)",
+                  "popin" : "<div class=\"row detailPrestationPopin\">  <h5>Selon la norme NF X 15-211</h5>  <br/>  <ul>    <li><h4>Examen visuel de l'état de la sorbonne de laboratoire</h4></li>    <li><h4>Configuration du local d'implantation de la sorbonne de laboratoire</h4></li>    <li><h4>Configuration de la sorbonne de laboratoire contrôlée</h4></li>    <li><h4>Paramètres ambiants</h4></li>    <li><h4>Visualisation du débit d'air par test fumigène visible</h4></li>    <li><h4>Mesure des vitesses d'air frontales</h4></li>  </ul></div>"
                 }
             ]
         },
@@ -31,7 +34,8 @@
                 {
                   "code" : "hotteChimie",
                   "type" : "Contrôle périodique",
-                  "detail" : "(selon l’ED 695 de l’INRS)"
+                  "detail" : "(selon l’ED 695 de l’INRS)",
+                  "popin" : "<div class=\"row detailPrestationPopin\">  <h5>Selon l'ED 695 de l'INRS</h5>  <br/>  <p>L'objectif de ce contrôle est de vérifier le bon fonctionnement de l'équipement et de vérifier que le débit d'air extrait est suffisant pour capter efficacement les polluants au niveau de leur source d'émission.</p></div>"
                 }
             ]
         },
@@ -41,7 +45,8 @@
                 {
                   "code" : "brasAspirant",
                   "type" : "Contrôle périodique",
-                  "detail" : "(selon l’ED 695 de l’INRS)"
+                  "detail" : "(selon l’ED 695 de l’INRS)",
+                  "popin" : "<div class=\"row detailPrestationPopin\">  <h5>Selon l'ED 695 de l'INRS</h5>  <br/>  <p>L'objectif de ce contrôle est de vérifier le bon fonctionnement de l'équipement et de vérifier que le débit d'air extrait est suffisant pour capter efficacement les polluants et de déterminer la distance maximale d'utilisation à respecter par rapport à la source d'émission du polluant.</p></div>"
                 }
             ]
         },
@@ -51,7 +56,8 @@
                 {
                   "code" : "armoireVentilee",
                   "type" : "Contrôle périodique",
-                  "detail" : "(selon la norme NF EN 14470-1)"
+                  "detail" : "(selon la norme NF EN 14470-1)",
+                  "popin" : "<div class=\"row detailPrestationPopin\">  <h5>Selon la norme NF EN 14470-1</h5>  <br/>  <p>L'objectif du contrôle est de vérifier que les conditions de stockage des produits chimiques dans l'armoire ventilée sont correctes et de réaliser une mesure du taux de renouvellement horaire conformément à la norme EN-14470-1 d'octobre 2004.</p></div>"
                 }
             ]
         }
