@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Valeurs.css';
+import Valeur from './Valeur/Valeur';
 import valeursData from './valeursData.json';
 
 class Valeurs extends Component {
@@ -18,13 +19,9 @@ class Valeurs extends Component {
 
                 <div class="row">
 
-                    {valeursData.valeurs.map((valeur, index) => {
+                    {valeursData.valeurs.map(valeur => {
                         return (
-                            <div class="col-md-6 valeur-item">
-                                <div class="valeur-title">{valeur.titre}</div>
-                                <p>{valeur.content}</p>
-                            </div>
-
+                            <Valeur title={valeur.title} image={valeur.image} content={valeur.content} alt="pictogramme valeur" />
                         )
                     })}
 
