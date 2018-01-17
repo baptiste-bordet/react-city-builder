@@ -24,7 +24,6 @@ const customStyles = {
         top: '100px',
         left: '25%',
         right: '25%',
-        bottom: '40px',
         border: '1px solid #ccc',
         background: '#fff',
         overflow: 'auto',

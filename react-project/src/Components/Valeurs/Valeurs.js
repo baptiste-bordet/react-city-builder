@@ -7,21 +7,21 @@ class Valeurs extends Component {
 
     render() {
         return (
-            <div id="valeurs-bloc" class="container">
+            <div id="valeurs-bloc" className="container">
 
-                <div class="row">
+                <div className="row">
                     <h1>VALEURS</h1>
                 </div>
 
-                <div class="row">
+                <div className="row">
                     <p>La société Control’Air s’est spécialisée dans le contrôle des sorbonnes de laboratoire et des différents équipements de protection ventilés de laboratoire.</p>
                 </div>
 
-                <div class="row">
+                <div className="row">
 
                     {valeursData.valeurs.map(valeur => {
                         return (
-                            <Valeur title={valeur.title} image={valeur.image} content={valeur.content} alt="pictogramme valeur" />
+                            <Valeur key={valeur.title} title={valeur.title} image={valeur.image} content={valeur.content} />
                         )
                     })}
 

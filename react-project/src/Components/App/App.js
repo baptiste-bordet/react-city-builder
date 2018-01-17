@@ -5,6 +5,7 @@ import Sorbonne from '../Sorbonne/Sorbonne';
 import Reglementation from '../Reglementation/Reglementation';
 import Prestations from '../Prestations/Prestations';
 import Valeurs from '../Valeurs/Valeurs';
+import Devis from '../Devis/Devis';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
                 <Reglementation />
                 <Prestations />
                 <Valeurs />
+                <Devis />
 
                 <h1 className="App-title">From JSON => {data.hello}</h1>
                 <h1 className="App-title">From server => {this.state.test}</h1>
