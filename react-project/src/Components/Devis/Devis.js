@@ -25,6 +25,20 @@ class Devis extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+
+        fetch('/api/devis', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                data: this.state
+            })
+        })
+            .then(res => res.json())
+            .then(jsonRes => this.setState({ test: jsonRes.world }));
+
         console.log('this.state = ' + JSON.stringify(this.state));
     }
 
