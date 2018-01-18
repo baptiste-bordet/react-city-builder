@@ -6,8 +6,9 @@ import Reglementation from '../Reglementation/Reglementation';
 import Prestations from '../Prestations/Prestations';
 import Valeurs from '../Valeurs/Valeurs';
 import Devis from '../Devis/Devis';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
 var data = require('../../data/data.json');
 
@@ -31,6 +32,8 @@ class App extends Component {
                 <Prestations />
                 <Valeurs />
                 <Devis />
+                <Contact />
+                <Footer />
 
                 <h1 className="App-title">From JSON => {data.hello}</h1>
                 <h1 className="App-title">From server => {this.state.test}</h1>

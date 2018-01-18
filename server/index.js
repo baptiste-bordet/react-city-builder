@@ -31,7 +31,7 @@ app.post('/api/devis', function (req, res) {
     }
 
     const form = req.body.data,
-        captchaResponse = req.body.data.captchaResponse,
+        captchaResponse = req.body.data.captcha,
         captchaPromise = FormValidator.recaptchaValidation(captchaResponse),
         formPromise = FormValidator.validate(form);
 
