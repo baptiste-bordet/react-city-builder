@@ -124,10 +124,10 @@ class Devis extends Component {
 
                     <div className="row">
                         <div className="form-group col-md-8">
-                            {/*"6LfVbiEUAAAAAACvbi_AmVq6GZ__ORNZmejycT3o"*/}
+                            {/*"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"*/}
                             <ReCAPTCHA
                                 ref="recaptcha"
-                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                                sitekey="6LfVbiEUAAAAAACvbi_AmVq6GZ__ORNZmejycT3o"
                                 onChange={this.onRecaptchaChange.bind(this)}
                             />
                         </div>
