@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
+import * as $ from 'jquery';
 import './Footer.css';
 
 class Footer extends Component {
+
+    constructor() {
+        super();
+        this.toggleCollapse = this.toggleCollapse.bind(this);
+    }
+
+    toggleCollapse(event) {
+        console.log('coucou');
+        $('html,body').animate({scrollTop: document.body.scrollHeight}, 'slow');
+    }
 
     render() {
         return (
             <div id="footer-bloc">
                 
-                <a data-toggle="collapse" href="#mentionsLegalesCollapse" aria-expanded="false" aria-controls="mentionsLegalesCollapse">Mentions légales</a>
+                <a data-toggle="collapse" href="#mentionsLegalesCollapse" aria-expanded="false" aria-controls="mentionsLegalesCollapse" onClick={this.toggleCollapse}>Mentions légales</a>
+
                 <div className="collapse" id="mentionsLegalesCollapse">
 
                     <div className="well">
@@ -27,7 +39,7 @@ class Footer extends Component {
                 </div>
             </div>
         );
-    }
+    };
 }
 
 export default Footer;

@@ -34,13 +34,6 @@ class App extends Component {
                 <Devis />
                 <Contact />
                 <Footer />
-
-                <h1 className="App-title">From JSON => {data.hello}</h1>
-                <h1 className="App-title">From server => {this.state.test}</h1>
-
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
             </div>
         );
     }
