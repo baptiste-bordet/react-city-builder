@@ -49,6 +49,8 @@ app.post('/api/devis', function (req, res) {
             });
         }
 
+    }).catch((e) => {
+        console.error('ERROR : ' + e);
     });
 
 });
