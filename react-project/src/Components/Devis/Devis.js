@@ -37,7 +37,7 @@ class Devis extends Component {
             })
         })
             .then(res => res.json())
-            .then(jsonRes => this.setState({ test: jsonRes.world }));
+            .then(jsonRes => this.setState({ errors: jsonRes }));
 
         console.log('this.state = ' + JSON.stringify(this.state));
     }
@@ -57,6 +57,19 @@ class Devis extends Component {
                 <div className="row">
                     <h1>DEVIS</h1>
                 </div>
+
+                {this.state.errors ? (
+                    <div class="alert alert-danger form-errors" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        {this.state.errors.map(error => {
+                            return (
+                                <div>{error}</div>
+                            )
+                        })}
+                    </div>
+                ) : ''}
 
                 <form onSubmit={this.handleSubmit}>
 
