@@ -17,14 +17,18 @@ class Devis extends Component {
             telephone: '',
             nature: 'Essais de réception - sorbonnes de laboratoire',
             info: '',
-            captcha: ''
+            captcha: '',
+            envoiEnCours: false
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.resetMessage = this.resetMessage.bind(this);
     }
 
     handleSubmit(event) {
         event.preventDefault();
+
+        this.setState({ envoiEnCours: true });
 
         fetch('/api/devis', {
             method: 'POST',
@@ -37,7 +41,10 @@ class Devis extends Component {
             })
         })
             .then(res => res.json())
-            .then(jsonRes => this.setState({ errors: jsonRes }));
+            .then(jsonRes => this.setState({
+                errors: jsonRes,
+                envoiEnCours: false
+            }));
 
         console.log('this.state = ' + JSON.stringify(this.state));
     }
@@ -50,6 +57,10 @@ class Devis extends Component {
         this.setState({ captcha: captcha });
     }
 
+    resetMessage() {
+        this.setState({ errors: null });
+    }
+
     render() {
         return (
             <div id="devis-bloc" className="container">
@@ -58,16 +69,25 @@ class Devis extends Component {
                     <h1>DEVIS</h1>
                 </div>
 
-                {this.state.errors ? (
+                {this.state.errors && Object.keys(this.state.errors).length > 0 ? (
                     <div class="alert alert-danger form-errors" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Fermer" onSubmit={this.resetMessage}>
                         <span aria-hidden="true">&times;</span>
                         </button>
-                        {this.state.errors.map(error => {
+                        {Object.keys(this.state.errors).map(error => {
                             return (
-                                <div>{error}</div>
+                                <div>{this.state.errors[error]}</div>
                             )
                         })}
+                    </div>
+                ) : ''}
+
+                {this.state.errors && Object.keys(this.state.errors).length === 0 ? (
+                    <div class="alert alert-success" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Fermer" onSubmit={this.resetMessage}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div>La demande de devis a bien été envoyée.</div>
                     </div>
                 ) : ''}
 
@@ -137,7 +157,6 @@ class Devis extends Component {
 
                     <div className="row">
                         <div className="form-group col-md-8">
-                            {/*"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"*/}
                             <ReCAPTCHA
                                 ref="recaptcha"
                                 sitekey="6LfVbiEUAAAAAACvbi_AmVq6GZ__ORNZmejycT3o"
@@ -146,7 +165,11 @@ class Devis extends Component {
                         </div>
                     </div>
 
-                    <button className="btn btn-success" type="submit" value="Submit">Envoyer la demande</button>
+                    {this.state.envoiEnCours ? (
+                        <button class="btn btn-success" type="submit" disabled="disabled"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>  Envoi du message...</button>
+                    ) : (
+                        <button className="btn btn-success" type="submit" value="Submit">Envoyer la demande</button>
+                    )}
 
                 </form>
 
