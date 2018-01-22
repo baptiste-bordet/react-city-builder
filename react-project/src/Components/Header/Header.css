@@ -18,3 +18,10 @@
     color: #ffffff;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    .header-visu img {
+        width: 100%;
+    }
+}
+

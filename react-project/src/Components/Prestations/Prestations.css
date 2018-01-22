@@ -87,3 +87,10 @@ prestations-bloc table {
     color: #ffffff;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+    .ReactModal__Content {
+        left: 5% !important;
+        right: 5% !important;
+    }
+}
