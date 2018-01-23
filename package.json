@@ -1,7 +1,7 @@
 {
-  "name": "test-react",
+  "name": "control-air",
   "version": "1.0.0",
-  "description": "How to use create-react-app with a custom Node API on Heroku",
+  "description": "Spécialiste en mesure et analyse des comportements aérauliques",
   "scripts": {
     "start": "node server",
     "heroku-postbuild": "cd react-project/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
