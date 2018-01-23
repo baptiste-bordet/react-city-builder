@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Menu.css';
+import profil from '../../assets/manue.jpg';
 
 class Menu extends Component {
 
@@ -17,7 +18,9 @@ class Menu extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="#">Emmanuelle Claeys</a>
+                        <img src={profil} alt="profil" />
+                        <h1>Emmanuelle Claeys</h1>
+                        <p className="description">Doctorante, enseignante et statistique lover</p>
                     </div>
 
                     <div className="navbar-collapse collapse">

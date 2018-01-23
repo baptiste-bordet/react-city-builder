@@ -1,5 +1,7 @@
 @import 'custom_navbar.scss';
 
+
+
 @media (min-width: 768px) {
     .navbar-fixed-side {
         position: fixed !important;
@@ -13,8 +15,26 @@
     }
 }
 
+
 .navbar-default {
     background-color: #4acaa8 !important;
+
+    img {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    h1 {
+        color: #d1f1e9;
+    }
+
+    .description {
+        font-style: italic;
+        color: #d1f1e9;
+    }
 
     a, li {
         color: #FFF  !important;
