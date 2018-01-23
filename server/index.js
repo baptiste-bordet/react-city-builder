@@ -12,14 +12,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Priority serve any static files.
-app.use(express.static(path.resolve(__dirname, '../react-project/build')));
+app.use(express.static(path.resolve(__dirname, '../app/build')));
 
 // Answer API requests.
 app.get('/api/test', (req, res) => res.send({"world": "World"}));
 
 // All remaining requests return the React app, so it can handle routing.
 app.get('*', function(request, response) {
-    response.sendFile(path.resolve(__dirname, '../react-project/build', 'index.html'));
+    response.sendFile(path.resolve(__dirname, '../app/build', 'index.html'));
 });
 
 app.post('/api/devis', function (req, res) {
