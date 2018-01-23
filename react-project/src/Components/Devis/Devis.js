@@ -18,7 +18,9 @@ class Devis extends Component {
             nature: 'Essais de réception - sorbonnes de laboratoire',
             info: '',
             captcha: '',
-            envoiEnCours: false
+            envoiEnCours: false,
+            displayErrors: false,
+            displaySuccess: false
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -41,12 +43,14 @@ class Devis extends Component {
             })
         })
             .then(res => res.json())
-            .then(jsonRes => this.setState({
-                errors: jsonRes,
-                envoiEnCours: false
-            }));
-
-        console.log('this.state = ' + JSON.stringify(this.state));
+            .then(jsonRes => {
+                this.setState({
+                    errors: jsonRes,
+                    displayErrors: Object.keys(jsonRes).length > 0,
+                    displaySuccess: Object.keys(jsonRes).length === 0,
+                    envoiEnCours: false
+                });
+            });
     }
 
     onChange(field, event) {
@@ -58,7 +62,10 @@ class Devis extends Component {
     }
 
     resetMessage() {
-        this.setState({ errors: null });
+        this.setState({
+            displayErrors: false,
+            displaySuccess: false
+        });
     }
 
     render() {
@@ -69,22 +76,22 @@ class Devis extends Component {
                     <h1>DEVIS</h1>
                 </div>
 
-                {this.state.errors && Object.keys(this.state.errors).length > 0 ? (
-                    <div class="alert alert-danger form-errors" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Fermer" onSubmit={this.resetMessage}>
-                        <span aria-hidden="true">&times;</span>
+                {this.state.displayErrors ? (
+                    <div className="alert alert-danger form-errors" role="alert">
+                        <button type="button" className="close" onClick={this.resetMessage}>
+                            <span aria-hidden="true">&times;</span>
                         </button>
                         {Object.keys(this.state.errors).map(error => {
                             return (
-                                <div>{this.state.errors[error]}</div>
+                                <div key={error}>{this.state.errors[error]}</div>
                             )
                         })}
                     </div>
                 ) : ''}
 
-                {this.state.errors && Object.keys(this.state.errors).length === 0 ? (
-                    <div class="alert alert-success" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Fermer" onSubmit={this.resetMessage}>
+                {this.displaySuccess ? (
+                    <div className="alert alert-success" role="alert">
+                        <button type="button" className="close" onClick={this.resetMessage}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <div>La demande de devis a bien été envoyée.</div>
@@ -166,7 +173,7 @@ class Devis extends Component {
                     </div>
 
                     {this.state.envoiEnCours ? (
-                        <button class="btn btn-success" type="submit" disabled="disabled"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>  Envoi du message...</button>
+                        <button className="btn btn-success" type="submit" disabled="disabled"><span className="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>  Envoi du message...</button>
                     ) : (
                         <button className="btn btn-success" type="submit" value="Submit">Envoyer la demande</button>
                     )}

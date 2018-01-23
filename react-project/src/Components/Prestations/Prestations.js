@@ -90,13 +90,12 @@ class Prestations extends Component {
                         {prestationsData.prestations.map((prestation, index) => {
                             return prestation.controls.map((control, controlIndex) => {
                                 return (
-                                    <tr key={control.code}>
-                                        {
+                                    <tr key={control.code}>{
                                             controlIndex === 0 ?
-                                                <td rowSpan={this.buildRowspan(prestation, controlIndex)}
-                                                    className="name">{prestation.name}</td>
-                                                :
-                                                ''
+                                            <td rowSpan={this.buildRowspan(prestation, controlIndex)}
+                                                className="name">{prestation.name}</td>
+                                            :
+                                            ''
                                         }
                                         <td>{control.type}</td>
                                         <td className="prestation"
