@@ -1,33 +1,25 @@
 #reglementation-bloc p {
-    font-size: 14px;
-}
+  font-size: 14px; }
 
 #reglementation-bloc h3 {
-    margin-top: 25px;
-}
+  margin-top: 25px; }
 
 #reglementation-bloc img {
-    width: 100%;
-    margin-top: 20px;
-}
+  width: 100%;
+  margin-top: 20px; }
 
-.norme-vigueur-row {
-    margin-top: 20px;
-}
-
-.norme-vigueur h3 {
+#reglementation-bloc .norme-vigueur-row {
+  margin-top: 20px; }
+  #reglementation-bloc .norme-vigueur-row h3 {
     margin-top: 45px !important;
-    padding-bottom: 0;
-}
+    padding-bottom: 0; }
 
-.diagramSVG svg {
-    width: 100%;
-    height: 481px;
-    margin-top: 25px;
-}
+#reglementation-bloc .diagramSVG svg {
+  width: 100%;
+  height: 481px;
+  margin-top: 25px; }
 
-.diagram2SVG svg {
-    width: 100%;
-    height: 235px;
-    margin-top: 25px;
-}
+#reglementation-bloc .diagram2SVG svg {
+  width: 100%;
+  height: 235px;
+  margin-top: 25px; }

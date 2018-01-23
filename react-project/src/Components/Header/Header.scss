@@ -1,0 +1,27 @@
+#header-bloc {
+    padding-top: 56px;
+    text-align: center;
+
+    .header-logo img {
+        width: 50%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .sentance {
+        background: #3A5068;
+        text-align: center;
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .header-visu img {
+            width: 100%;
+        }
+    }
+
+}

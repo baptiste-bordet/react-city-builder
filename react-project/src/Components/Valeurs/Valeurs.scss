@@ -1,0 +1,27 @@
+#valeurs-bloc {
+    background: #ffffff;
+
+    .valeur-item {
+        padding: 20px;
+        text-align: center;
+
+        img {
+            width: 100px;
+            padding-bottom: 25px;
+        }
+    }
+
+    .valeur-title {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: 40px;
+        display: inline-block;
+        font-family: 'Comfortaa', cursive;
+    }
+}
+
+#prestations-bloc p,
+#valeurs-bloc p {
+    font-size: 16px;
+    text-align: justify;
+}

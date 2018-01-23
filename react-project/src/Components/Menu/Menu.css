@@ -1,21 +1,17 @@
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
+  display: inline-block;
+  float: none; }
 
 .navbar .navbar-collapse {
-    text-align: center;
-}
+  text-align: center; }
 
-.navbar a{
-    transition: color 0.2s,padding 0.2s;
-    color: #e4e4e4;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+.navbar a {
+  transition: color 0.2s,padding 0.2s;
+  color: #e4e4e4;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .navbar li a {
-    font-family: 'Quicksand', cursive;
-    font-size: 2rem;
-    font-weight: 500;
-}
+  font-family: 'Quicksand', cursive;
+  font-size: 2rem;
+  font-weight: 500; }
