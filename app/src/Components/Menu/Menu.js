@@ -5,37 +5,37 @@ class Menu extends Component {
 
     render() {
         return (
-            <header className="App-Menu">
 
-                <nav className="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <nav className="navbar navbar-default navbar-fixed-side">
 
-                    <div className="container-fluid">
+                <div className="container">
 
-                        <div className="navbar-menu">
-                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
-                                <span className="sr-only">Toggle navigation</span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div className="collapse navbar-collapse" id="navigationbar">
-                            <ul className="nav navbar-nav">
-                                <li className="active-elt">
-                                    <a href="#lien1-bloc">Lien 1</a>
-                                </li>
-                                <li>
-                                    <a href="#lien2-bloc">Lien 2</a>
-                                </li>
-                            </ul>
-                        </div>
-
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <a className="navbar-brand" href="#">Emmanuelle Claeys</a>
                     </div>
 
-                </nav>
+                    <div className="navbar-collapse collapse">
+                        <ul className="nav navbar-nav">
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Activités</a></li>
+                            <li><a href="#">Recherche</a></li>
+                            <li><a href="#">Enseignement</a></li>
+                            <li><a href="#">Autre</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">CV</a></li>
+                        </ul>
+                    </div>
 
-            </header>
+                </div>
+
+            </nav>
+
         );
     }
 }

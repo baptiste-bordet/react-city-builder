@@ -95,19 +95,3 @@
     color: #fff; }
   .navbar-fixed-side.navbar-inverse .dropdown > .dropdown-toggle {
     color: #777777 !important; } }
-
-@media (min-width: 768px) {
-  .navbar-fixed-side {
-    position: fixed !important;
-    margin: 0 -15px !important;
-    height: 100vh !important;
-    width: inherit;
-    overflow: auto !important;
-    border-top-width: 0 !important;
-    border-bottom-width: 0 !important;
-    border-radius: 0 !important; } }
-
-.navbar-default {
-  background-color: #4acaa8 !important; }
-  .navbar-default a, .navbar-default li {
-    color: #FFF  !important; }

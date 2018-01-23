@@ -1,21 +1,22 @@
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+@import 'custom_navbar.scss';
+
+@media (min-width: 768px) {
+    .navbar-fixed-side {
+        position: fixed !important;
+        margin: 0 -15px !important;
+        height: 100vh !important;
+        width: inherit;
+        overflow: auto !important;
+        border-top-width: 0 !important;
+        border-bottom-width: 0 !important;
+        border-radius: 0 !important;
+    }
 }
 
-.navbar .navbar-collapse {
-    text-align: center;
-}
+.navbar-default {
+    background-color: #4acaa8 !important;
 
-.navbar a {
-    transition: color 0.2s,padding 0.2s;
-    color: #e4e4e4;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navbar li a {
-    font-family: 'Quicksand', cursive;
-    font-size: 2rem;
-    font-weight: 500;
+    a, li {
+        color: #FFF  !important;
+    }
 }
