@@ -1,6 +1,9 @@
 .actualite {
     
         padding: 100px 350px !important;
+        @media (max-width: 768px) {
+            padding: 100px 50px !important;
+        }
         
         color: #777;
         text-align: justify;
@@ -13,14 +16,17 @@
         }
 
         .col-md-6 {
-            padding-left: 0 !important;
+            padding-left: 0 !important;            
+            @media (max-width: 768px) {
+                padding-right: 0 !important;
+            }
 
             img {
                 width: 75%;
-                display: none;
         
-                @media (min-width: 768px) {
-                    display: block;
+                @media (max-width: 768px) {
+                    margin: 0 auto;
+                    width: 100%;
                 }
             }
 
@@ -28,6 +34,10 @@
         .titre-article {
             font-size: 20px;
             margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                margin-top: 20px;
+            }
         }
 
         p {

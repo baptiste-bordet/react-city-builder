@@ -2,6 +2,9 @@
   padding: 100px 350px !important;
   color: #777;
   text-align: justify; }
+  @media (max-width: 768px) {
+    .a-propos {
+      padding: 100px 50px !important; } }
   .a-propos .title {
     color: #4acaa8;
     margin-top: 25px;

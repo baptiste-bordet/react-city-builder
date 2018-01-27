@@ -34,7 +34,23 @@
         color: #d1f1e9;
     }
 
-    a, li {
-        color: #FFF  !important;
+    .navbar-collapse {
+        margin-top: 35px;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                border-top: solid 2px #5ccfb0;
+                display: block;
+                padding: 15px 0;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            li:hover {
+                background: #FFF;
+                color: #4acaa8;
+
+            }
+        }
     }
 }

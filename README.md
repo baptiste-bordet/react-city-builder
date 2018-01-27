@@ -13,3 +13,13 @@ Se positionner dans le dossier app (/manue/app)
 ### `npm start`
 
 Le projet est basé sur [Create React App](https://github.com/facebookincubator/create-react-app).
+
+TODO:
+- Favicon
+- Design menu
+- Déploiement sur Heroku
+
+TODO later:
+- Achat nom de domaine
+- Déploiement
+- Contenu

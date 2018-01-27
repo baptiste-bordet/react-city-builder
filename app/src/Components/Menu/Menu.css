@@ -103,9 +103,9 @@
     height: 100vh !important;
     width: inherit;
     overflow: auto !important;
-    border-top-width: 0 !important;
-    border-bottom-width: 0 !important;
-    border-radius: 0 !important; } }
+    /*border-top-width: 0 !important;
+        border-bottom-width: 0 !important;
+        border-radius: 0 !important;*/ } }
 
 .navbar-default {
   background-color: #4acaa8 !important; }
@@ -119,5 +119,17 @@
   .navbar-default .description {
     font-style: italic;
     color: #d1f1e9; }
-  .navbar-default a, .navbar-default li {
-    color: #FFF  !important; }
+  .navbar-default .navbar-collapse {
+    margin-top: 35px; }
+    .navbar-default .navbar-collapse ul {
+      list-style: none;
+      padding: 0; }
+      .navbar-default .navbar-collapse ul li {
+        border-top: solid 2px #5ccfb0;
+        display: block;
+        padding: 15px 0;
+        color: #ffffff;
+        text-decoration: none; }
+      .navbar-default .navbar-collapse ul li:hover {
+        background: #FFF;
+        color: #4acaa8; }
