@@ -1,0 +1,38 @@
+.actualite {
+    
+        padding: 100px 350px !important;
+        
+        color: #777;
+        text-align: justify;
+        
+        .title {
+            color: #4acaa8;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-size: 35px;
+        }
+
+        .col-md-6 {
+            padding-left: 0 !important;
+
+            img {
+                width: 75%;
+                display: none;
+        
+                @media (min-width: 768px) {
+                    display: block;
+                }
+            }
+
+        }
+        .titre-article {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #777;
+            font-size: 18px;
+        }
+        
+    }

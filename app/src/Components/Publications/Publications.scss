@@ -1,0 +1,31 @@
+.publications {
+    
+        padding: 100px 350px !important;
+        
+        color: #777;
+        text-align: justify;
+        
+        .title {
+            color: #4acaa8;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-size: 35px;
+        }
+
+        .col-md-6 {
+            padding-left: 0 !important;
+            .type-publication {
+                font-size: 18px;
+            }
+        }
+        
+        ul {
+            margin-bottom: 25px;
+            li {
+                font-size: 16px;
+                margin-top: 20px;
+                
+            }
+        }
+        
+    }
