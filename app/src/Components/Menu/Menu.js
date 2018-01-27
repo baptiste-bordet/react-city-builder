@@ -35,6 +35,15 @@ class Menu extends Component {
                         </ul>
                     </div>
 
+                    <div className="nav-bar-footer">
+                        <ul class="icons">
+                            <li><a class="icon fa-twitter"><span>Twitter</span></a></li>
+                            <li><a class="icon fa-facebook"><span>Facebook</span></a></li>
+                            <li><a class="icon fa-instagram"><span>Instagram</span></a></li>
+                            <li><a class="icon fa-github"><span>Github</span></a></li>
+                            <li><a class="icon fa-envelope"><span>Email</span></a></li>
+                        </ul>
+                    </div>
                 </div>
 
             </nav>

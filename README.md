@@ -1,4 +1,4 @@
-## Instalation
+## Installation
 
 Se positionner dans le dossier du projet (/manue)
 

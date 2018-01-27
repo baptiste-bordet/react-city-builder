@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import APropos from '../APropos/APropos';
 import Menu from '../Menu/Menu';
-import Projets from '../Projets/Projets';
+import Summary from '../Summary/Summary';
 import './App.css';
 import logo from '../../assets/logo-control-air.jpg';
 
@@ -24,11 +25,9 @@ class App extends Component {
                         <div className="col-sm-3 col-lg-2">
                             <Menu />
                         </div>
-                        <div className="col-sm-9 col-lg-10">
-                            <Projets />
-                            <h1 className="App-title">From JSON => {data.hello}</h1>
-                            <h1 className="App-title">From server => {this.state.world}</h1>
-                            <img src={logo} alt="logo" />
+                        <div className="col-sm-9 col-lg-10 home-container">
+                            <Summary className="summary" />
+                            <APropos className="a-propos" />
                         </div>
                     </div>
                 </div>

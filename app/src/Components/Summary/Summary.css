@@ -1,0 +1,17 @@
+.summary {
+  padding: 100px 350px !important;
+  color: #777;
+  text-align: justify; }
+  .summary h1 {
+    color: #4acaa8;
+    font-size: 50px; }
+  .summary h5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px; }
+  .summary ul {
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .summary p {
+    font-size: 18px;
+    margin-bottom: 25px; }
