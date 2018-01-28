@@ -15,11 +15,11 @@ Se positionner dans le dossier app (/manue/app)
 Le projet est basé sur [Create React App](https://github.com/facebookincubator/create-react-app).
 
 TODO:
-- Favicon
-- Design menu
-- Déploiement sur Heroku
+- Favicon                   ( )
+- Design menu               ( )
+- Déploiement sur Heroku    (X)
 
 TODO later:
-- Achat nom de domaine
-- Déploiement
-- Contenu
+- Achat nom de domaine      (X)
+- Déploiement               (X)
+- Contenu                   (X)
