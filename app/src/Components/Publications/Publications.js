@@ -7,9 +7,9 @@ class Publications extends Component {
     render() {
         return (
 
-            <div className="publications row">
+            <div id="publications" className="row">
 
-                <div className="">
+                <div>
                     <h5 className="title">Publications</h5>
 
                     <div className="col-md-6">

@@ -17,23 +17,21 @@ class Menu extends Component {
 
                 <div className="nav-links">
                     <ul>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">Recherche</a></li>
-                        <li><a href="#">Enseignement</a></li>
-                        <li><a href="#">Autre</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">CV</a></li>
+                        <li><a href="#a-propos">A propos</a></li>
+                        <li><a href="#actualites">Actualites</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#enseignement">Enseignement</a></li>
+                        <li><a href="#cv">CV</a></li>
                     </ul>
                 </div>
 
                 <div className="nav-footer">
                     <ul className="icons">
-                        <li><a className="icon fa-twitter"><span>Twitter</span></a></li>
-                        <li><a className="icon fa-facebook"><span>Facebook</span></a></li>
-                        <li><a className="icon fa-instagram"><span>Instagram</span></a></li>
-                        <li><a className="icon fa-github"><span>Github</span></a></li>
-                        <li><a className="icon fa-envelope"><span>Email</span></a></li>
+                        <li><a href="#"><i className="fa fa-twitter"/></a></li>
+                        <li><a href="#"><i className="fa fa-facebook"/></a></li>
+                        <li><a href="#"><i className="fa fa-instagram"/></a></li>
+                        <li><a href="#"><i className="fa fa-github"/></a></li>
+                        <li><a href="#"><i className="fa fa-envelope"/></a></li>
                     </ul>
                 </div>
 

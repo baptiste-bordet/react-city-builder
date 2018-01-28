@@ -8,7 +8,7 @@ class Actualite extends Component {
     render() {
         return (
 
-            <div className="actualite row">
+            <div id="actualites" className="row">
 
                 <div className="">
                     <h5 className="title">Actualité</h5>

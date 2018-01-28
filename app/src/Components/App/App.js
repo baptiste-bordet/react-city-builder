@@ -4,6 +4,7 @@ import APropos from '../APropos/APropos';
 import Menu from '../Menu/Menu';
 import Publications from '../Publications/Publications';
 import Summary from '../Summary/Summary';
+import Footer from '../Footer/Footer';
 import './App.css';
 
 
@@ -28,10 +29,11 @@ class App extends Component {
                         </div>
 
                         <div className="home-container col-md-9 col-xs-12">
-                            <Summary className="summary" />
-                            <APropos className="a-propos" />
-                            <Publications className="publications" />
-                            <Actualite className="actualite" />
+                            <Summary />
+                            <APropos />
+                            <Publications />
+                            <Actualite />
+                            <Footer />
                         </div>
 
                     </div>

@@ -7,7 +7,7 @@ class APropos extends Component {
     render() {
         return (
 
-            <div className="a-propos row">
+            <div id="a-propos" className="row">
 
                 <div className="">
                     <h5 className="title">Mes activités</h5>

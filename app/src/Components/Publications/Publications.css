@@ -1,21 +1,21 @@
-.publications {
+#publications {
   padding: 100px 350px !important;
   color: #777;
   text-align: justify; }
   @media (max-width: 768px) {
-    .publications {
+    #publications {
       padding: 100px 50px !important; } }
-  .publications .title {
+  #publications .title {
     color: #4acaa8;
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 35px; }
-  .publications .col-md-6 {
+  #publications .col-md-6 {
     padding-left: 0 !important; }
-    .publications .col-md-6 .type-publication {
+    #publications .col-md-6 .type-publication {
       font-size: 18px; }
-  .publications ul {
+  #publications ul {
     margin-bottom: 25px; }
-    .publications ul li {
+    #publications ul li {
       font-size: 16px;
       margin-top: 20px; }

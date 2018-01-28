@@ -31,9 +31,35 @@ nav {
       nav .nav-links ul li {
         border-top: solid 2px #5ccfb0;
         display: block;
-        padding: 15px 0;
-        color: #ffffff;
-        text-decoration: none; }
-      nav .nav-links ul li:hover {
-        background: #FFF;
-        color: #4acaa8; }
+        padding: 0;
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer; }
+        nav .nav-links ul li a {
+          text-decoration: none;
+          margin: 0px;
+          padding: 15px 30px;
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #ffffff; }
+          nav .nav-links ul li a:hover {
+            background: #FFF;
+            color: #5B5B5B; }
+      nav .nav-links ul li:last-child {
+        border-bottom: solid 2px #5ccfb0; }
+  nav .nav-footer {
+    text-align: center;
+    padding-left: 0;
+    margin: 40px 0; }
+    nav .nav-footer ul {
+      padding: 0; }
+      nav .nav-footer ul li {
+        list-style: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 20px; }
+        nav .nav-footer ul li i {
+          color: #FFF; }
+          nav .nav-footer ul li i:hover {
+            color: #5B5B5B; }
