@@ -16,14 +16,14 @@ class APropos extends Component {
 
                     <ul>
                         <div className="col-md-6">
-                            <li><span className="icon fa-code"/>Programmation (R)</li>
-                            <li><span className="icon fa-book"/>Conseil pédagogique</li>
-                            <li><span className="icon fa-book"/>Enseignement</li>
+                            <li><i className="fa fa-code"/>Programmation (R)</li>
+                            <li><i className="fa fa-book"/>Conseil pédagogique</li>
+                            <li><i className="fa fa-book"/>Enseignement</li>
                         </div>
                         <div className="col-md-6">
-                            <li><span className="icon fa-area-/chart"/>Ecriture</li>
-                            <li><span className="icon fa-gradu/ation-cap"/>Data Scientist</li>
-                            <li><span className="icon fa-users/"/>Tutorat</li>
+                            <li><i className="fa fa-area-chart"/>Ecriture</li>
+                            <li><i className="fa fa-graduation-cap"/>Data Scientist</li>
+                            <li><i className="fa fa-users"/>Tutorat</li>
                         </div>
                     </ul>
 

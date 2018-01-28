@@ -5,9 +5,7 @@ import Menu from '../Menu/Menu';
 import Publications from '../Publications/Publications';
 import Summary from '../Summary/Summary';
 import './App.css';
-import logo from '../../assets/logo-control-air.jpg';
 
-var data = require('../../data/data.json');
 
 class App extends Component {
 
@@ -24,15 +22,18 @@ class App extends Component {
             <div className="App">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-3 col-lg-3">
+
+                        <div className="menu-container col-md-3 col-xs-12">
                             <Menu />
                         </div>
-                        <div className="col-sm-9 col-lg-9 home-container">
+
+                        <div className="home-container col-md-9 col-xs-12">
                             <Summary className="summary" />
                             <APropos className="a-propos" />
                             <Publications className="publications" />
                             <Actualite className="actualite" />
                         </div>
+
                     </div>
                 </div>
             </div>
