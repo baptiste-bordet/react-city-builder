@@ -25,6 +25,8 @@ nav {
 
         img {
             width: 200px;
+            border-radius: 90px;
+            margin: 50px;
         }
 
         h1 {
@@ -47,6 +49,7 @@ nav {
             padding: 0;
 
             li {
+                text-align: center;
                 border-top: solid 2px #5ccfb0;
                 display: block;
                 padding: 0;

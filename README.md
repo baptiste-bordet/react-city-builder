@@ -17,9 +17,8 @@ Le projet est basé sur [Create React App](https://github.com/facebookincubator/
 TODO:
 - Favicon                   ( )
 - Design menu               ( )
-- Déploiement sur Heroku    (X)
+- Design responsive         ( )
 
 TODO later:
-- Achat nom de domaine      (X)
-- Déploiement               (X)
-- Contenu                   (X)
+- Déploiement               ( )
+- Contenu                   ( )
