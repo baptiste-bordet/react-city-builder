@@ -13,7 +13,11 @@
       list-style: none; }
       #a-propos ul li i {
         margin: 20px;
-        font-size: 30px; }
+        font-size: 30px;
+        background: #4acaa8;
+        border-radius: 50%;
+        color: #FFF;
+        padding: 10px; }
   #a-propos p {
     font-size: 18px;
     margin-bottom: 25px; }

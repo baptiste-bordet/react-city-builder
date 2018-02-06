@@ -8,21 +8,23 @@ class Menu extends Component {
         return (
 
             <nav>
+                <div id="first-part">
 
-                <div className="nav-header">
-                    <img src={profil} alt="profil" />
-                    <h1>Emmanuelle Claeys</h1>
-                    <p className="description">Doctorante, enseignante et statistique lover</p>
-                </div>
+                    <div className="nav-header">
+                        <img src={profil} alt="profil" />
+                        <h1>Emmanuelle Claeys</h1>
+                        <p className="description">Doctorante, enseignante et statistique lover</p>
+                    </div>
 
-                <div className="nav-links">
-                    <ul>
-                        <li><a href="#a-propos">A propos</a></li>
-                        <li><a href="#actualites">Actualites</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#enseignement">Enseignement</a></li>
-                        <li><a href="#cv">CV</a></li>
-                    </ul>
+                    <div className="nav-links">
+                        <ul>
+                            <li><a href="#a-propos">A propos</a></li>
+                            <li><a href="#actualites">Actualites</a></li>
+                            <li><a href="#publications">Publications</a></li>
+                            <li><a href="#enseignement">Enseignement</a></li>
+                            <li><a href="#cv">CV</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="nav-footer">
