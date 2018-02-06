@@ -18,9 +18,8 @@ class Actualite extends Component {
                     </div>
 
                     <div className="col-md-6 col-xs-12">
-                        <div className="titre-article">Apéro sur la plage</div>
-
-                        <p>Un article à propos de jolies filles qui font la fête sur la plage au coucher du soleil à Vina del Mar au Chili. Elles fêtent le début de l'année 2018 entre copines.</p>                        
+                        <p> À partir du 18 janvier s'ouvrent les États généraux de la bioéthique. Jusqu'au 7 juillet, une soixantaine de débats vont être organisés partout en France pour faire le point sur l'évolution de la science médicale et sur son utilisation dans notre société. Le gouvernement présentera ensuite un projet de loi à l'automne.</p> 
+                        <p>Cette vaste concertation, pilotée par le Comité consultatif national d'éthique (CCNE) et déclinée en régions, s'adressera à tous : médecins, experts, associations mais aussi simples citoyens et jeunes, avec des débats dédiés aux étudiants et lycéens. La phase de débats sera close début juillet par un événement placé sous l'égide du Président de la République.</p>                       
 
                     </div>
 
