@@ -5,6 +5,7 @@ import Menu from '../Menu/Menu';
 import Publications from '../Publications/Publications';
 import Summary from '../Summary/Summary';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import './App.css';
 
 
@@ -29,6 +30,7 @@ class App extends Component {
                         </div>
 
                         <div className="home-container col-md-9 col-xs-12">
+                            <Header />
                             <Summary />
                             <APropos />
                             <Publications />
