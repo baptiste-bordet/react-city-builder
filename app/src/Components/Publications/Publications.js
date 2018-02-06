@@ -12,33 +12,18 @@ class Publications extends Component {
                 <div>
                     <h2 className="title">Publications</h2>
 
-                    <div className="col-md-6">
+                    <div>
                         <div className="type-publication">Papier International</div>
                         <ul>
-                            <li>Les modèles de bandits</li>
-                            <li>Les modèles de bandits</li>
+                            <li>Emmanuelle Claeys, Pierre Gançarski, Myriam Maumy-Bertrand, Hubert Wassner: Regression Tree for Bandits Models in A/B Testing. IDA 2017: 52-62</li>
                         </ul>
 
                         <div className="type-publication">Papier National</div>
                         <ul>
-                            <li>Les modèles de bandits</li>
-                            <li>Les modèles de bandits</li>
+                            <li>Emmanuelle Claeys, Pierre Gançarski, Myriam Maumy-Bertrand: Approche contextuelle par régression pour les tests A/B. In EGC 2018, pp.269-274</li>
+                            <li>Emmanuelle Claeys, Pierre Gançarski, Myriam Maumy-Bertrand, Hubert Wassner: Approche paramétrique de bandits pour le test A/B. APIA 2017: 19-25</li>
+                            <li>Emmanuelle Claeys, Pierre Gançarski, Myriam Maumy-Bertrand, Hubert Wassner: Conception d’un modèle généraliste pour l’évaluation d’un test A/B. EGC 2017: 423-424</li>
                         </ul>
-                    </div>
-
-                    <div className="col-md-6">
-                        <div className="type-publication">Workshop</div>
-                            <ul>
-                                <li>Les modèles de bandits</li>
-                                <li>Les modèles de bandits</li>
-                            </ul>
-
-                            <div className="type-publication">Poster</div>
-                            <ul>
-                                <li>Les modèles de bandits</li>
-                                <li>Les modèles de bandits</li>
-                            </ul>
-
                     </div>
 
                 </div>

@@ -4,10 +4,8 @@
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 35px; }
-  #publications .col-md-6 {
-    padding-left: 0 !important; }
-    #publications .col-md-6 .type-publication {
-      font-size: 18px; }
+  #publications .type-publication {
+    font-size: 18px; }
   #publications ul {
     margin-bottom: 25px; }
     #publications ul li {
