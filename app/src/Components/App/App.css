@@ -2,7 +2,7 @@
   padding: 0 !important; }
 
 .home-container .home-block {
-  padding: 100px 20%; }
+  padding: 100px 15%; }
   @media (max-width: 768px) {
     .home-container .home-block {
       padding: 100px 50px !important; } }
