@@ -7,10 +7,10 @@ class APropos extends Component {
     render() {
         return (
 
-            <div id="a-propos" className="row">
+            <div id="a-propos" className="row home-block">
 
-                <div className="">
-                    <h5 className="title">Mes activités</h5>
+                <div>
+                    <h2 className="title">Mes activités</h2>
 
                     <p>Dans le cadre et en parallèle de ma thèse je développe plusieurs activités :</p>
 

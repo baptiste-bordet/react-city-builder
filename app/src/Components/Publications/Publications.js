@@ -7,10 +7,10 @@ class Publications extends Component {
     render() {
         return (
 
-            <div id="publications" className="row">
+            <div id="publications" className="row home-block">
 
                 <div>
-                    <h5 className="title">Publications</h5>
+                    <h2 className="title">Publications</h2>
 
                     <div className="col-md-6">
                         <div className="type-publication">Papier International</div>

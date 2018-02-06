@@ -8,10 +8,10 @@ class Actualite extends Component {
     render() {
         return (
 
-            <div id="actualites" className="row">
+            <div id="actualites" className="row home-block">
 
                 <div className="">
-                    <h5 className="title">Actualité</h5>
+                    <h2 className="title">Actualité</h2>
 
                     <div className="col-md-6 col-xs-12">
                     <img src={photoActualite} alt="photoActualite" />

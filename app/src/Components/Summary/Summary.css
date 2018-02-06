@@ -1,13 +1,6 @@
 .summary {
-  padding: 100px 20%;
   color: #777;
   text-align: justify; }
-  @media (max-width: 768px) {
-    .summary {
-      padding: 100px 50px !important; } }
-  .summary h1 {
-    color: #4acaa8;
-    font-size: 35px; }
   .summary h5 {
     margin-top: 25px;
     margin-bottom: 25px;

@@ -1,6 +1,12 @@
 .menu-container {
   padding: 0 !important; }
 
+.home-container .home-block {
+  padding: 100px 20%; }
+  @media (max-width: 768px) {
+    .home-container .home-block {
+      padding: 100px 50px !important; } }
+
 .home-container #a-propos {
   border-top: 6px solid #EEE; }
 

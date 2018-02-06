@@ -19,7 +19,8 @@ nav {
     nav .nav-header img {
       width: 200px; }
     nav .nav-header h1 {
-      color: #d1f1e9; }
+      color: #d1f1e9;
+      font-size: 30px; }
     nav .nav-header .description {
       font-style: italic;
       color: #d1f1e9; }

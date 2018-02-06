@@ -1,12 +1,6 @@
 #actualites {
-  padding: 100px 350px !important;
-  color: #777;
   text-align: justify; }
-  @media (max-width: 768px) {
-    #actualites {
-      padding: 100px 50px !important; } }
   #actualites .title {
-    color: #4acaa8;
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 35px; }

@@ -1,12 +1,6 @@
 #publications {
-  padding: 100px 350px !important;
-  color: #777;
   text-align: justify; }
-  @media (max-width: 768px) {
-    #publications {
-      padding: 100px 50px !important; } }
   #publications .title {
-    color: #4acaa8;
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 35px; }
