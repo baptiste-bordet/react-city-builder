@@ -17,7 +17,9 @@ nav {
   nav .nav-header {
     text-align: center; }
     nav .nav-header img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 90px;
+      margin: 50px; }
     nav .nav-header h1 {
       color: #d1f1e9;
       font-size: 30px; }
@@ -30,6 +32,7 @@ nav {
       list-style: none;
       padding: 0; }
       nav .nav-links ul li {
+        text-align: center;
         border-top: solid 2px #5ccfb0;
         display: block;
         padding: 0;
