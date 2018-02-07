@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
 
         return (
-            <div class="header row">
+            <div className="header row">
                 <img src={banner} alt="banniere" />
             </div>
         );
