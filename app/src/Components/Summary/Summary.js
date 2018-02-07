@@ -7,7 +7,7 @@ class Summary extends Component {
     render() {
         return (
 
-            <div className="summary row home-block">
+            <div id="summary" className="row home-block">
 
                 <div className="">
                     <h1>En quelques lignes</h1>

@@ -1,13 +1,13 @@
-.summary {
+#summary {
   color: #777;
   text-align: justify; }
-  .summary h5 {
+  #summary h5 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 25px; }
-  .summary ul {
+  #summary ul {
     font-size: 18px;
     margin-bottom: 25px; }
-  .summary p {
+  #summary p {
     font-size: 18px;
     margin-bottom: 25px; }
