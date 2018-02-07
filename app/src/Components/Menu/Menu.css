@@ -32,7 +32,10 @@ nav {
       font-style: italic;
       color: #d1f1e9; }
   nav .nav-links {
-    margin-top: 35px; }
+    margin-top: 75px; }
+    @media (max-height: 850px) {
+      nav .nav-links {
+        margin-top: 25px; } }
     nav .nav-links ul {
       list-style: none;
       padding: 0; }
