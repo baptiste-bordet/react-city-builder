@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import './APropos.css';
+import './Activites.css';
 
-class APropos extends Component {
+class Activites extends Component {
 
 
     render() {
         return (
 
-            <div id="a-propos" className="row home-block">
+            <div id="activites" className="row home-block">
 
                 <div>
                     <h2 className="title">Mes activités</h2>
@@ -35,4 +35,4 @@ class APropos extends Component {
     }
 }
 
-export default APropos;
+export default Activites;

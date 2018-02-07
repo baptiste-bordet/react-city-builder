@@ -18,11 +18,10 @@ class Menu extends Component {
 
                     <div className="nav-links">
                         <ul>
-                            <li><a href="/#a-propos">A propos</a></li>
-                            <li><a href="/#actualites">Actualites</a></li>
+                            <li><a href="/#summary">En quelques lignes</a></li>
+                            <li><a href="/#activites">Mes activités</a></li>
                             <li><a href="/#publications">Publications</a></li>
-                            <li><a href="/#enseignement">Enseignement</a></li>
-                            <li><a href="/#cv">CV</a></li>
+                            <li><a href="/#actualites">Actualites</a></li>
                         </ul>
                     </div>
                 </div>

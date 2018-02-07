@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Actualite from '../Actualite/Actualite';
-import APropos from '../APropos/APropos';
+import Activites from '../Activites/Activites';
 import Menu from '../Menu/Menu';
 import Publications from '../Publications/Publications';
 import Summary from '../Summary/Summary';
@@ -37,7 +37,7 @@ class App extends Component {
                                 <div className="home-container col-md-9 col-xs-12">
                                     <Header />
                                     <Summary />
-                                    <APropos />
+                                    <Activites />
                                     <Publications />
                                     <Actualite />
                                     <Footer />
