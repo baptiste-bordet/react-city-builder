@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+import CustomHelmet from '../Helmet/Helmet';
 import Actualite from '../Actualite/Actualite';
 import Activites from '../Activites/Activites';
 import Menu from '../Menu/Menu';
@@ -9,6 +10,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Article from '../Article/Article';
 import './App.css';
+import metadata from '../../metadata/metadata.json';
 
 
 class App extends Component {
@@ -35,20 +37,27 @@ class App extends Component {
 
                             <Route exact={true} path="/" component={()=> (
                                 <div className="home-container col-md-9 col-xs-12">
+                                    <CustomHelmet
+                                        name={metadata.name}
+                                        description={metadata.description}
+                                        url={metadata.url}
+                                    />
                                     <Header />
                                     <Summary />
                                     <Activites />
                                     <Publications />
                                     <Actualite />
                                     <Footer />
-
-                                    <div class="favicon">EM</div>
-
                                 </div>
                             )} />
 
                             <Route exact={true} path="/article" component={()=> (
                                 <div className="home-container col-md-9 col-xs-12">
+                                    <CustomHelmet
+                                        name={metadata.name}
+                                        description={metadata.description}
+                                        url={metadata.url}
+                                    />
                                     <Header />
                                     <Article />
                                     <Footer />
