@@ -1,13 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Emmanuelle Claeys",
+  "name": "Emmanuelle Claeys",
+  "description": "Emmanuelle Claeys - Doctorante à l'Université de Strasbourg au laboratoire de l'Icube encadrée par Pierre Gançarski et co-encadrée par Myriam Maummy-Bertrand du laboratoire IRMA. Ma thèse est soutenue et financée par l'entreprise AB Tasty.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
     }
   ],
+  "default_locale": "fr",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

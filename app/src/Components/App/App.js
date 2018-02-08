@@ -41,6 +41,9 @@ class App extends Component {
                                     <Publications />
                                     <Actualite />
                                     <Footer />
+
+                                    <div class="favicon">EM</div>
+
                                 </div>
                             )} />
 

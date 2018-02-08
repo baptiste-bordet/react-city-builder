@@ -12,15 +12,18 @@
     }
   }
 
+  #activites,
+  #publications,
+  #actualites,
   #a-propos {
     border-top: 6px solid #EEE;
   }
+}
 
-  #publications {
-    border-top: 6px solid #EEE;
-  }
-
-  #actualites {
-    border-top: 6px solid #EEE;
-  }
+.favicon {
+  background: #4acaa8;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  color: #FFF;
 }

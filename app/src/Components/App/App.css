@@ -7,11 +7,15 @@
     .home-container .home-block {
       padding: 100px 50px !important; } }
 
+.home-container #activites,
+.home-container #publications,
+.home-container #actualites,
 .home-container #a-propos {
   border-top: 6px solid #EEE; }
 
-.home-container #publications {
-  border-top: 6px solid #EEE; }
-
-.home-container #actualites {
-  border-top: 6px solid #EEE; }
+.favicon {
+  background: #4acaa8;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  color: #FFF; }
