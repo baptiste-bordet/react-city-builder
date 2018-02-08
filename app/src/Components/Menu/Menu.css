@@ -8,6 +8,12 @@ nav {
   border-top-width: 0;
   border-bottom-width: 0;
   border-radius: 0; }
+  nav #photo-profil {
+    background-image: url("../../assets/profil.jpg");
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 25px auto; }
   @media (max-width: 1000px) {
     nav {
       position: relative;

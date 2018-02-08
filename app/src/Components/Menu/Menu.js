@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Menu.css';
-import profil from '../../assets/manue.jpg';
+import profil from '../../assets/profil.jpg';
 
 class Menu extends Component {
 
@@ -11,7 +11,7 @@ class Menu extends Component {
                 <div id="first-part">
 
                     <div className="nav-header">
-                        <img src={profil} alt="profil" />
+                        <div id="photo-profil"></div>
                         <h1>Emmanuelle Claeys</h1>
                         <p className="description">Doctorante, enseignante et statistique lover</p>
                     </div>
@@ -28,11 +28,9 @@ class Menu extends Component {
 
                 <div className="nav-footer">
                     <ul className="icons">
-                        <li><a href="#"><i className="fa fa-twitter"/></a></li>
-                        <li><a href="#"><i className="fa fa-facebook"/></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"/></a></li>
-                        <li><a href="#"><i className="fa fa-github"/></a></li>
-                        <li><a href="#"><i className="fa fa-envelope"/></a></li>
+                        <li><a target="_blank" href="https://twitter.com/ManueClaeys"><i className="fa fa-twitter"/></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/emmanuelle-claeys-02347974/"><i className="fa fa-linkedin"/></a></li>
+                        <li><a target="_blank" href="https://github.com/manuclaeys"><i className="fa fa-github"/></a></li>
                     </ul>
                 </div>
 
