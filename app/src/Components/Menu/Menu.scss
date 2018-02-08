@@ -1,11 +1,6 @@
 nav {
-    #photo-profil {
-        background-image: url('../../assets/profil.jpg');
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-        margin: 25px auto;
-    }
+
+    justify-content: space-between;
     background-color: #4acaa8;
     position: fixed;
     padding: 0;
@@ -25,13 +20,10 @@ nav {
         }
     }
 
-    #first-part {
-        padding-bottom: 100px;
-    }
-
     .nav-header {
 
         text-align: center;
+        margin-bottom: 0 !important;
 
         @media (max-width: 1000px) {
             margin-bottom: 100px;
@@ -58,6 +50,7 @@ nav {
     .nav-links {
 
         margin-top: 75px;
+
         @media (max-height: 850px) {
             margin-top: 25px;
         }
@@ -103,12 +96,12 @@ nav {
         text-align: center;
         padding-left: 0;
         margin: 15px auto;
-        position: absolute;
-        bottom: 0;
         width: 100%;
+        padding-top: 100px;
 
         @media (max-width: 1000px) {
             margin-top: 25px;
+            padding-top: 0;
         }
 
         ul {
