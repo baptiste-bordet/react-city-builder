@@ -1,5 +1,11 @@
 nav {
-
+    #photo-profil {
+        background-image: url('../../assets/profil.jpg');
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 25px auto;
+    }
     justify-content: space-between;
     background-color: #4acaa8;
     position: fixed;
