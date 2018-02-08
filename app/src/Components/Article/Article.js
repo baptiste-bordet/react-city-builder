@@ -11,9 +11,6 @@ class Article extends Component {
 
                 <div>
                     <h2 className="title">Article</h2>
-
-                    <p>Dans le cadre et en parallèle de ma thèse je développe plusieurs activités :</p>
-
                 </div>
 
             </div>
