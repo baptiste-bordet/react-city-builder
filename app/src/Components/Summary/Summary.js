@@ -26,7 +26,7 @@ class Summary extends Component {
 
                     <p>Je suis également chargée de travaux dirigés à l'<a target="_blank" href="https://www.esiea.fr" rel="noopener noreferrer">E.S.I.E.A</a> dans le module de d'<a target="_blank" href="https://www.esiea.fr/wp-content/uploads/2017/12/4eAnnee.jpg" rel="noopener noreferrer">estimation et analyse de données (M1)</a>, <a target="_blank" href="https://www.esiea.fr/wp-content/uploads/2017/12/5eAnneeAlaCarte.jpg" rel="noopener noreferrer">d'analyse exploratoire et modèle pour la data-science (M2)</a>.</p>
 
-                    <p>Attirée par la pédagogie et les statistiques, j'explore par l'informatique et les mathématiques, les secrets du mondes qui nous entoure.</p>
+                    <p>Attirée par la pédagogie et les statistiques, j'explore par l'informatique et les mathématiques, les secrets du mondes qui nous entourent.</p>
 
                 </div>
 
