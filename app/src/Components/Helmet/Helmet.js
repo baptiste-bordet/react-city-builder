@@ -13,7 +13,7 @@ class CustomHelmet extends Component {
                 <meta property="og:title" content={this.props.name} />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content={this.props.url} />
-                <meta property="og:image" content="https://www.emmanuelle-claeys.com/favicon.png" />
+                <meta property="og:image" content="http://www.emmanuelle-claeys.com/favicon.png" />
             </Helmet>
         );
     }
