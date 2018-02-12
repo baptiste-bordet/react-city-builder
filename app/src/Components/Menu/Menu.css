@@ -1,4 +1,5 @@
 nav {
+  justify-content: space-between;
   background-color: #4acaa8;
   position: fixed;
   padding: 0;
@@ -8,16 +9,21 @@ nav {
   border-top-width: 0;
   border-bottom-width: 0;
   border-radius: 0; }
+  nav #photo-profil {
+    background-image: url("../../assets/profil.jpg");
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 25px auto; }
   @media (max-width: 1000px) {
     nav {
       position: relative;
       height: auto; }
       nav .nav-links {
         display: none; } }
-  nav #first-part {
-    padding-bottom: 100px; }
   nav .nav-header {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0 !important; }
     @media (max-width: 1000px) {
       nav .nav-header {
         margin-bottom: 100px; } }
@@ -64,12 +70,12 @@ nav {
     text-align: center;
     padding-left: 0;
     margin: 15px auto;
-    position: absolute;
-    bottom: 0;
-    width: 100%; }
+    width: 100%;
+    padding-top: 100px; }
     @media (max-width: 1000px) {
       nav .nav-footer {
-        margin-top: 25px; } }
+        margin-top: 25px;
+        padding-top: 0; } }
     nav .nav-footer ul {
       padding: 0; }
       nav .nav-footer ul li {

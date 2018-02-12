@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Menu.css';
-import profil from '../../assets/manue.jpg';
 
 class Menu extends Component {
 
@@ -11,28 +10,26 @@ class Menu extends Component {
                 <div id="first-part">
 
                     <div className="nav-header">
-                        <img src={profil} alt="profil" />
+                        <div id="photo-profil"></div>
                         <h1>Emmanuelle Claeys</h1>
                         <p className="description">Doctorante, enseignante et statistique lover</p>
                     </div>
 
                     <div className="nav-links">
                         <ul>
-                            <li><a href="/#summary">En quelques lignes</a></li>
-                            <li><a href="/#activites">Mes activités</a></li>
-                            <li><a href="/#publications">Publications</a></li>
-                            <li><a href="/#actualites">Actualites</a></li>
+                            <li><a href="/#summary" rel="noopener noreferrer">En quelques lignes</a></li>
+                            <li><a href="/#activites" rel="noopener noreferrer">Mes activités</a></li>
+                            <li><a href="/#publications" rel="noopener noreferrer">Publications</a></li>
+                            <li><a href="/#actualites" rel="noopener noreferrer">Actualites</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="nav-footer">
                     <ul className="icons">
-                        <li><a href="#"><i className="fa fa-twitter"/></a></li>
-                        <li><a href="#"><i className="fa fa-facebook"/></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"/></a></li>
-                        <li><a href="#"><i className="fa fa-github"/></a></li>
-                        <li><a href="#"><i className="fa fa-envelope"/></a></li>
+                        <li><a target="_blank" href="https://twitter.com/ManueClaeys" rel="noopener noreferrer"><i className="fa fa-twitter"/></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/emmanuelle-claeys-02347974/" rel="noopener noreferrer"><i className="fa fa-linkedin"/></a></li>
+                        <li><a target="_blank" href="https://github.com/manuclaeys" rel="noopener noreferrer"><i className="fa fa-github"/></a></li>
                     </ul>
                 </div>
 
