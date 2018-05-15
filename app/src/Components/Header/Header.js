@@ -5,11 +5,10 @@ import banner from '../../assets/banner.jpg';
 
 class Header extends Component {
 
-
     render() {
 
         return (
-            <div className="header row">
+            <div id="header">
                 <img src={banner} alt="banniere" />
             </div>
         );

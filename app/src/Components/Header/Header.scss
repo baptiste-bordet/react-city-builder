@@ -1,10 +1,5 @@
 .header {
-  text-align: center;
   background: #000;
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
 
   img {
     height: 260px;

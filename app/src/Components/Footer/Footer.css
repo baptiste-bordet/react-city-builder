@@ -1,10 +1,2 @@
-.footer {
-  padding: 10px;
-  background-color: #3A5068;
-  text-align: center; }
-  .footer .copyright {
-    color: #FFFFFF;
-    margin: 0; }
-    .footer .copyright p {
-      font-size: 12px !important;
-      margin: 0; }
+#footer {
+  background-color: #3A5068; }
