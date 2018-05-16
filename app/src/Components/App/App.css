@@ -1,14 +1,11 @@
-.menu-container {
-  padding: 0 !important; }
+.goToWrapper {
+  text-align: center; }
 
-.home-container .home-block {
-  padding: 100px 15%; }
-  @media (max-width: 768px) {
-    .home-container .home-block {
-      padding: 100px 50px !important; } }
-
-.home-container #activites,
-.home-container #publications,
-.home-container #actualites,
-.home-container #a-propos {
-  border-top: 6px solid #EEE; }
+.goToButton {
+  display: inline-block;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #e6e6e8;
+  color: darkcyan;
+  margin-right: 20px; }
