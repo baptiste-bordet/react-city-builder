@@ -12,9 +12,11 @@
     "react-fontawesome": "^1.6.1",
     "react-google-recaptcha": "^0.9.9",
     "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.4",
-    "react-spring": "^5.1.10"
+    "react-spring": "^5.1.10",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "start": "run-p watch-css start:client start:server",

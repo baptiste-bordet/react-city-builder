@@ -3,11 +3,13 @@
 }
 
 .goToButton {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 50%;
   width: 120px;
   height: 120px;
   background-color: #e6e6e8;
   color: darkcyan;
-  margin-right: 20px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
 }
