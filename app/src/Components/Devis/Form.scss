@@ -1,0 +1,33 @@
+.form-wrapper {
+  font-family: Verdana;
+
+  .row {
+    margin-bottom: 30px;
+  }
+
+  label {
+    color: #FFFFFF;
+    display: block;
+    text-align: left;
+  }
+
+  input[type=text] {
+    background-color: #273548;
+    height: 20px;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #536274;
+    color: #536274;
+    font-size: 16px;
+
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+
+}
+

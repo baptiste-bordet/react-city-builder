@@ -14,20 +14,20 @@ class App extends Component {
         super(props);
 
         this.state = {
-            headerOffset: 0.8
+            headerOffset: 0.3
         };
 
         this.goToPage = this.goToPage.bind(this);
     }
 
     goToPage(page) {
-        this.setState({headerOffset: page + 0.8});
+        this.setState({headerOffset: page + 0.3});
         this.parallax.scrollTo(page);
     }
 
     render() {
         return (
-            <Parallax ref={ref => (this.parallax = ref)} pages={3.1} scrolling={true}>
+            <Parallax ref={ref => (this.parallax = ref)} pages={3} scrolling={false}>
 
                 <CustomHelmet
                     name={metadata.name}
@@ -53,7 +53,7 @@ class App extends Component {
                     <Footer />
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={this.state.headerOffset} speed={0}>
+                <Parallax.Layer offset={this.state.headerOffset} speed={0.5} style={{ width: '120px' }}>
                     <div className="goToWrapper">
                         <div className="goToButton" onClick={() => {
                             this.goToPage(0);
