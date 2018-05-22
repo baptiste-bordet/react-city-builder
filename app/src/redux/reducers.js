@@ -1,14 +1,14 @@
-import {CHANGE_FORM_STEP} from './actions';
+import {SUBMIT_STEP} from './actions';
 
-const formStep = (state = {formStep: 0}, action) => {
+const form = (state = {form: {step: 0}}, action) => {
 
     switch (action.type) {
-        case CHANGE_FORM_STEP:
-            return Object.assign({}, state, {formStep: action.step});
+        case SUBMIT_STEP:
+            return Object.assign({}, state, {form: action.form});
         default:
             return state;
     }
 };
 
-export default formStep;
+export default form;
 

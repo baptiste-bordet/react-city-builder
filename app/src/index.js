@@ -8,9 +8,9 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 
-import formStep from './redux/reducers';
+import form from './redux/reducers';
 
-const store = createStore(formStep);
+const store = createStore(form);
 
 ReactDOM.render(
     <Provider store={store}>

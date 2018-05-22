@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
-import { changeFormStep } from '../../redux/actions';
+import {connect} from 'react-redux';
+import {submitStep} from '../../redux/actions';
 
 class Form2 extends Component {
 
@@ -12,28 +12,28 @@ class Form2 extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.changeFormStep(0);
+        this.props.submitStep({form: {step: 0}});
     }
 
     render() {
 
         return (
-          <div className="form-wrapper">
+            <div className="form-wrapper">
 
-              <h2>Form 2</h2>
-              <form onSubmit={this.handleSubmit}>
-                  <button type="submit" value="Submit" >Retour</button>
-              </form>
+                <h2>Form 2</h2>
+                <form onSubmit={this.handleSubmit}>
+                    <button type="submit" value="Submit">Retour</button>
+                </form>
 
-          </div>
+            </div>
         );
 
     }
 
-};
+}
 
 const mapDispatchToProps = {
-    changeFormStep
+    submitStep
 };
 
 export default connect(null, mapDispatchToProps)(Form2);

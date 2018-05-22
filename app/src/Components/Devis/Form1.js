@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {changeFormStep} from '../../redux/actions';
+import {submitStep} from '../../redux/actions';
 import './Form.css';
 
 class Form1 extends Component {
@@ -9,20 +9,24 @@ class Form1 extends Component {
         super(props);
 
         this.state = {
-            form: 0
+            form: {
+                step: 0,
+                nom: '',
+                prenom: ''
+            }
         };
 
-        this.handleOptionChange = this.handleOptionChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({form: {[event.target.name]: event.target.value}});
     }
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.changeFormStep(this.state.form);
-    }
-
-    handleOptionChange(event) {
-        this.setState({form: event.target.value});
+        this.props.submitStep(this.state.form);
     }
 
     render() {
@@ -34,21 +38,19 @@ class Form1 extends Component {
 
                     <div className="row">
                         <label>NOM</label>
-                        <input type="text" name="nom" placeholder="Saisisez votre nom"/>
+                        <input type="text" name="nom" placeholder="Saisisez votre nom" onChange={this.handleChange} />
                     </div>
 
                     <div className="row">
                         <label>PRENOM</label>
-                        <input type="text" name="prenom" placeholder="Saisisez votre prénom"/>
+                        <input type="text" name="prenom" placeholder="Saisisez votre prénom" onChange={this.handleChange} />
                     </div>
 
                     <div className="row">
-                        <input type="radio" id="form2" name="choix-form" value="1"
-                               onChange={this.handleOptionChange} />
+                        <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange} />
                         <label htmlFor="form2">Formulaire 2</label>
 
-                        <input type="radio" id="form3" name="choix-form" value="2"
-                               onChange={this.handleOptionChange} />
+                        <input type="radio" id="form3" name="step" value="2" onChange={this.handleChange} />
                         <label htmlFor="form3">Formulaire 3</label>
                     </div>
 
@@ -62,10 +64,9 @@ class Form1 extends Component {
     }
 
 }
-;
 
 const mapDispatchToProps = {
-    changeFormStep
+    submitStep
 };
 
 export default connect(null, mapDispatchToProps)(Form1);

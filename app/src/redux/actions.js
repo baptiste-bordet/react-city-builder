@@ -2,16 +2,16 @@
  * action types
  */
 
-export const CHANGE_FORM_STEP = 'CHANGE_FORM_STEP';
+export const SUBMIT_STEP = 'SUBMIT_STEP';
 
 
 /*
  * action creators
  */
 
-export function changeFormStep(step) {
+export function submitStep(form) {
     return {
-        type: CHANGE_FORM_STEP,
-        step: step
+        type: SUBMIT_STEP,
+        form: form
     }
 };

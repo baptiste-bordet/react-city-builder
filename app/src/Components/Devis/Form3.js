@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { changeFormStep } from '../../redux/actions';
+import { submitStep } from '../../redux/actions';
 
 class Form3 extends Component {
 
@@ -12,7 +12,7 @@ class Form3 extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.changeFormStep(0);
+        this.props.submitStep({form: {step: 0}});
     }
 
     render() {
@@ -30,10 +30,10 @@ class Form3 extends Component {
 
     }
 
-};
+}
 
 const mapDispatchToProps = {
-    changeFormStep
+    submitStep
 };
 
 export default connect(null, mapDispatchToProps)(Form3);
