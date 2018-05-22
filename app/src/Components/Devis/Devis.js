@@ -12,12 +12,16 @@ class Devis extends Component {
         super(props);
 
         this.state = {
-            formStep: 0
+            form : {
+                step: 0,
+                nom: '',
+                prenom: ''
+            }
         }
     }
 
     componentDidUpdate() {
-        this.devisParallax.scrollTo(this.props.formStep >= 1 ? 1 : 0);
+        this.devisParallax.scrollTo(this.props.form.step >= 1 ? 1 : 0);
     }
 
     render() {
@@ -33,7 +37,7 @@ class Devis extends Component {
             <div id="devis">
                 <h2 className="title">DEVIS</h2>
 
-                <h3>Step = {this.props.formStep}</h3>
+                <h3>Step = {this.props.form.step}</h3>
 
                 <Parallax ref={ref2 => (this.devisParallax = ref2)} pages={2} horizontal={true} scrolling={false}>
 
@@ -45,7 +49,7 @@ class Devis extends Component {
 
                     <Parallax.Layer offset={1.25} factor={0.5} speed={0} style={formStyle}>
                         <div className="form form2">
-                            {this.props.formStep == 1 ? <Form2 /> : <Form3 />}
+                            {this.props.form.step == 1 ? <Form2 form={this.props.form} /> : <Form3 />}
                         </div>
                     </Parallax.Layer>
 
@@ -56,7 +60,7 @@ class Devis extends Component {
 }
 
 const mapStateToProps = state => ({
-    formStep: state.form.step
+    form: state.form
 });
 
 export default connect(mapStateToProps)(Devis);

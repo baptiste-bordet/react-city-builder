@@ -10,9 +10,7 @@ class Form1 extends Component {
 
         this.state = {
             form: {
-                step: 0,
-                nom: '',
-                prenom: ''
+                step: 0
             }
         };
 
