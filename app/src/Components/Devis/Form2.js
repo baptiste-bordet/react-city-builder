@@ -29,6 +29,12 @@ class Form2 extends Component {
                 <p>coucou {this.props.form.prenom} {this.props.form.nom}</p>
 
                 <form onSubmit={this.handleSubmit}>
+
+                    <div className="input-file-wrapper">
+                        <label for="file" className="label-file">Choisir un fichier</label>
+                        <input id="file" className="input-file" type="file" />
+                    </div>
+
                     <button type="submit" value="Submit">Retour</button>
                 </form>
 

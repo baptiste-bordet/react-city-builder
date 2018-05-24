@@ -85,7 +85,7 @@ class Form1 extends Component {
                     <InputText label="EMAIL" name="email" placeholder="Saisir votre adresse email"
                            handleChange={this.handleChange.bind(this)} error={this.state.emailError} />
 
-                    <div className="row">
+                    <div className="input-radio">
                         <label className="radio-inline" htmlFor="form2">
                             <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange} />Mes données sont structurées
                         </label>

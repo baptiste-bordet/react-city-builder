@@ -1,1 +1,43 @@
+.form-wrapper {
+
+  text-align: left;
+
+  .input-radio {
+    margin-bottom: 30px;
+
+    label {
+      display: block;
+    }
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: #e6e6e8;
+    padding: 20px;
+
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  .input-file-wrapper {
+
+    .label-file {
+      cursor: pointer;
+      color: #00b1ca;
+      font-weight: bold;
+    }
+    
+    .label-file:hover {
+      color: #25a5c4;
+    }
+
+    .input-file {
+      display: none;
+    }
+  }
+
+}
 
