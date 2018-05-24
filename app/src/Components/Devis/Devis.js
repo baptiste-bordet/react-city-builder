@@ -13,9 +13,7 @@ class Devis extends Component {
 
         this.state = {
             form : {
-                step: 0,
-                nom: '',
-                prenom: ''
+                step: 0
             }
         }
     }
@@ -37,17 +35,15 @@ class Devis extends Component {
             <div id="devis">
                 <h2 className="title">DEVIS</h2>
 
-                <h3>Step = {this.props.form.step}</h3>
-
                 <Parallax ref={ref2 => (this.devisParallax = ref2)} pages={2} horizontal={true} scrolling={false}>
 
-                    <Parallax.Layer offset={0.25} factor={0.5} speed={0} style={formStyle}>
+                    <Parallax.Layer offset={0.4} factor={0.2} speed={0.5} style={formStyle}>
                         <div className="form form1">
                             <Form1 />
                         </div>
                     </Parallax.Layer>
 
-                    <Parallax.Layer offset={1.25} factor={0.5} speed={0} style={formStyle}>
+                    <Parallax.Layer offset={1.4} factor={0.2} speed={0} style={formStyle}>
                         <div className="form form2">
                             {this.props.form.step == 1 ? <Form2 form={this.props.form} /> : <Form3 />}
                         </div>

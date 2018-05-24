@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {submitStep} from '../../redux/actions';
+import InputText from './InputText';
 import './Form.css';
 
 class Form1 extends Component {
@@ -9,22 +10,65 @@ class Form1 extends Component {
         super(props);
 
         this.state = {
-            form: {
-                step: 0
-            }
+            nom: '',
+            prenom: '',
+            email: '',
+            nomError: '',
+            prenomError: '',
+            emailError: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    isFormValid() {
+
+        let nomError = '', prenomError = '', emailError = '';
+
+        if (this.state.nom.length === 0) {
+            nomError = 'Le champ Nom est obligatoire';
+        } else if (!this.state.nom.match(/^[a-zA-Z ]+$/)) {
+            nomError = 'Le champ Nom n\'est pas valide';
+        } else {
+            nomError = '';
+        }
+
+        if (this.state.prenom.length === 0) {
+            prenomError = 'Le champ Prénom est obligatoire';
+        } else if (!this.state.prenom.match(/^[a-zA-Z ]+$/)) {
+            prenomError = 'Le champ Prénom n\'est pas valide';
+        } else {
+            prenomError = '';
+        }
+
+        if (this.state.email.length === 0) {
+            emailError = 'Le champ Email est obligatoire';
+        } else if (!this.state.email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+            emailError = 'Le champ Email n\'est pas valide';
+        } else {
+            emailError = '';
+        }
+
+        this.setState({
+           nomError: nomError,
+            prenomError: prenomError,
+            emailError: emailError
+        });
+
+        return nomError.length === 0 && prenomError.length === 0 && emailError.length === 0
+    }
+
     handleChange(event) {
-        this.setState({form: {[event.target.name]: event.target.value}});
+        this.setState({ ...this.state, [event.target.name]: event.target.value });
     }
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.submitStep(this.state.form);
+
+        if (this.isFormValid()) {
+            this.props.submitStep(this.state);
+        }
     }
 
     render() {
@@ -34,22 +78,21 @@ class Form1 extends Component {
 
                 <form onSubmit={this.handleSubmit}>
 
-                    <div className="row">
-                        <label>NOM</label>
-                        <input type="text" name="nom" placeholder="Saisisez votre nom" onChange={this.handleChange} />
-                    </div>
+                    <InputText label="NOM" name="nom" placeholder="Saisir votre nom"
+                           handleChange={this.handleChange.bind(this)} error={this.state.nomError} />
+                    <InputText label="PRENOM" name="prenom" placeholder="Saisir votre prenom"
+                           handleChange={this.handleChange.bind(this)} error={this.state.prenomError} />
+                    <InputText label="EMAIL" name="email" placeholder="Saisir votre adresse email"
+                           handleChange={this.handleChange.bind(this)} error={this.state.emailError} />
 
                     <div className="row">
-                        <label>PRENOM</label>
-                        <input type="text" name="prenom" placeholder="Saisisez votre prénom" onChange={this.handleChange} />
-                    </div>
+                        <label className="radio-inline" htmlFor="form2">
+                            <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange} />Mes données sont structurées
+                        </label>
 
-                    <div className="row">
-                        <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange} />
-                        <label htmlFor="form2">Formulaire 2</label>
-
-                        <input type="radio" id="form3" name="step" value="2" onChange={this.handleChange} />
-                        <label htmlFor="form3">Formulaire 3</label>
+                        <label className="radio-inline"  htmlFor="form3">
+                            <input type="radio" id="form3" name="step" value="2" onChange={this.handleChange} />Mes données sont en vrac
+                        </label>
                     </div>
 
                     <button type="submit" value="Submit">Envoyer</button>
