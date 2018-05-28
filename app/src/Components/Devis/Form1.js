@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {submitStep} from '../../redux/actions';
-import InputText from './InputText';
-import './Form.css';
+import React, {Component} from "react";
+import {connect} from "react-redux";
+import {submitStep} from "../../redux/actions";
+import InputText from "./InputText";
+import "./Form.css";
 
 class Form1 extends Component {
 
@@ -51,7 +51,7 @@ class Form1 extends Component {
         }
 
         this.setState({
-           nomError: nomError,
+            nomError: nomError,
             prenomError: prenomError,
             emailError: emailError
         });
@@ -60,7 +60,7 @@ class Form1 extends Component {
     }
 
     handleChange(event) {
-        this.setState({ ...this.state, [event.target.name]: event.target.value });
+        this.setState({...this.state, [event.target.name]: event.target.value});
     }
 
     handleSubmit(event) {
@@ -79,19 +79,21 @@ class Form1 extends Component {
                 <form onSubmit={this.handleSubmit}>
 
                     <InputText label="NOM" name="nom" placeholder="Saisir votre nom"
-                           handleChange={this.handleChange.bind(this)} error={this.state.nomError} />
+                               handleChange={this.handleChange.bind(this)} error={this.state.nomError}/>
                     <InputText label="PRENOM" name="prenom" placeholder="Saisir votre prenom"
-                           handleChange={this.handleChange.bind(this)} error={this.state.prenomError} />
+                               handleChange={this.handleChange.bind(this)} error={this.state.prenomError}/>
                     <InputText label="EMAIL" name="email" placeholder="Saisir votre adresse email"
-                           handleChange={this.handleChange.bind(this)} error={this.state.emailError} />
+                               handleChange={this.handleChange.bind(this)} error={this.state.emailError}/>
 
                     <div className="input-radio">
                         <label className="radio-inline" htmlFor="form2">
-                            <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange} />Mes données sont structurées
+                            <input type="radio" id="form2" name="step" value="1" onChange={this.handleChange}/>Mes
+                            données sont structurées
                         </label>
 
-                        <label className="radio-inline"  htmlFor="form3">
-                            <input type="radio" id="form3" name="step" value="2" onChange={this.handleChange} />Mes données sont en vrac
+                        <label className="radio-inline" htmlFor="form3">
+                            <input type="radio" id="form3" name="step" value="2" onChange={this.handleChange}/>Mes
+                            données sont en vrac
                         </label>
                     </div>
 
