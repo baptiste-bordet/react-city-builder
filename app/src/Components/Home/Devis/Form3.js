@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { submitStep } from '../../redux/actions';
+import { submitStep } from '../../../redux/actions';
 
 class Form3 extends Component {
 

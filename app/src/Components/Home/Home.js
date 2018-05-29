@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import PresentationQui from '../PresentationQui/PresentationQui';
-import PresentationQuoi from '../PresentationQuoi/PresentationQuoi';
-import Devis from '../Devis/Devis';
+import PresentationQui from './PresentationQui/PresentationQui';
+import PresentationQuoi from './PresentationQuoi/PresentationQuoi';
+import Devis from './Devis/Devis';
 import Footer from '../Footer/Footer';
 import { Parallax } from 'react-spring';
 import stars from '../../assets/stars-2.jpg';
@@ -54,7 +54,7 @@ class Home extends Component {
                 <Parallax.Layer offset={0} speed={0} factor={3.1} style={{ backgroundImage: `url(${stars})`, backgroundSize: 'cover' }} />
 
                 <Parallax.Layer offset={0.1} factor={0.8} speed={0.1}
-                                style={{ backgroundColor: '#252839', opacity: '0.95', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                style={{ backgroundColor: '#252839', opacity: '0.95', display: 'flex' }}
                                 onWheel = {(e) => this.scrollEvent(e, 0)}>
                     <PresentationQui />
                 </Parallax.Layer>

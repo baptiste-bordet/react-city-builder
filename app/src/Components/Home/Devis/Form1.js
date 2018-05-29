@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {submitStep} from "../../redux/actions";
-import InputText from "./InputText";
+import {submitStep} from "../../../redux/actions";
+import InputText from "../../Form/InputText";
 import "./Form.css";
 
 class Form1 extends Component {
@@ -79,11 +79,11 @@ class Form1 extends Component {
                 <form onSubmit={this.handleSubmit}>
 
                     <InputText label="NOM" name="nom" placeholder="Saisir votre nom"
-                               handleChange={this.handleChange.bind(this)} error={this.state.nomError}/>
+                               handleChange={this.handleChange} error={this.state.nomError}/>
                     <InputText label="PRENOM" name="prenom" placeholder="Saisir votre prenom"
-                               handleChange={this.handleChange.bind(this)} error={this.state.prenomError}/>
+                               handleChange={this.handleChange} error={this.state.prenomError}/>
                     <InputText label="EMAIL" name="email" placeholder="Saisir votre adresse email"
-                               handleChange={this.handleChange.bind(this)} error={this.state.emailError}/>
+                               handleChange={this.handleChange} error={this.state.emailError}/>
 
                     <div className="input-radio">
                         <label className="radio-inline" htmlFor="form2">
