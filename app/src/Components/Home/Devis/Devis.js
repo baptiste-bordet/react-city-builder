@@ -18,15 +18,6 @@ class Devis extends Component {
         }
     }
 
-    componentWillMount() {
-        fetch('/api/test')
-            .then(res => res.json())
-            .then(jsonRes => {
-                this.setState({ world: jsonRes.world });
-                console.log('Hello ' + this.state.world);
-            });
-    }
-
     componentDidUpdate() {
         this.devisParallax.scrollTo(this.props.form.step >= 1 ? 1 : 0);
     }
