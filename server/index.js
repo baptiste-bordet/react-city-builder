@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-const session = require("express-session");
+// const session = require("express-session");
 const path = require('path');
 const passport = require('passport');
 const flash = require('connect-flash');
@@ -18,13 +18,13 @@ app.use(bodyParser.json());
 
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, '../app/build')));
-app.use(session({
-    cookie : {
-        maxAge: 36000000000,
-        secure: false
-    },
-    secret: "cats"
-}));
+// app.use(session({
+//     cookie : {
+//         maxAge: 36000000000,
+//         secure: false
+//     },
+//     secret: "cats"
+// }));
 
 // **********************************************************
 //      Authentification config
@@ -33,12 +33,12 @@ app.use(session({
 const userRef = {
     id: 325,
     username: 'hello',
-    password: 'world'
+    password: '486EA46224D1BB4FB680F34F7C9AD96A8F24EC88BE73EA8E5A6C65260E9CB8A7'
 };
 
 app.use(flash());
 app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.session());
 
 passport.serializeUser(function(user, done) {
     done(null, user.id);
@@ -54,7 +54,7 @@ passport.use(new BasicStrategy(
             console.log('Incorrect username.');
             return done(null, false, { message: 'Incorrect username.' });
         }
-        if (password != userRef.password) {
+        if (password.toUpperCase() != userRef.password) {
             console.log('Incorrect password.');
             return done(null, false, { message: 'Incorrect password.' });
         }
@@ -69,7 +69,7 @@ passport.use(new BasicStrategy(
 app.get('/api/test', (req, res) => res.send({"world": "World"}));
 
 app.get('/api/login', passport.authenticate('basic', { session: false }), function(req, res) {
-    console.log(req.user + ' connected');
+    console.log('   ---> ' + JSON.stringify(req.user) + ' connected');
     res.send({});
 });
 

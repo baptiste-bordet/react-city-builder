@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import './LoginForm.css';
 import InputText from '../../Form/InputText';
 import axios from "axios";
+import sha256 from 'crypto-js/sha256';
+import {connect} from "react-redux";
+import {login} from "../../../redux/actions";
 import { withRouter } from 'react-router';
 
 class LoginForm extends Component {
@@ -12,9 +15,7 @@ class LoginForm extends Component {
         this.state = {
             username: '',
             password: '',
-            loginError: false,
-            usernameError: '',
-            passwordError: ''
+            loginError: false
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -28,12 +29,11 @@ class LoginForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log(this.state.username + ' ' + this.state.password);
 
         axios.get('/api/login', {
             auth: {
                 username: this.state.username,
-                password: this.state.password
+                password: sha256(this.state.password)
             }
         })
             .then(() => {
@@ -46,7 +46,10 @@ class LoginForm extends Component {
     }
 
     saveLoginData() {
-        console.log('save login')
+        this.props.login({
+            username: this.state.username,
+            password: sha256(this.state.password).toString()
+        })
     }
 
     render() {
@@ -58,9 +61,9 @@ class LoginForm extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     <InputText label="USERNAME" name="username" placeholder="Saisir votre username"
-                               handleChange={this.handleChange} error={this.state.usernameError}/>
+                               handleChange={this.handleChange} />
                     <InputText type="password" label="MOT DE PASSE" name="password" placeholder="Saisir votre mot de passe"
-                               handleChange={this.handleChange} error={this.state.passwordError}/>
+                               handleChange={this.handleChange} />
                     <button type="submit" value="Submit">Login</button>
                 </form>
 
@@ -69,4 +72,9 @@ class LoginForm extends Component {
     }
 }
 
-export default withRouter(LoginForm);
+const mapDispatchToProps = {
+    login
+};
+
+
+export default connect(null, mapDispatchToProps)(withRouter(LoginForm));

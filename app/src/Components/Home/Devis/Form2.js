@@ -10,10 +10,6 @@ class Form2 extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount() {
-        console.log(JSON.stringify(this.props));
-    }
-
     handleSubmit(event) {
         event.preventDefault();
         this.props.submitStep({form: {step: 0}});
@@ -31,7 +27,7 @@ class Form2 extends Component {
                 <form onSubmit={this.handleSubmit}>
 
                     <div className="input-file-wrapper">
-                        <label for="file" className="label-file">Choisir un fichier</label>
+                        <label htmlFor="file" className="label-file">Choisir un fichier</label>
                         <input id="file" className="input-file" type="file" />
                     </div>
 

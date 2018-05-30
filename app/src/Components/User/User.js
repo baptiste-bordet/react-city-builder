@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+import { connect } from 'react-redux';
 import './User.css';
 
 class User extends Component {
@@ -14,10 +15,11 @@ class User extends Component {
     }
 
     componentWillMount() {
+
         axios.get('/api/user/data', {
             auth: {
-                username: 'hello',
-                password: 'world'
+                username: this.props.user.username,
+                password: this.props.user.password
             }
         })
             .then((response) => {
@@ -42,4 +44,8 @@ class User extends Component {
 
 }
 
-export default User;
+const mapStateToProps = state => ({
+    user: state.user
+});
+
+export default connect(mapStateToProps)(User);
