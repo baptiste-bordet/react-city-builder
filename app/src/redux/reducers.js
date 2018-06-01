@@ -1,21 +1,15 @@
-import {SUBMIT_STEP} from './actions';
-import {LOGIN} from './actions';
-import {LOGOUT} from './actions';
+import {SET_LANGUAGE} from './actions';
 
-const form = (state = {form: {step: 0}, user: {}}, action) => {
+var data = require('../data.json');
+
+const form = (state = {data: data['EN']}, action) => {
 
     switch (action.type) {
-        case SUBMIT_STEP:
-            return Object.assign({}, state, {form: action.form});
-        case LOGIN:
-            console.log('reducer : ' + JSON.stringify(action.user));
-            return Object.assign({}, state, {user: action.user});
-        case LOGOUT:
-            return Object.assign({}, state, {user: {}});
+        case SET_LANGUAGE:
+            return Object.assign({}, state, {data: data[action.language]});
         default:
             return state;
     }
 };
 
 export default form;
-

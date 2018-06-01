@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import Flags from '../Flags/Flags';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
 import { Parallax } from 'react-spring';
@@ -19,6 +21,10 @@ class App extends Component {
     render() {
         return (
             <Parallax ref={ref => (this.parallax = ref)} pages={3.1} scrolling={true}>
+
+                <Flags />
+
+                <h2>{this.props.data.titre}</h2>
 
                 <Parallax.Layer offset={0.1} factor={0.8} speed={0.1}
                                 style={{ backgroundColor: '#252839', opacity: '0.95', display: 'flex' }}>
@@ -51,4 +57,8 @@ class App extends Component {
     }
 }
 
-export default App;
+const mapStateToProps = state => ({
+    data: state.data
+});
+
+export default connect(mapStateToProps, null)(App);

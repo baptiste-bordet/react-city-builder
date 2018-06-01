@@ -2,31 +2,15 @@
  * action types
  */
 
-export const SUBMIT_STEP = 'SUBMIT_STEP';
-export const LOGIN = 'LOGIN';
-export const LOGOUT = 'LOGOUT';
-
+export const SET_LANGUAGE = 'SET_LANGUAGE';
 
 /*
  * action creators
  */
 
-export function submitStep(form) {
+export function setLanguage(language) {
     return {
-        type: SUBMIT_STEP,
-        form: form
-    }
-};
-
-export function login(user) {
-    return {
-        type: LOGIN,
-        user: user
-    }
-};
-
-export function logout() {
-    return {
-        type: LOGOUT
+        type: SET_LANGUAGE,
+        language: language
     }
 };

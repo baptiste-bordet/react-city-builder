@@ -1,0 +1,14 @@
+{
+  "EN" : {
+    "titre": "Fullstack devloper",
+    "infos": {
+      "label": "Personal information"
+    }
+  },
+  "FR" : {
+    "titre": "Fullstack développeur",
+    "infos": {
+      "label": "Informations personnelles"
+    }
+  }
+}
