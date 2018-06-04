@@ -3,6 +3,7 @@
     "titre": "Web devloper",
     "infos": {
       "label": "Personal information",
+      "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
       "birthdate": "24/12/1988"
     },
     "technos": {
@@ -50,6 +51,7 @@
     "titre": "Développeur web",
     "infos": {
       "label": "Informations personnelles",
+      "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
       "birthdate": "24/12/1988"
     },
     "technos": {

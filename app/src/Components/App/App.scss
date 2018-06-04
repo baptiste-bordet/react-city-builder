@@ -1,14 +1,43 @@
-.parallax-info:after {
+#header {
+  background-color: #F7F7F2;
+  color: #008291;
+  overflow: hidden;
+}
+
+#header:after {
   content: "";
   display: block;
   background: white;
-  height: 450px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  bottom: -40%;
-  left: 50%;
-  margin-left: -4000px;
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
+  height: 135px;
+  margin-bottom: -40px;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  transform: skew(0deg,-2deg);
+  -ms-transform: skew(0deg,-2deg);
+  -webkit-transform: skew(0deg,-2deg);
+}
+
+//#infos:before {
+//  content: "";
+//  display: block;
+//  background: white;
+//  height: 135px;
+//  margin-top: -30px;
+//  -webkit-transform: rotate(-2deg);
+//  -ms-transform: rotate(-2deg);
+//  transform: rotate(-2deg);
+//  transform: skew(0deg,-2deg);
+//  -ms-transform: skew(0deg,-2deg);
+//  -webkit-transform: skew(0deg,-2deg);
+//}
+
+#infos {
+  background-color: #008291;
+  overflow: hidden;
+}
+
+#technos {
+  background-color: #011638;
+  overflow: auto;
 }

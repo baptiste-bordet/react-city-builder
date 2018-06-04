@@ -16,7 +16,7 @@
       line-height: 1.6; }
     #technos .title h3 {
       text-transform: uppercase;
-      margin: 1rem !important; }
+      margin: 1rem; }
   #technos .list {
     margin: 1rem;
     padding: 2rem;
