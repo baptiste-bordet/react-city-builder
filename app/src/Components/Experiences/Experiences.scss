@@ -1,0 +1,68 @@
+#experiences {
+
+  text-align: center;
+
+  .timeline {
+
+    ul li {
+      list-style-type: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: #008291;
+    }
+
+    ul li::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #008291;
+    }
+
+    ul li div {
+      position: relative;
+      bottom: 0;
+      width: 400px;
+      padding: 15px;
+      background: #FFFFFF;
+      border-radius: 2px;
+    }
+
+    ul li div::before {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    ul li:nth-child(odd) div {
+      left: 45px;
+    }
+
+    ul li:nth-child(odd) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #FFFFFF transparent transparent;
+    }
+
+    ul li:nth-child(even) div {
+      left: -468px;
+    }
+
+    ul li:nth-child(even) div::before {
+      right: -15px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent #FFFFFF;
+    }
+
+  }
+
+}

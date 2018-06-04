@@ -45,6 +45,9 @@
           "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
         }
       ]
+    },
+    "experiences": {
+      "label": "Experiences"
     }
   },
   "FR" : {
@@ -91,6 +94,16 @@
           "label": "Langues",
           "icon": "fa-flag",
           "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
+        }
+      ]
+    },
+    "experiences": {
+      "label": "Experiences",
+      "list": [
+        {
+          "title": "Front-end developpeur",
+          "client": "PMU",
+          "duration": ""
         }
       ]
     }

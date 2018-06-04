@@ -4,6 +4,7 @@ import Flags from '../Flags/Flags';
 import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
+import Experiences from '../Experiences/Experiences';
 import { Parallax } from 'react-spring';
 import './App.css';
 
@@ -27,6 +28,7 @@ class App extends Component {
                 <Header />
                 <Infos />
                 <Technos />
+                <Experiences />
             </div>
         );
     }
