@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import Flags from '../Flags/Flags';
+import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
 import { Parallax } from 'react-spring';
@@ -19,24 +20,34 @@ class App extends Component {
     }
 
     render() {
+
+        const parallaxStyle = {
+            opacity: '0.95',
+            display: 'flex',
+            width: '100%'
+        };
+
         return (
             <Parallax ref={ref => (this.parallax = ref)} pages={3.1} scrolling={true}>
 
                 <Flags />
 
-                <h2>{this.props.data.titre}</h2>
+                <Parallax.Layer offset={0.1} factor={0.1} speed={1}
+                                style={{ backgroundColor: '#252839', parallaxStyle}}>
+                    <Header />
+                </Parallax.Layer>
 
-                <Parallax.Layer offset={0.1} factor={0.8} speed={0.1}
-                                style={{ backgroundColor: '#252839', opacity: '0.95', display: 'flex' }}>
+                <Parallax.Layer className="parallax-info" offset={0.3} factor={0.4} speed={0.8}
+                                style={{ backgroundColor: '#252839', opacity: '0.95', display: 'flex', width: '100%' }}>
                     <Infos />
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={1.1} factor={0.8} speed={0.1}
-                                style={{ backgroundColor: '#677077', opacity: '0.95', display: 'flex' }}>
+                <Parallax.Layer offset={0.8} factor={0.8} speed={1}
+                                style={{ backgroundColor: '#008291', opacity: '0.95', display: 'flex', width: '100%' }}>
                     <Technos />
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={0.6} speed={0.2}>
+                {/*<Parallax.Layer offset={0.6} speed={0.2}>
                     <div className="goToWrapper">
                         <div className="goToButton" onClick={() => {
                             this.goToPage(0);
@@ -50,7 +61,7 @@ class App extends Component {
                             this.goToPage(2);
                         }}><span>Devis</span></div>
                     </div>
-                </Parallax.Layer>
+                </Parallax.Layer>*/}
 
             </Parallax>
         );

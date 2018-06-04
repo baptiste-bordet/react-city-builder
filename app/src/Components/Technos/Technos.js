@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import List from './List';
 
 import './Techno.css';
 
@@ -6,11 +8,23 @@ class Techno extends Component {
 
     render() {
         return (
-            <div id="infos">
-                <h2>Techno</h2>
+            <div id="technos">
+                <h2>{this.props.data.label}</h2>
+
+                {this.props.data.list.map((elt) => {
+                    return (
+                        <List elt={elt} key={elt.label} />
+                    )
+                })}
+
             </div>
         );
     }
 }
 
-export default Techno;
+const mapStateToProps = state => ({
+    data: state.data.technos
+});
+
+export default connect(mapStateToProps, null)(Techno);
+

@@ -5,10 +5,6 @@ import './Infos.css';
 
 class Infos extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div id="infos">

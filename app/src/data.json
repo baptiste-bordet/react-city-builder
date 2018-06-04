@@ -1,14 +1,96 @@
 {
   "EN" : {
-    "titre": "Fullstack devloper",
+    "titre": "Web devloper",
     "infos": {
-      "label": "Personal information"
+      "label": "Personal information",
+      "birthdate": "24/12/1988"
+    },
+    "technos": {
+      "label": "Technical skills and languages",
+      "list": [
+        {
+          "label": "programming languages / frameworks (Front)",
+          "icon": "fa-code",
+          "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
+        },
+        {
+          "label": "programming languages / frameworks (Back)",
+          "icon": "fa-code",
+          "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
+        },
+        {
+          "label": "Tools",
+          "icon": "fa-toolbox",
+          "list": ["Git", "NPM", "Grunt", "Webpack", "Jenkins"]
+        },
+        {
+          "label": "Other",
+          "icon": "fa-terminal",
+          "list": ["Webstorm", "ItelliJ", "Linux"]
+        },
+        {
+          "label": "Clean code",
+          "icon": "fa-keyboard",
+          "list": ["TDD", "code review", "pair programing", "refacto"]
+        },
+        {
+          "label": "Method",
+          "icon": "fa-users",
+          "list": ["Scrum"]
+        },
+        {
+          "label": "Languages",
+          "icon": "fa-flag",
+          "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
+        }
+      ]
     }
   },
   "FR" : {
-    "titre": "Fullstack développeur",
+    "titre": "Développeur web",
     "infos": {
-      "label": "Informations personnelles"
+      "label": "Informations personnelles",
+      "birthdate": "24/12/1988"
+    },
+    "technos": {
+      "label": "Compétences techniques",
+      "list": [
+        {
+          "label": "Langages de programations / frameworks (Front)",
+          "icon": "fa-code",
+          "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
+        },
+        {
+          "label": "Langages de programations / frameworks (Back)",
+          "icon": "fa-code",
+          "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
+        },
+        {
+          "label": "Outils",
+          "icon": "fa-toolbox",
+          "list": ["Git", "NPM", "Grunt", "Webpack", "Jenkins"]
+        },
+        {
+          "label": "Autre",
+          "icon": "fa-terminal",
+          "list": ["Webstorm", "ItelliJ", "Linux"]
+        },
+        {
+          "label": "Clean code",
+          "icon": "fa-keyboard",
+          "list": ["TDD", "code review", "pair programing", "refacto"]
+        },
+        {
+          "label": "Methode",
+          "icon": "fa-users",
+          "list": ["Scrum"]
+        },
+        {
+          "label": "Langues",
+          "icon": "fa-flag",
+          "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
+        }
+      ]
     }
   }
 }

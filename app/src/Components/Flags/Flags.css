@@ -1,0 +1,8 @@
+#flags {
+  position: absolute;
+  right: 0;
+  margin: 10px; }
+  #flags img {
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px; }

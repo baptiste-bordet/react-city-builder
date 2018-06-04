@@ -1,0 +1,29 @@
+#technos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #technos h2 {
+    width: 100%;
+    display: block; }
+  #technos .title {
+    display: inline-flex;
+    text-align: center; }
+    #technos .title i {
+      font-size: 2rem;
+      vertical-align: middle;
+      line-height: 1.6; }
+    #technos .title h3 {
+      text-transform: uppercase;
+      margin: 1rem !important; }
+  #technos .list {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 3px;
+    text-align: center; }
+    #technos .list .list-elt span {
+      margin: 0 0.5rem 0;
+      background-color: #011638;
+      border-radius: 20px;
+      padding: 0.4rem; }
