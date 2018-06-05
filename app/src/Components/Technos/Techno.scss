@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 15%;
 
   h2 {
     width: 100%;
@@ -32,12 +33,15 @@
     padding: 2rem;
     border-radius: 3px;
     text-align: center;
+    max-width: 500px;
 
-    .list-elt span {
-      margin: 0 0.5rem 0;
-      background-color: #011638;
-      border-radius: 20px;
+    .elt {
+      display: inline-block;
+      margin: 0.5rem;
+      background-color: #008291;
+      border-radius: 7px;
       padding: 0.4rem;
+      white-space: nowrap;
     }
   }
 

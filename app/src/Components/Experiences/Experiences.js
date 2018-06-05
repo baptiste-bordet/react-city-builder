@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import Timeline from './Timeline';
 
 import './Experiences.css';
 
@@ -10,22 +11,7 @@ class Experiences extends Component {
             <div id="experiences">
                 <h2>{this.props.data.label}</h2>
 
-                <section class="timeline">
-                    <ul>
-                        <li>
-                            <div>
-                                <time>1934</time>
-                                Some content here
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>1934</time>
-                                Some content here
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+                <Timeline data={this.props.data.soatTimeline} />
 
             </div>
         );

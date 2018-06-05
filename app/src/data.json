@@ -10,12 +10,12 @@
       "label": "Technical skills and languages",
       "list": [
         {
-          "label": "programming languages / frameworks (Front)",
+          "label": "Front-End",
           "icon": "fa-code",
           "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
         },
         {
-          "label": "programming languages / frameworks (Back)",
+          "label": "Back-End",
           "icon": "fa-code",
           "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
         },
@@ -47,7 +47,42 @@
       ]
     },
     "experiences": {
-      "label": "Experiences"
+      "label": "Experiences",
+      "soatTimeline": {
+        "title": "Soat",
+        "list": [
+          {
+            "title": "Front-end developpeur",
+            "client": "PMU",
+            "duration": "Janvier 2017 - Aujourd'hui",
+            "list": [
+              "Development, maintenance and evolution of management and account opening web applications",
+              "Development of transversal login application",
+              "Development of a money transfer between equestrian and poker wallets application"
+            ],
+            "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
+          },
+          {
+            "title": "Full-stack developer",
+            "client": "Société Générale",
+            "duration": "Janvier 2017 - Aujourd'hui",
+            "list": [
+              "Development of a web application that allows professionals to make international bank transfers"
+            ],
+            "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
+          },
+          {
+            "title": "Full-stack developer",
+            "client": "FFT / Roland Garros",
+            "duration": "Janvier 2017 - Aujourd'hui",
+            "list": [
+              "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
+              "In charge of conception and development of the application"
+            ],
+            "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
+          }
+        ]
+      }
     }
   },
   "FR" : {
@@ -61,12 +96,12 @@
       "label": "Compétences techniques",
       "list": [
         {
-          "label": "Langages de programations / frameworks (Front)",
+          "label": "Front-End",
           "icon": "fa-code",
           "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
         },
         {
-          "label": "Langages de programations / frameworks (Back)",
+          "label": "Back-End",
           "icon": "fa-code",
           "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
         },
@@ -99,13 +134,22 @@
     },
     "experiences": {
       "label": "Experiences",
-      "list": [
-        {
-          "title": "Front-end developpeur",
-          "client": "PMU",
-          "duration": ""
-        }
-      ]
+      "soatTimeline": {
+        "title": "Soat",
+        "list": [
+          {
+            "title": "Front-end developpeur",
+            "client": "PMU",
+            "duration": "Janvier 2017 - Aujourd'hui",
+            "list": [
+              "Development, maintenance and evolution of management and account opening web applications",
+              "Development of transversal login application",
+              "Development of a money transfer between equestrian and poker wallets application"
+            ],
+            "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
+          }
+        ]
+      }
     }
   }
 }

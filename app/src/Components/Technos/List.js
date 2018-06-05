@@ -13,7 +13,7 @@ const List = (props) => {
             <div className="list-elt">
                 {props.elt.list.map((elt) => {
                     return (
-                        <span key={elt}>{elt}</span>
+                        <div className="elt" key={elt}>{elt}</div>
                     )
                 })}
             </div>
