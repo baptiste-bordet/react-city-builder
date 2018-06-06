@@ -18,12 +18,11 @@
   -webkit-transform: skew(0deg,-2deg);
 }
 
-//#infos:before {
+//#infos:after {
 //  content: "";
 //  display: block;
-//  background: white;
-//  height: 135px;
-//  margin-top: -30px;
+//  background-color: #008291;
+//  height: 82px;
 //  -webkit-transform: rotate(-2deg);
 //  -ms-transform: rotate(-2deg);
 //  transform: rotate(-2deg);
@@ -32,13 +31,13 @@
 //  -webkit-transform: skew(0deg,-2deg);
 //}
 
+
 #infos {
-  background-color: #008291;
   overflow: hidden;
 }
 
 #technos {
-  background-color: #011638;
+  background-color: #008291;
   overflow: auto;
 }
 

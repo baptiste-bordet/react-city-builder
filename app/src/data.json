@@ -87,11 +87,11 @@
             "label": "Experiences",
             "soatTimeline": {
                 "title": "Soat",
+                "duration": "September 2015 - today",
                 "list": [
                     {
                         "title": "Front-end developpeur",
                         "client": "PMU",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Development, maintenance and evolution of management and account opening web applications",
                             "Development of transversal login application",
@@ -102,7 +102,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Société Générale",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Development of a web application that allows professionals to make international bank transfers"
                         ],
@@ -111,7 +110,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "FFT / Roland Garros",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
                             "In charge of conception and development of the application"
@@ -122,11 +120,11 @@
             },
             "sopraTimeline": {
                 "title": "Sopra Steria",
+                "duration": "February 2012 - September 2015",
                 "list": [
                     {
                         "title": "Full-stack developer",
                         "client": "RSI",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
                             "Wrote the technical specifications, made the conception and part of the development with unit tests"
@@ -136,7 +134,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Conseil Général des Hauts de Seines",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
                             "Realized a web application for managing transport card request",
@@ -147,7 +144,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "AFPA",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Made evolution of a web application for professional training, in a Scrum team"
                         ],
@@ -155,6 +151,9 @@
                     }
                 ]
             }
+        },
+        "contact": {
+            "label": "Contact"
         }
     },
     "FR": {
@@ -245,11 +244,11 @@
             "label": "Experiences",
             "soatTimeline": {
                 "title": "Soat",
+                "duration": "septembre 2015 - aujourd'hui",
                 "list": [
                     {
                         "title": "Front-end developpeur",
                         "client": "PMU",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Development, maintenance and evolution of management and account opening web applications",
                             "Development of transversal login application",
@@ -260,7 +259,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Société Générale",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Development of a web application that allows professionals to make international bank transfers"
                         ],
@@ -269,7 +267,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "FFT / Roland Garros",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
                             "In charge of conception and development of the application"
@@ -280,11 +277,11 @@
             },
             "sopraTimeline": {
                 "title": "Sopra Steria",
+                "duration": "février 2012 - septembre 2015",
                 "list": [
                     {
                         "title": "Full-stack developer",
                         "client": "RSI",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
                             "Wrote the technical specifications, made the conception and part of the development with unit tests"
@@ -294,7 +291,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Conseil Général des Hauts de Seines",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
                             "Realized a web application for managing transport card request",
@@ -305,7 +301,6 @@
                     {
                         "title": "Full-stack developer",
                         "client": "AFPA",
-                        "duration": "Janvier 2017 - Aujourd'hui",
                         "list": [
                             "Made evolution of a web application for professional training, in a Scrum team"
                         ],
@@ -313,6 +308,9 @@
                     }
                 ]
             }
+        },
+        "contact": {
+            "label": "Contact"
         }
     }
 }

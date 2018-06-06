@@ -8,7 +8,6 @@ class Infos extends Component {
     render() {
         return (
             <div id="infos">
-                <h2>{this.props.data.label}</h2>
                 <p>{this.props.data.apropos}</p>
             </div>
         );

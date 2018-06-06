@@ -1,2 +1,15 @@
 #header {
   text-align: center; }
+  #header h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    line-height: 60px;
+    font-size: 40px;
+    margin-bottom: 0; }
+  #header h2 {
+    text-transform: inherit;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    font-size: 30px; }

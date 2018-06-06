@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
 import Experiences from '../Experiences/Experiences';
+import Contact from '../Contact/Contact';
 import { Parallax } from 'react-spring';
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
                 <Infos />
                 <Technos />
                 <Experiences />
+                <Contact />
             </div>
         );
     }

@@ -6,13 +6,15 @@ const Timeline = (props) => {
 
     return (
         <section className={`timeline ${props.className}`}>
+
+            <h3>{props.data.duration}</h3>
+
             <ul className="timeline-list">
                 {props.data.list.map((elt) => {
                     return (
                         <li>
                             <div>
                                 <h4>{elt.client} - {elt.title}</h4>
-                                {/*<time>{elt.duration}</time>*/}
                                 <ul className="elt-ul">
                                     {elt.list.map((exp) => {
                                         return (

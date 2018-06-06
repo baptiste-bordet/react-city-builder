@@ -8,8 +8,8 @@ class Header extends Component {
     render() {
         return (
             <div id="header">
-                <h2>Baptiste Bordet</h2>
-                <h3>{this.props.data.titre}</h3>
+                <h1>Baptiste Bordet</h1>
+                <h2>{this.props.data.titre}</h2>
             </div>
         );
     }

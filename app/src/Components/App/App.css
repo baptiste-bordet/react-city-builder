@@ -17,11 +17,10 @@
   -webkit-transform: skew(0deg, -2deg); }
 
 #infos {
-  background-color: #008291;
   overflow: hidden; }
 
 #technos {
-  background-color: #011638;
+  background-color: #008291;
   overflow: auto; }
 
 #experiences {

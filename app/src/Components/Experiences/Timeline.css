@@ -1,7 +1,14 @@
+.timeline h3 {
+  position: absolute;
+  left: 54%;
+  margin-top: 38px;
+  font-weight: 400;
+  font-size: 25px; }
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 4px;
   margin: 0 auto;
   padding-top: 50px;
   background: #008291; }
@@ -22,22 +29,24 @@
   border-radius: 50%;
   background-size: 100%;
   background-position: center;
-  border: 6px solid #008291; }
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  border: 4px solid #008291; }
 
 .timeline.timeline-soat ul.timeline-list::before {
   background-image: url("../../assets/logo_soat.png"); }
 
 .timeline.timeline-sopra ul.timeline-list::before {
-  background-image: url("../../assets/logo_sopra.png"); }
+  background-image: url("../../assets/logo_sopra_2.png"); }
 
 .timeline ul li::before {
   content: '';
   position: absolute;
   left: 50%;
-  margin-top: 22px;
+  margin-top: 27px;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #008291; }
 
@@ -84,7 +93,8 @@
   clear: both;
   display: block;
   text-align: left;
-  color: #7d878f; }
+  color: #7d878f;
+  font-size: 15px; }
 
 .timeline .elt-li {
   margin-bottom: 0.5rem; }
@@ -105,10 +115,14 @@
   display: inline-block;
   margin: 0.5rem;
   background-color: #C1C1C1;
-  border-radius: 7px;
-  padding: 0.4rem; }
+  border-radius: 25px;
+  padding: 0.4rem 0.5rem;
+  font-size: 14px;
+  width: 90%; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .timeline h3 {
+    left: 35%; }
   .timeline ul li {
     position: relative;
     display: block;
@@ -124,4 +138,6 @@
       left: inherit !important;
       right: inherit !important; }
       .timeline ul li div::before {
-        content: none; } }
+        content: none; }
+  .timeline ul.timeline-list::before {
+    left: 20%; } }

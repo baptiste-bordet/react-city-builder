@@ -1,0 +1,25 @@
+#contact {
+  text-align: center;
+  color: #2c3e50; }
+  #contact form {
+    background: #011638;
+    padding: 2rem;
+    margin: 0 20% 2rem;
+    border-radius: 4px; }
+  #contact .button-container {
+    vertical-align: top;
+    margin-top: 1rem; }
+    #contact .button-container button {
+      border: none;
+      border-radius: 30px;
+      background-color: #e6e6e8;
+      padding: 0.8rem 1.5rem;
+      margin-left: 2rem;
+      font-weight: 600; }
+      #contact .button-container button i {
+        margin-right: 0.5rem;
+        font-size: 1rem; }
+      #contact .button-container button:focus {
+        cursor: pointer; }
+  #contact .row div {
+    display: inline-block; }
