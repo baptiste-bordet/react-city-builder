@@ -1,155 +1,318 @@
 {
-  "EN" : {
-    "titre": "Web devloper",
-    "infos": {
-      "label": "Personal information",
-      "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
-      "birthdate": "24/12/1988"
-    },
-    "technos": {
-      "label": "Technical skills and languages",
-      "list": [
-        {
-          "label": "Front-End",
-          "icon": "fa-code",
-          "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
+    "EN": {
+        "titre": "Web devloper",
+        "infos": {
+            "label": "Personal information",
+            "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
+            "birthdate": "24/12/1988"
         },
-        {
-          "label": "Back-End",
-          "icon": "fa-code",
-          "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
+        "technos": {
+            "label": "Technical skills and languages",
+            "list": [
+                {
+                    "label": "Front-End",
+                    "icon": "fa-code",
+                    "list": [
+                        "Javascript ES5 / ES6",
+                        "React / Redux",
+                        "Backbone / Marionette",
+                        "HTML5",
+                        "CSS / SASS",
+                        "Jest",
+                        "Karma",
+                        "Mocha",
+                        "Chai",
+                        "Istanbul"
+                    ]
+                },
+                {
+                    "label": "Back-End",
+                    "icon": "fa-code",
+                    "list": [
+                        "Java 7 / 8",
+                        "Spring",
+                        "Node JS",
+                        "Express JS"
+                    ]
+                },
+                {
+                    "label": "Tools",
+                    "icon": "fa-toolbox",
+                    "list": [
+                        "Git",
+                        "NPM",
+                        "Grunt",
+                        "Webpack",
+                        "Jenkins"
+                    ]
+                },
+                {
+                    "label": "Other",
+                    "icon": "fa-terminal",
+                    "list": [
+                        "Webstorm",
+                        "ItelliJ",
+                        "Linux"
+                    ]
+                },
+                {
+                    "label": "Clean code",
+                    "icon": "fa-keyboard",
+                    "list": [
+                        "TDD",
+                        "code review",
+                        "pair programing",
+                        "refacto"
+                    ]
+                },
+                {
+                    "label": "Method",
+                    "icon": "fa-users",
+                    "list": [
+                        "Scrum"
+                    ]
+                },
+                {
+                    "label": "Languages",
+                    "icon": "fa-flag",
+                    "list": [
+                        "French (native language)",
+                        "English (fluent, TOEIC: 890)",
+                        "Spanish (basics)"
+                    ]
+                }
+            ]
         },
-        {
-          "label": "Tools",
-          "icon": "fa-toolbox",
-          "list": ["Git", "NPM", "Grunt", "Webpack", "Jenkins"]
-        },
-        {
-          "label": "Other",
-          "icon": "fa-terminal",
-          "list": ["Webstorm", "ItelliJ", "Linux"]
-        },
-        {
-          "label": "Clean code",
-          "icon": "fa-keyboard",
-          "list": ["TDD", "code review", "pair programing", "refacto"]
-        },
-        {
-          "label": "Method",
-          "icon": "fa-users",
-          "list": ["Scrum"]
-        },
-        {
-          "label": "Languages",
-          "icon": "fa-flag",
-          "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
+        "experiences": {
+            "label": "Experiences",
+            "soatTimeline": {
+                "title": "Soat",
+                "list": [
+                    {
+                        "title": "Front-end developpeur",
+                        "client": "PMU",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Development, maintenance and evolution of management and account opening web applications",
+                            "Development of transversal login application",
+                            "Development of a money transfer between equestrian and poker wallets application"
+                        ],
+                        "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "Société Générale",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Development of a web application that allows professionals to make international bank transfers"
+                        ],
+                        "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "FFT / Roland Garros",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
+                            "In charge of conception and development of the application"
+                        ],
+                        "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
+                    }
+                ]
+            },
+            "sopraTimeline": {
+                "title": "Sopra Steria",
+                "list": [
+                    {
+                        "title": "Full-stack developer",
+                        "client": "RSI",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
+                            "Wrote the technical specifications, made the conception and part of the development with unit tests"
+                        ],
+                        "technos": "Spring Batch, JEE 7, maven, JBoss, Oracle 11G"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "Conseil Général des Hauts de Seines",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
+                            "Realized a web application for managing transport card request",
+                            "Realized the new intranet for all county employees"
+                        ],
+                        "technos": "Java 7 / JEE, Groovy, Grails, Liferay 6, MySQL, W4 workflow engine, HTML / CSS"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "AFPA",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Made evolution of a web application for professional training, in a Scrum team"
+                        ],
+                        "technos": "JEE 7, Liferay 6, MySQL, HTML, CSS"
+                    }
+                ]
+            }
         }
-      ]
     },
-    "experiences": {
-      "label": "Experiences",
-      "soatTimeline": {
-        "title": "Soat",
-        "list": [
-          {
-            "title": "Front-end developpeur",
-            "client": "PMU",
-            "duration": "Janvier 2017 - Aujourd'hui",
+    "FR": {
+        "titre": "Développeur web",
+        "infos": {
+            "label": "Informations personnelles",
+            "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
+            "birthdate": "24/12/1988"
+        },
+        "technos": {
+            "label": "Compétences techniques",
             "list": [
-              "Development, maintenance and evolution of management and account opening web applications",
-              "Development of transversal login application",
-              "Development of a money transfer between equestrian and poker wallets application"
-            ],
-            "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
-          },
-          {
-            "title": "Full-stack developer",
-            "client": "Société Générale",
-            "duration": "Janvier 2017 - Aujourd'hui",
-            "list": [
-              "Development of a web application that allows professionals to make international bank transfers"
-            ],
-            "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
-          },
-          {
-            "title": "Full-stack developer",
-            "client": "FFT / Roland Garros",
-            "duration": "Janvier 2017 - Aujourd'hui",
-            "list": [
-              "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
-              "In charge of conception and development of the application"
-            ],
-            "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
-          }
-        ]
-      }
-    }
-  },
-  "FR" : {
-    "titre": "Développeur web",
-    "infos": {
-      "label": "Informations personnelles",
-      "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
-      "birthdate": "24/12/1988"
-    },
-    "technos": {
-      "label": "Compétences techniques",
-      "list": [
-        {
-          "label": "Front-End",
-          "icon": "fa-code",
-          "list": ["Javascript ES5 / ES6", "React / Redux", "Backbone / Marionette", "HTML5", "CSS / SASS", "Jest", "Karma", "Mocha", "Chai", "Istanbul"]
+                {
+                    "label": "Front-End",
+                    "icon": "fa-code",
+                    "list": [
+                        "Javascript ES5 / ES6",
+                        "React / Redux",
+                        "Backbone / Marionette",
+                        "HTML5",
+                        "CSS / SASS",
+                        "Jest",
+                        "Karma",
+                        "Mocha",
+                        "Chai",
+                        "Istanbul"
+                    ]
+                },
+                {
+                    "label": "Back-End",
+                    "icon": "fa-code",
+                    "list": [
+                        "Java 7 / 8",
+                        "Spring",
+                        "Node JS",
+                        "Express JS"
+                    ]
+                },
+                {
+                    "label": "Outils",
+                    "icon": "fa-toolbox",
+                    "list": [
+                        "Git",
+                        "NPM",
+                        "Grunt",
+                        "Webpack",
+                        "Jenkins"
+                    ]
+                },
+                {
+                    "label": "Autre",
+                    "icon": "fa-terminal",
+                    "list": [
+                        "Webstorm",
+                        "ItelliJ",
+                        "Linux"
+                    ]
+                },
+                {
+                    "label": "Clean code",
+                    "icon": "fa-keyboard",
+                    "list": [
+                        "TDD",
+                        "code review",
+                        "pair programing",
+                        "refacto"
+                    ]
+                },
+                {
+                    "label": "Methode",
+                    "icon": "fa-users",
+                    "list": [
+                        "Scrum"
+                    ]
+                },
+                {
+                    "label": "Langues",
+                    "icon": "fa-flag",
+                    "list": [
+                        "French (native language)",
+                        "English (fluent, TOEIC: 890)",
+                        "Spanish (basics)"
+                    ]
+                }
+            ]
         },
-        {
-          "label": "Back-End",
-          "icon": "fa-code",
-          "list": ["Java 7 / 8", "Spring", "Node JS", "Express JS"]
-        },
-        {
-          "label": "Outils",
-          "icon": "fa-toolbox",
-          "list": ["Git", "NPM", "Grunt", "Webpack", "Jenkins"]
-        },
-        {
-          "label": "Autre",
-          "icon": "fa-terminal",
-          "list": ["Webstorm", "ItelliJ", "Linux"]
-        },
-        {
-          "label": "Clean code",
-          "icon": "fa-keyboard",
-          "list": ["TDD", "code review", "pair programing", "refacto"]
-        },
-        {
-          "label": "Methode",
-          "icon": "fa-users",
-          "list": ["Scrum"]
-        },
-        {
-          "label": "Langues",
-          "icon": "fa-flag",
-          "list": ["French (native language)", "English (fluent, TOEIC: 890)", "Spanish (basics)"]
+        "experiences": {
+            "label": "Experiences",
+            "soatTimeline": {
+                "title": "Soat",
+                "list": [
+                    {
+                        "title": "Front-end developpeur",
+                        "client": "PMU",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Development, maintenance and evolution of management and account opening web applications",
+                            "Development of transversal login application",
+                            "Development of a money transfer between equestrian and poker wallets application"
+                        ],
+                        "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "Société Générale",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Development of a web application that allows professionals to make international bank transfers"
+                        ],
+                        "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "FFT / Roland Garros",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
+                            "In charge of conception and development of the application"
+                        ],
+                        "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
+                    }
+                ]
+            },
+            "sopraTimeline": {
+                "title": "Sopra Steria",
+                "list": [
+                    {
+                        "title": "Full-stack developer",
+                        "client": "RSI",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
+                            "Wrote the technical specifications, made the conception and part of the development with unit tests"
+                        ],
+                        "technos": "Spring Batch, JEE 7, maven, JBoss, Oracle 11G"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "Conseil Général des Hauts de Seines",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
+                            "Realized a web application for managing transport card request",
+                            "Realized the new intranet for all county employees"
+                        ],
+                        "technos": "Java 7 / JEE, Groovy, Grails, Liferay 6, MySQL, W4 workflow engine, HTML / CSS"
+                    },
+                    {
+                        "title": "Full-stack developer",
+                        "client": "AFPA",
+                        "duration": "Janvier 2017 - Aujourd'hui",
+                        "list": [
+                            "Made evolution of a web application for professional training, in a Scrum team"
+                        ],
+                        "technos": "JEE 7, Liferay 6, MySQL, HTML, CSS"
+                    }
+                ]
+            }
         }
-      ]
-    },
-    "experiences": {
-      "label": "Experiences",
-      "soatTimeline": {
-        "title": "Soat",
-        "list": [
-          {
-            "title": "Front-end developpeur",
-            "client": "PMU",
-            "duration": "Janvier 2017 - Aujourd'hui",
-            "list": [
-              "Development, maintenance and evolution of management and account opening web applications",
-              "Development of transversal login application",
-              "Development of a money transfer between equestrian and poker wallets application"
-            ],
-            "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
-          }
-        ]
-      }
     }
-  }
 }

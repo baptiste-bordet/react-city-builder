@@ -11,8 +11,8 @@ class Experiences extends Component {
             <div id="experiences">
                 <h2>{this.props.data.label}</h2>
 
-                <Timeline data={this.props.data.soatTimeline} />
-
+                <Timeline className="timeline-soat" data={this.props.data.soatTimeline} />
+                <Timeline className="timeline-sopra" data={this.props.data.sopraTimeline} />
             </div>
         );
     }

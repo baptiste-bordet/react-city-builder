@@ -9,11 +9,39 @@
     background: #008291;
   }
 
-  ul li::after {
+  ul.timeline-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.timeline-list::before {
+    content: '';
+    position: relative;
+    display: block;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-position: center;
+    border: 6px solid #008291;
+  }
+
+  &.timeline-soat ul.timeline-list::before {
+    background-image: url("../../assets/logo_soat.png");
+  }
+
+  &.timeline-sopra ul.timeline-list::before {
+    background-image: url("../../assets/logo_sopra.png");
+  }
+
+  ul li::before {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
+    margin-top: 22px;
     transform: translateX(-50%);
     width: 30px;
     height: 30px;
@@ -23,37 +51,45 @@
 
   ul li div {
     position: relative;
+    text-align: center;
     bottom: 0;
-    width: 400px;
+    width: 500px;
     padding: 15px;
     background: #FFFFFF;
-    border-radius: 2px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+
+    h4 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.3rem;
+    }
   }
 
   ul li div::before {
     content: '';
     position: absolute;
-    bottom: 7px;
+    top: 28px;
     width: 0;
     height: 0;
     border-style: solid;
   }
 
-  ul li:nth-child(odd) div {
+  ul li:nth-child(even) div {
     left: 45px;
   }
 
-  ul li:nth-child(odd) div::before {
+  ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #FFFFFF transparent transparent;
   }
 
-  ul li:nth-child(even) div {
-    left: -468px;
+  ul li:nth-child(odd) div {
+    left: -568px;
   }
 
-  ul li:nth-child(even) div::before {
+  ul li:nth-child(odd) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent #FFFFFF;
@@ -62,6 +98,67 @@
   .elt-ul,
   .elt-li {
     clear: both;
+    display: block;
+    text-align: left;
+    color: #7d878f;
+  }
+
+  .elt-li {
+    margin-bottom: 0.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 8%;
+      margin-top: 7px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #008291;
+    }
+  }
+
+  span.techno {
+    display: inline-block;
+    margin: 0.5rem;
+    background-color: #C1C1C1;
+    border-radius: 7px;
+    padding: 0.4rem;
+  }
+
+}
+
+@media(max-width: 1000px) {
+
+  .timeline {
+
+    ul li {
+      position: relative;
+      display: block;
+      width: auto;
+      margin: 0 10px !important;
+      background: none;
+      padding-top: 20px;
+
+      &::after {
+        content: none;
+      }
+
+      div {
+        display: block;
+        width: auto;
+        left: inherit !important;
+        right: inherit !important;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+
   }
 
 }
