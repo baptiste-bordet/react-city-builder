@@ -2,13 +2,51 @@ body {
   margin: 0 !important;
   color: #e6e6e8 !important;
   font-family: 'Raleway', sans-serif; }
+  body h1, body h2, body h3 {
+    font-family: 'Raleway', sans-serif; }
+  body h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 0; }
+  body h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    line-height: 3rem;
+    font-size: 2.5rem; }
 
-h1, h2, h3 {
-  font-family: 'Raleway', sans-serif; }
-
-h2 {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 5px;
-  line-height: 60px;
-  font-size: 40px; }
+@media print {
+  html {
+    font-size: 75% !important; }
+    html #infos,
+    html #technos {
+      padding: 0 10%; }
+    html #header:after {
+      height: 75px !important; }
+    html #infos .info-elt {
+      display: block; }
+    html #infos p {
+      width: 100%;
+      margin: 1rem auto;
+      background-color: #F7F7F2;
+      border-radius: 25px;
+      padding: 1.5rem; }
+    html #technos {
+      display: block; }
+      html #technos .title h3 {
+        margin-bottom: 0; }
+      html #technos .list {
+        margin: 0 0 1rem;
+        padding: 0;
+        text-align: left; }
+        html #technos .list .list-elt {
+          margin: 0; }
+          html #technos .list .list-elt .elt {
+            font-size: 0.8rem; }
+    html .timeline .elt-li::before {
+      left: 4%; }
+    html #contact {
+      display: none; } }

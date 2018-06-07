@@ -1,11 +1,29 @@
 #infos {
   text-align: center;
+  color: #008291;
+  margin: 0 auto;
+  padding: 0 20%;
+
+  .info-elt {
+    display: none;
+    text-align: left;
+    margin: 10px;
+
+    i {
+      margin: 0.1rem 1rem;
+      vertical-align: middle;
+    }
+
+    .adresse2 {
+      margin-left: 3rem;
+    }
+  }
 
   p {
+    text-align: center;
     margin: 3rem auto;
     width: 50%;
     font-size: 1.3rem;
-    text-align: justify;
     color: #7d878f;
   }
 }

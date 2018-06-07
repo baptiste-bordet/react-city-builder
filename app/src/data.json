@@ -3,8 +3,12 @@
         "titre": "Web devloper",
         "infos": {
             "label": "Personal information",
-            "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
-            "birthdate": "24/12/1988"
+            "apropos": "Serious, dynamic and curious, I'm looking for a south asia opportunity as a web developer.",
+            "birthdate": "24/12/1988",
+            "adresse1": "18 rue Saint Laurent",
+            "adresse2": "75010 Paris - FRANCE",
+            "tel": "+33 6 70 45 62 36",
+            "email": "baptiste.bordet@gmail.com"
         },
         "technos": {
             "label": "Technical skills and languages",
@@ -160,8 +164,12 @@
         "titre": "Développeur web",
         "infos": {
             "label": "Informations personnelles",
-            "apropos": "Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi ad colligendos rumores per Antiochiae latera cuncta destinarentur relaturi quae audirent. hi peragranter et dissimulanter honoratorum circulis adsistendo pervadendoque divites domus egentium habitu quicquid noscere poterant vel audire latenter intromissi per posticas in regiam.",
-            "birthdate": "24/12/1988"
+            "apropos": "Serieux, dynamique et curieux, je suis à la recherche d'un post de développeur web en Asie du sud-est.",
+            "birthdate": "24/12/1988",
+            "adresse1": "18 rue Saint Laurent",
+            "adresse2": "75010 Paris - FRANCE",
+            "tel": "+33 6 70 45 62 36",
+            "email": "baptiste.bordet@gmail.com"
         },
         "technos": {
             "label": "Compétences techniques",
