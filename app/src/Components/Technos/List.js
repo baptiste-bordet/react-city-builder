@@ -10,13 +10,13 @@ const List = (props) => {
                 <h3>{props.elt.label}</h3>
             </div>
 
-            <div className="list-elt">
+            <ul className="list-elt">
                 {props.elt.list.map((elt) => {
                     return (
-                        <div className="elt" key={elt}>{elt}</div>
+                        <li className="elt" key={elt}>{elt}</li>
                     )
                 })}
-            </div>
+            </ul>
         </div>
     )
 

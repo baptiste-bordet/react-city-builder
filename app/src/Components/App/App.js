@@ -6,6 +6,7 @@ import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
 import Experiences from '../Experiences/Experiences';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import { Parallax } from 'react-spring';
 import './App.css';
 
@@ -31,6 +32,7 @@ class App extends Component {
                 <Technos />
                 <Experiences />
                 <Contact />
+                <Footer />
             </div>
         );
     }

@@ -15,11 +15,38 @@
       background-color: #e6e6e8;
       padding: 0.8rem 1.5rem;
       margin-left: 2rem;
-      font-weight: 600; }
+      font-weight: 600;
+      /* Safari */ }
       #contact .button-container button i {
         margin-right: 0.5rem;
         font-size: 1rem; }
-      #contact .button-container button:focus {
+      #contact .button-container button.enable:hover {
+        background-color: #008291;
         cursor: pointer; }
+      #contact .button-container button span {
+        vertical-align: top;
+        line-height: 2rem; }
+      #contact .button-container button .loader {
+        border: 4px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 4px solid #3498db;
+        width: 20px;
+        height: 20px;
+        -webkit-animation: spin 2s linear infinite;
+        /* Safari */
+        animation: spin 2s linear infinite;
+        margin-right: 0.5rem; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
   #contact .row div {
     display: inline-block; }

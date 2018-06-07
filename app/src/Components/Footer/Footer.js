@@ -7,7 +7,11 @@ class Footer extends Component {
 
         return (
             <div id="footer">
-                <p>copyright Emmanuelle Claeys - 2018 <i className="fa fa-copyright"/></p>
+                <div className="media-wrapper">
+                    <a className="linkedin-i"><i className="fab fa-linkedin"></i></a>
+                    <a className="insta-i"><i className="fab fa-instagram"></i></a>
+                </div>
+                <p>copyright Baptiste Bordet - 2018 <i className="fa fa-copyright"/></p>
             </div>
         );
 

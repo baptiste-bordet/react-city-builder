@@ -14,11 +14,12 @@ class Contact extends Component {
 
         this.state = {
             nom: '',
-            prenom: '',
             email: '',
+            message: '',
             nomError: '',
-            prenomError: '',
-            emailError: ''
+            emailError: '',
+            messageError: '',
+            envoiEnCours: false
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -28,7 +29,7 @@ class Contact extends Component {
 
     isFormValid() {
 
-        let nomError = '', prenomError = '', emailError = '';
+        let nomError = '', messageError = '', emailError = '';
 
         if (this.state.nom.length === 0) {
             nomError = 'Le champ Nom est obligatoire';
@@ -36,14 +37,6 @@ class Contact extends Component {
             nomError = 'Le champ Nom n\'est pas valide';
         } else {
             nomError = '';
-        }
-
-        if (this.state.prenom.length === 0) {
-            prenomError = 'Le champ Prénom est obligatoire';
-        } else if (!this.state.prenom.match(/^[a-zA-Z ]+$/)) {
-            prenomError = 'Le champ Prénom n\'est pas valide';
-        } else {
-            prenomError = '';
         }
 
         if (this.state.email.length === 0) {
@@ -54,13 +47,17 @@ class Contact extends Component {
             emailError = '';
         }
 
+        if (this.state.message.length === 0) {
+            messageError = 'Le message est obligatoire';
+        }
+
         this.setState({
             nomError: nomError,
-            prenomError: prenomError,
-            emailError: emailError
+            emailError: emailError,
+            messageError: messageError
         });
 
-        return nomError.length === 0 && prenomError.length === 0 && emailError.length === 0
+        return nomError.length === 0 && messageError.length === 0 && emailError.length === 0
     }
 
     handleChange(event) {
@@ -71,7 +68,29 @@ class Contact extends Component {
         event.preventDefault();
 
         if (this.isFormValid()) {
-            this.props.submitStep(this.state);
+            this.setState({ envoiEnCours: true });
+
+            fetch('/api/devis', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    data: this.state
+                })
+            })
+                .then(res => res.json())
+                .then(jsonRes => {
+                    this.setState({
+                        errors: jsonRes,
+                        displayErrors: Object.keys(jsonRes).length > 0,
+                        displaySuccess: Object.keys(jsonRes).length === 0,
+                        envoiEnCours: false
+                    });
+                }).catch(error => {
+
+            });
         }
     }
 
@@ -95,7 +114,7 @@ class Contact extends Component {
 
                     <div className="row">
                         <Textarea label="MESSAGE" name="message"
-                                handleChange={this.handleChange} error={this.state.messageError}/>
+                                  handleChange={this.handleChange} error={this.state.messageError}/>
                     </div>
 
                     <div className="row">
@@ -105,8 +124,13 @@ class Contact extends Component {
                             onChange={this.onRecaptchaChange}
                         />
                         <div className="button-container">
-                            <button type="submit" value="Submit"><i class="far fa-envelope"></i>Envoyer</button>
+                            {this.state.envoiEnCours ? (
+                                <button type="submit" value="Submit" disabled="disabled"><div className="loader"></div><span> Envoi du message...</span></button>
+                            ) : (
+                                <button type="submit" value="Submit" className="enable"><i className="far fa-envelope"></i>Envoyer</button>
+                            )}
                         </div>
+
                     </div>
 
                 </form>
