@@ -3,9 +3,17 @@
   h3 {
     position: absolute;
     left: 54%;
-    margin-top: 38px;
+    margin-top: 28px;
     font-weight: 400;
     font-size: 1.5rem;
+  }
+
+  h5 {
+    position: absolute;
+    left: 54%;
+    margin-top: 63px;
+    font-weight: 400;
+    font-size: 1rem;
   }
 
   ul li {
@@ -32,7 +40,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-size: 100%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #FFF;
@@ -45,6 +53,10 @@
 
   &.timeline-sopra ul.timeline-list::before {
     background-image: url("../../assets/logo_sopra_2.png");
+  }
+
+  &.timeline-polytech ul.timeline-list::before {
+    background-image: url("../../assets/logo_polytech.png");
   }
 
   ul li::before {
@@ -73,6 +85,10 @@
       text-align: center;
       margin-top: 10px;
       font-size: 1.3rem;
+
+      i {
+        margin-right: 1rem;
+      }
     }
   }
 

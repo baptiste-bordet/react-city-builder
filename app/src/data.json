@@ -92,10 +92,12 @@
             "soatTimeline": {
                 "title": "Soat",
                 "duration": "September 2015 - today",
+                "lieu": "Paris, France",
                 "list": [
                     {
                         "title": "Front-end developpeur",
                         "client": "PMU",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Development, maintenance and evolution of management and account opening web applications",
                             "Development of transversal login application",
@@ -106,6 +108,7 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Société Générale",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Development of a web application that allows professionals to make international bank transfers"
                         ],
@@ -114,6 +117,7 @@
                     {
                         "title": "Full-stack developer",
                         "client": "FFT / Roland Garros",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
                             "In charge of conception and development of the application"
@@ -125,10 +129,12 @@
             "sopraTimeline": {
                 "title": "Sopra Steria",
                 "duration": "February 2012 - September 2015",
+                "lieu": "Paris, France",
                 "list": [
                     {
                         "title": "Full-stack developer",
                         "client": "RSI",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
                             "Wrote the technical specifications, made the conception and part of the development with unit tests"
@@ -138,6 +144,7 @@
                     {
                         "title": "Full-stack developer",
                         "client": "Conseil Général des Hauts de Seines",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
                             "Realized a web application for managing transport card request",
@@ -148,6 +155,7 @@
                     {
                         "title": "Full-stack developer",
                         "client": "AFPA",
+                        "icon": "fas fa-briefcase",
                         "list": [
                             "Made evolution of a web application for professional training, in a Scrum team"
                         ],
@@ -158,9 +166,12 @@
             "polytechTimeline": {
                 "title": "Polytech'Nantes",
                 "duration": "September 2009 - January 2012",
+                "lieu": "Nantes, France",
                 "list": [
                     {
                         "title": "Engineer degree",
+                        "client": "Polytech'Nantes",
+                        "icon": "fas fa-graduation-cap",
                         "list": [
                             "French engineering school which provides a five-year engineering degree as a Master of Computer Science (specialized in IS, software and network)"
                         ]
@@ -168,6 +179,7 @@
                     {
                         "title": "Internship",
                         "client": "Renison College, University of Waterloo, Canada",
+                        "icon": "fas fa-graduation-cap",
                         "list": [
                             "In charge of the conception and realization of a new website for the college"
                         ],
@@ -176,10 +188,19 @@
                     {
                         "title": "Recherch and development project",
                         "client": "Polytech'Nantes",
+                        "icon": "fas fa-graduation-cap",
                         "list": [
                             "Realized an augmented reality mobile application, using smartphone sensors and camera for detection"
                         ],
                         "technos": "SDK Android, librairies OpenCV et OpenGL"
+                    },
+                    {
+                        "title": "Faculty of mathematics",
+                        "client": "Univeristy François Rabelais, Tours",
+                        "icon": "fas fa-graduation-cap",
+                        "list": [
+                            "Two preparatory years of mathematics and computer science"
+                        ]
                     }
                 ]
             }
