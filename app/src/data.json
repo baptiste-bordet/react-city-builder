@@ -154,6 +154,34 @@
                         "technos": "JEE 7, Liferay 6, MySQL, HTML, CSS"
                     }
                 ]
+            },
+            "polytechTimeline": {
+                "title": "Polytech'Nantes",
+                "duration": "September 2009 - January 2012",
+                "list": [
+                    {
+                        "title": "Engineer degree",
+                        "list": [
+                            "French engineering school which provides a five-year engineering degree as a Master of Computer Science (specialized in IS, software and network)"
+                        ]
+                    },
+                    {
+                        "title": "Internship",
+                        "client": "Renison College, University of Waterloo, Canada",
+                        "list": [
+                            "In charge of the conception and realization of a new website for the college"
+                        ],
+                        "technos": "Drupal 7, HTML, CSS"
+                    },
+                    {
+                        "title": "Recherch and development project",
+                        "client": "Polytech'Nantes",
+                        "list": [
+                            "Realized an augmented reality mobile application, using smartphone sensors and camera for detection"
+                        ],
+                        "technos": "SDK Android, librairies OpenCV et OpenGL"
+                    }
+                ]
             }
         },
         "contact": {

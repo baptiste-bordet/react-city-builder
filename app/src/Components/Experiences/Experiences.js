@@ -13,6 +13,7 @@ class Experiences extends Component {
 
                 <Timeline className="timeline-soat" data={this.props.data.soatTimeline} />
                 <Timeline className="timeline-sopra" data={this.props.data.sopraTimeline} />
+                <Timeline className="timeline-polytech" data={this.props.data.polytechTimeline} />
             </div>
         );
     }

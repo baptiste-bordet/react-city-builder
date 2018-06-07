@@ -16,7 +16,6 @@
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "react-scripts": "^1.1.4",
-    "react-spring": "^5.2.0",
     "react-world-flags": "^1.2.0",
     "redux": "^4.0.0"
   },

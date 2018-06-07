@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import './Timeline.css';
 
@@ -22,7 +22,7 @@ const Timeline = (props) => {
                                         )
                                     })}
                                 </ul>
-                                <span className="techno">{elt.technos}</span>
+                                {elt.technos ? (<span className="techno">{elt.technos}</span>) : ''}
                             </div>
                         </li>
                     )
