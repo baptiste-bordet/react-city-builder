@@ -30,8 +30,13 @@ body {
 @media print {
 
   html {
-    font-size: 75% !important;
+    font-size: 65% !important;
 
+    #flags,
+    #footer {
+      display: none;
+    }
+    
     #infos,
     #technos {
       padding: 0 10%;
@@ -48,7 +53,6 @@ body {
 
       p {
         width: 100%;
-        margin: 1rem auto;
         background-color: #F7F7F2;
         border-radius: 25px;
         padding: 1.5rem;
@@ -58,26 +62,28 @@ body {
     #technos {
 
       display: block;
+      padding-bottom: 3rem;
 
       .title h3 {
         margin-bottom: 0;
       }
 
-      .list {
-        margin: 0 0 1rem;
-        padding: 0;
-        text-align: left;
+    }
 
-        .list-elt {
-          margin: 0;
+    #experiences {
+      padding-top: 2rem;
 
-          .elt {
-            font-size: 0.8rem;
-          }
-        }
-
+      .timeline-sopra {
+        padding-top: 2rem;
       }
 
+      .timeline-polytech {
+        padding-top: 2rem;
+      }
+
+      .timeline-list li {
+        margin: 1rem 2rem;
+      }
     }
 
     .timeline .elt-li::before {

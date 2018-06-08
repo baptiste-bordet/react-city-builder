@@ -11,11 +11,14 @@ class Techno extends Component {
             <div id="technos">
                 <h2>{this.props.data.label}</h2>
 
-                {this.props.data.list.map((elt) => {
-                    return (
-                        <List elt={elt} key={elt.label} />
-                    )
-                })}
+
+                <div className="technos-wrapper">
+                    {this.props.data.list.map((elt) => {
+                        return (
+                            <List elt={elt} key={elt.label} />
+                        )
+                    })}
+                </div>
 
             </div>
         );

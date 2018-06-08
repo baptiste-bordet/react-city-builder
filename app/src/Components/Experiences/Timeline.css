@@ -133,13 +133,16 @@
   width: 90%; }
 
 @media (max-width: 1100px) {
-  .timeline h3 {
+  .timeline h3,
+  .timeline h5 {
     left: 35%; }
+  .timeline h5 {
+    margin-top: 53px; }
   .timeline ul li {
     position: relative;
     display: block;
     width: auto;
-    margin: 0 10px !important;
+    margin: 0.5rem 4rem !important;
     background: none;
     padding-top: 20px; }
     .timeline ul li::after {

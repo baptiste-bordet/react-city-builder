@@ -164,15 +164,20 @@
 
   .timeline {
 
-    h3 {
+    h3,
+    h5 {
       left: 35%;
+    }
+
+    h5 {
+      margin-top: 53px;
     }
 
     ul li {
       position: relative;
       display: block;
       width: auto;
-      margin: 0 10px !important;
+      margin: 0.5rem 4rem !important;
       background: none;
       padding-top: 20px;
 

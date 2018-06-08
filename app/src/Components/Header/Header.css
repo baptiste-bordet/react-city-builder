@@ -1,5 +1,17 @@
 #header {
   text-align: center; }
+  #header:after {
+    content: "";
+    display: block;
+    background: white;
+    height: 75px;
+    margin-bottom: -40px;
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    transform: skew(0deg, -2deg);
+    -ms-transform: skew(0deg, -2deg);
+    -webkit-transform: skew(0deg, -2deg); }
   #header h2 {
     text-transform: inherit;
     letter-spacing: 2px;

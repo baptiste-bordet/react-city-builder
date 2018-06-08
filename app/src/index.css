@@ -20,7 +20,10 @@ body {
 
 @media print {
   html {
-    font-size: 75% !important; }
+    font-size: 65% !important; }
+    html #flags,
+    html #footer {
+      display: none; }
     html #infos,
     html #technos {
       padding: 0 10%; }
@@ -30,22 +33,22 @@ body {
       display: block; }
     html #infos p {
       width: 100%;
-      margin: 1rem auto;
       background-color: #F7F7F2;
       border-radius: 25px;
       padding: 1.5rem; }
     html #technos {
-      display: block; }
+      display: block;
+      padding-bottom: 3rem; }
       html #technos .title h3 {
         margin-bottom: 0; }
-      html #technos .list {
-        margin: 0 0 1rem;
-        padding: 0;
-        text-align: left; }
-        html #technos .list .list-elt {
-          margin: 0; }
-          html #technos .list .list-elt .elt {
-            font-size: 0.8rem; }
+    html #experiences {
+      padding-top: 2rem; }
+      html #experiences .timeline-sopra {
+        padding-top: 2rem; }
+      html #experiences .timeline-polytech {
+        padding-top: 2rem; }
+      html #experiences .timeline-list li {
+        margin: 1rem 2rem; }
     html .timeline .elt-li::before {
       left: 4%; }
     html #contact {
