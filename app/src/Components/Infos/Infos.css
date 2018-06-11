@@ -5,8 +5,9 @@
   padding: 0 20%; }
   #infos .info-elt {
     display: none;
+    width: 45%;
     text-align: left;
-    margin: 10px; }
+    margin: 0.5rem; }
     #infos .info-elt i {
       margin: 0.1rem 1rem;
       vertical-align: middle; }

@@ -25,8 +25,7 @@
                         "Jest",
                         "Karma",
                         "Mocha",
-                        "Chai",
-                        "Istanbul"
+                        "sinon"
                     ]
                 },
                 {
@@ -206,8 +205,8 @@
             }
         },
         "recommandations": {
-            "label": "Recommendations",
-            "demande": "Sur demande",
+            "label": "Referees",
+            "demande": "On demand",
             "list": [
                 {
                     "nom": "Thomas Revise",
@@ -251,8 +250,7 @@
                         "Jest",
                         "Karma",
                         "Mocha",
-                        "Chai",
-                        "Istanbul"
+                        "sinon"
                     ]
                 },
                 {
