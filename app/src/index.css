@@ -77,28 +77,73 @@ body {
       display: none; }
   .fr {
     display: inline-block; }
+    .fr h2 {
+      font-size: 2rem; }
+    .fr #header:after {
+      height: 53px !important; }
+    .fr #infos {
+      display: inline-block;
+      width: 70%;
+      padding: 0;
+      float: right; }
+      .fr #infos p {
+        width: 85%;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem auto; }
     .fr #technos {
       display: inline-block;
       width: 30%;
       padding: 0;
-      vertical-align: top; }
+      vertical-align: top;
+      float: left;
+      overflow-y: hidden; }
       .fr #technos .list {
-        width: 100%; }
+        width: 100%;
+        margin: 0; }
+        .fr #technos .list ul {
+          padding: 0; }
+        .fr #technos .list .elt {
+          margin: 0.2rem;
+          padding: 0.1rem 0.5rem; }
     .fr #experiences {
       display: inline-block;
       width: 70%;
-      padding: 0; }
+      padding: 0;
+      float: right;
+      overflow-y: hidden; }
+      .fr #experiences h2 {
+        margin-bottom: 0 !important; }
+      .fr #experiences h3 {
+        margin-top: 5px !important;
+        font-size: 1.2rem; }
+      .fr #experiences h5 {
+        margin-top: 23px !important;
+        font-size: 0.8rem; }
       .fr #experiences .timeline-list {
         margin-top: 0 !important; }
         .fr #experiences .timeline-list li {
           padding-top: 0 !important;
           padding-bottom: 0 !important; }
+        .fr #experiences .timeline-list::before {
+          width: 40px !important;
+          height: 40px !important;
+          border-width: 2px; }
       .fr #experiences .timeline {
         padding-top: 0 !important; }
         .fr #experiences .timeline h3,
         .fr #experiences .timeline h5 {
-          left: 53%; }
+          left: 49%; }
         .fr #experiences .timeline ul li {
-          margin: 1rem !important; }
+          margin: 0.5rem !important;
+          padding: 0rem !important; }
+          .fr #experiences .timeline ul li div {
+            padding: 0.1rem !important; }
+            .fr #experiences .timeline ul li div h4 {
+              margin: 0.1rem;
+              font-size: 1.1rem; }
+        .fr #experiences .timeline span.techno {
+          padding: 0.2rem 0.5rem !important;
+          margin: 0.2rem !important; }
     .fr #recos {
       display: none; } }
