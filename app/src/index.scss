@@ -2,7 +2,6 @@ body {
   margin: 0 !important;
   color: #e6e6e8 !important;
   font-family: 'Raleway', sans-serif;
-  //font-size:62.5% !important;
 
   h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
@@ -40,6 +39,10 @@ body {
     #infos,
     #technos {
       padding: 0 10%;
+    }
+
+    #technos {
+      margin-bottom: 20rem;
     }
 
     #header:after {
@@ -88,6 +91,17 @@ body {
 
     .timeline .elt-li::before {
       left: 4%;
+    }
+
+    #recos {
+
+      .demande {
+        display: none;
+      }
+
+      .reco {
+        display: inline-block;
+      }
     }
 
     #contact {

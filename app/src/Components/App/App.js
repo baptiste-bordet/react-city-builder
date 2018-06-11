@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
 import Experiences from '../Experiences/Experiences';
+import Recommandations from '../Recommandations/Recommandations';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import './App.css';
@@ -30,6 +31,7 @@ class App extends Component {
                 <Infos />
                 <Technos />
                 <Experiences />
+                <Recommandations />
                 <Contact />
                 <Footer />
             </div>

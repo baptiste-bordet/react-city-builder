@@ -27,6 +27,8 @@ body {
     html #infos,
     html #technos {
       padding: 0 10%; }
+    html #technos {
+      margin-bottom: 20rem; }
     html #header:after {
       height: 75px !important; }
     html #infos .info-elt {
@@ -51,5 +53,9 @@ body {
         margin: 1rem 2rem; }
     html .timeline .elt-li::before {
       left: 4%; }
+    html #recos .demande {
+      display: none; }
+    html #recos .reco {
+      display: inline-block; }
     html #contact {
       display: none; } }

@@ -205,6 +205,22 @@
                 ]
             }
         },
+        "recommandations": {
+            "label": "Recommendations",
+            "demande": "Sur demande",
+            "list": [
+                {
+                    "nom": "Thomas Revise",
+                    "title": "Scrum master - Manager of Anakrome",
+                    "mail": "thomas@anakrome.net"
+                },
+                {
+                    "nom": "Jean Marc",
+                    "title": "Lead tech",
+                    "mail": "jean-marc@leadtech.com"
+                }
+            ]
+        },
         "contact": {
             "label": "Contact"
         }
@@ -364,7 +380,64 @@
                         "technos": "JEE 7, Liferay 6, MySQL, HTML, CSS"
                     }
                 ]
+            },
+            "polytechTimeline": {
+                "title": "Polytech'Nantes",
+                "duration": "September 2009 - January 2012",
+                "lieu": "Nantes, France",
+                "list": [
+                    {
+                        "title": "Engineer degree",
+                        "client": "Polytech'Nantes",
+                        "icon": "fas fa-graduation-cap",
+                        "list": [
+                            "French engineering school which provides a five-year engineering degree as a Master of Computer Science (specialized in IS, software and network)"
+                        ]
+                    },
+                    {
+                        "title": "Internship",
+                        "client": "Renison College, University of Waterloo, Canada",
+                        "icon": "fas fa-graduation-cap",
+                        "list": [
+                            "In charge of the conception and realization of a new website for the college"
+                        ],
+                        "technos": "Drupal 7, HTML, CSS"
+                    },
+                    {
+                        "title": "Recherch and development project",
+                        "client": "Polytech'Nantes",
+                        "icon": "fas fa-graduation-cap",
+                        "list": [
+                            "Realized an augmented reality mobile application, using smartphone sensors and camera for detection"
+                        ],
+                        "technos": "SDK Android, librairies OpenCV et OpenGL"
+                    },
+                    {
+                        "title": "Faculty of mathematics",
+                        "client": "Univeristy François Rabelais, Tours",
+                        "icon": "fas fa-graduation-cap",
+                        "list": [
+                            "Two preparatory years of mathematics and computer science"
+                        ]
+                    }
+                ]
             }
+        },
+        "recommandations": {
+            "label": "Recommendations",
+            "demande": "Sur demande",
+            "list": [
+                {
+                    "nom": "Thomas Revise",
+                    "title": "Scrum master - Manager of Anakrome",
+                    "mail": "thomas@anakrome.net"
+                },
+                {
+                    "nom": "Jean Marc",
+                    "title": "Lead tech",
+                    "mail": "jean-marc@leadtech.com"
+                }
+            ]
         },
         "contact": {
             "label": "Contact"
