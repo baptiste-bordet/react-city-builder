@@ -12,20 +12,12 @@ import './App.css';
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.goToPage = this.goToPage.bind(this);
-    }
-
-    goToPage(page) {
-        this.parallax.scrollTo(page);
-    }
-
     render() {
 
+        const className = `app-container ${this.props.data.class}`;
+
         return (
-            <div className="app-container">
+            <div className={className}>
                 <Flags />
                 <Header />
                 <Infos />

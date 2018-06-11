@@ -1,5 +1,6 @@
 {
     "EN": {
+        "class": "en",
         "titre": "Web devloper",
         "infos": {
             "label": "Personal information",
@@ -191,7 +192,7 @@
                         "list": [
                             "Realized an augmented reality mobile application, using smartphone sensors and camera for detection"
                         ],
-                        "technos": "SDK Android, librairies OpenCV et OpenGL"
+                        "technos": "SDK Android, OpenCV and OpenGL librairies"
                     },
                     {
                         "title": "Faculty of mathematics",
@@ -221,10 +222,29 @@
             ]
         },
         "contact": {
-            "label": "Contact"
+            "label": "Contact",
+            "name": {
+                "label": "NAME",
+                "errorEmpty": "The field Name is mandatory",
+                "errorInvalid": "The field Name is not valid"
+            },
+            "email": {
+                "label": "EMAIL",
+                "errorEmpty": "The field Email is mandatory",
+                "errorInvalid": "The field Email is not valid"
+            },
+            "message": {
+                "label": "MESSAGE",
+                "errorEmpty": "The field Message is mandatory"
+            },
+            "send": "Send",
+            "sending": "Sending...",
+            "succes": "Your message has been send"
+
         }
     },
     "FR": {
+        "class": "fr",
         "titre": "Développeur web",
         "infos": {
             "label": "Informations personnelles",
@@ -321,26 +341,25 @@
                         "title": "Front-end developpeur",
                         "client": "PMU",
                         "list": [
-                            "Development, maintenance and evolution of management and account opening web applications",
-                            "Development of transversal login application",
-                            "Development of a money transfer between equestrian and poker wallets application"
+                            "Developpement, maintenance et évolution des applications de gestion et d'ouverture de compte",
+                            "Developpement d'une application de connexion transverse",
+                            "Developpement d'une application de transfert d'argent entre les univers poker et paris"
                         ],
                         "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
                     },
                     {
-                        "title": "Full-stack developer",
+                        "title": "Full-stack developpeur",
                         "client": "Société Générale",
                         "list": [
-                            "Development of a web application that allows professionals to make international bank transfers"
+                            "Développement d'une application permettant aux professionnels d'effectuer des virements internationaux"
                         ],
                         "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
                     },
                     {
-                        "title": "Full-stack developer",
+                        "title": "Full-stack developpeur",
                         "client": "FFT / Roland Garros",
                         "list": [
-                            "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
-                            "In charge of conception and development of the application"
+                            "Conception et développement du nouveau site de billeterie du tournoi de Roland Garros, dans une équipe Scrum de 6 personnes"
                         ],
                         "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
                     }
@@ -351,29 +370,29 @@
                 "duration": "février 2012 - septembre 2015",
                 "list": [
                     {
-                        "title": "Full-stack developer",
+                        "title": "Full-stack developpeur",
                         "client": "RSI",
                         "list": [
-                            "Lead technic developer in a team of 3 people in charge of the development of a batch application to calculate daily indemnities for independent professionals",
-                            "Wrote the technical specifications, made the conception and part of the development with unit tests"
+                            "Lead technique développeur dans une équipe de 3 personnes en charge de la réalisation d'une application batch de calcul d'indemnités journalièrespour les professionnels indépendants",
+                            "Ecriture des spécifications techniques, conception et développement"
                         ],
                         "technos": "Spring Batch, JEE 7, maven, JBoss, Oracle 11G"
                     },
                     {
-                        "title": "Full-stack developer",
+                        "title": "Full-stack developpeur",
                         "client": "Conseil Général des Hauts de Seines",
                         "list": [
-                            "Realized a web application for registration of young student to school canteen. I was in charge of conception, development and test of this application, and I also had a role of Scrum master.",
-                            "Realized a web application for managing transport card request",
-                            "Realized the new intranet for all county employees"
+                            "Réalisation d'une application web d'inscriptionà la restauration scolaire pour les collégiens. En charge de la conception, développement et test de l'application, avec également un rôle de Scrum master.",
+                            "Conception et développement d'une application de gestion des demandes de cartes de transport",
+                            "Développement du nouvel intrant du conseil général pour l'ensemble des employés"
                         ],
                         "technos": "Java 7 / JEE, Groovy, Grails, Liferay 6, MySQL, W4 workflow engine, HTML / CSS"
                     },
                     {
-                        "title": "Full-stack developer",
+                        "title": "Full-stack developpeur",
                         "client": "AFPA",
                         "list": [
-                            "Made evolution of a web application for professional training, in a Scrum team"
+                            "Développement d'évolutions sur une application web d'inscription aux formations pour les professionnels dans une équipe Scrum"
                         ],
                         "technos": "JEE 7, Liferay 6, MySQL, HTML, CSS"
                     }
@@ -381,41 +400,41 @@
             },
             "polytechTimeline": {
                 "title": "Polytech'Nantes",
-                "duration": "September 2009 - January 2012",
+                "duration": "sptembre 2009 - janvier 2012",
                 "lieu": "Nantes, France",
                 "list": [
                     {
-                        "title": "Engineer degree",
+                        "title": "Diplôme d'ingénieur",
                         "client": "Polytech'Nantes",
                         "icon": "fas fa-graduation-cap",
                         "list": [
-                            "French engineering school which provides a five-year engineering degree as a Master of Computer Science (specialized in IS, software and network)"
+                            "Système Informatique, Logiciel et Réseau (option gestion de contenu numérique)"
                         ]
                     },
                     {
-                        "title": "Internship",
+                        "title": "Stage",
                         "client": "Renison College, University of Waterloo, Canada",
                         "icon": "fas fa-graduation-cap",
                         "list": [
-                            "In charge of the conception and realization of a new website for the college"
+                            "Assistant de l'administrateur système, en charge du développement du nouveau site web du Renison College"
                         ],
                         "technos": "Drupal 7, HTML, CSS"
                     },
                     {
-                        "title": "Recherch and development project",
+                        "title": "Projet de recherche et développement",
                         "client": "Polytech'Nantes",
                         "icon": "fas fa-graduation-cap",
                         "list": [
-                            "Realized an augmented reality mobile application, using smartphone sensors and camera for detection"
+                            "Réalisation d'une application mobile de réalité augmenté, utilisation des capteurs et caméras du smartphone"
                         ],
                         "technos": "SDK Android, librairies OpenCV et OpenGL"
                     },
                     {
-                        "title": "Faculty of mathematics",
-                        "client": "Univeristy François Rabelais, Tours",
+                        "title": "Faculté de mathématiques",
+                        "client": "Université François Rabelais, Tours",
                         "icon": "fas fa-graduation-cap",
                         "list": [
-                            "Two preparatory years of mathematics and computer science"
+                            "Deux années préparatoires en mathématiques et informatiques"
                         ]
                     }
                 ]
@@ -438,7 +457,24 @@
             ]
         },
         "contact": {
-            "label": "Contact"
+            "label": "Contact",
+            "name": {
+                "label": "NOM",
+                "errorEmpty": "Le champs Nom est obligatoire",
+                "errorInvalid": "Le champs Nom n'est pas valide"
+            },
+            "email": {
+                "label": "EMAIL",
+                "errorEmpty": "Le champs Email est obligatoire",
+                "errorInvalid": "Le champs Email n'est pas valide"
+            },
+            "message": {
+                "label": "MESSAGE",
+                "errorEmpty": "Le champs Message est obligatoire"
+            },
+            "send": "Envoyer",
+            "sending": "Envoie...",
+            "succes": "Votre message a bien été envoyé"
         }
     }
 }

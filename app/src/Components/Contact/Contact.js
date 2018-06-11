@@ -32,23 +32,23 @@ class Contact extends Component {
         let nomError = '', messageError = '', emailError = '';
 
         if (this.state.nom.length === 0) {
-            nomError = 'Le champ Nom est obligatoire';
+            nomError = this.props.data.name.errorEmpty;
         } else if (!this.state.nom.match(/^[a-zA-Z ]+$/)) {
-            nomError = 'Le champ Nom n\'est pas valide';
+            nomError = this.props.data.name.errorInvalid;
         } else {
             nomError = '';
         }
 
         if (this.state.email.length === 0) {
-            emailError = 'Le champ Email est obligatoire';
+            emailError = this.props.data.email.errorEmpty;
         } else if (!this.state.email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
-            emailError = 'Le champ Email n\'est pas valide';
+            emailError = this.props.data.name.errorInvalid;
         } else {
             emailError = '';
         }
 
         if (this.state.message.length === 0) {
-            messageError = 'Le message est obligatoire';
+            messageError = this.props.data.message.errorEmpty;
         }
 
         this.setState({
@@ -106,14 +106,14 @@ class Contact extends Component {
                 <form onSubmit={this.handleSubmit}>
 
                     <div className="row">
-                        <InputText label="NOM" name="nom" placeholder="Saisir votre nom"
+                        <InputText label={this.props.data.name.label} name="nom"
                                    handleChange={this.handleChange} error={this.state.nomError}/>
-                        <InputText label="EMAIL" name="email" placeholder="Saisir votre adresse email"
+                        <InputText label={this.props.data.email.label} name="email"
                                    handleChange={this.handleChange} error={this.state.emailError}/>
                     </div>
 
                     <div className="row">
-                        <Textarea label="MESSAGE" name="message"
+                        <Textarea label={this.props.data.message.label} name="message"
                                   handleChange={this.handleChange} error={this.state.messageError}/>
                     </div>
 
@@ -125,9 +125,9 @@ class Contact extends Component {
                         />
                         <div className="button-container">
                             {this.state.envoiEnCours ? (
-                                <button type="submit" value="Submit" disabled="disabled"><div className="loader"></div><span> Envoi du message...</span></button>
+                                <button type="submit" value="Submit" disabled="disabled"><div className="loader"></div><span> {this.props.data.sending}</span></button>
                             ) : (
-                                <button type="submit" value="Submit" className="enable"><i className="far fa-envelope"></i>Envoyer</button>
+                                <button type="submit" value="Submit" className="enable"><i className="far fa-envelope"></i>{this.props.data.send}</button>
                             )}
                         </div>
 

@@ -74,4 +74,31 @@ body {
     html #recos .reco {
       display: inline-block; }
     html #contact {
+      display: none; }
+  .fr {
+    display: inline-block; }
+    .fr #technos {
+      display: inline-block;
+      width: 30%;
+      padding: 0;
+      vertical-align: top; }
+      .fr #technos .list {
+        width: 100%; }
+    .fr #experiences {
+      display: inline-block;
+      width: 70%;
+      padding: 0; }
+      .fr #experiences .timeline-list {
+        margin-top: 0 !important; }
+        .fr #experiences .timeline-list li {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important; }
+      .fr #experiences .timeline {
+        padding-top: 0 !important; }
+        .fr #experiences .timeline h3,
+        .fr #experiences .timeline h5 {
+          left: 53%; }
+        .fr #experiences .timeline ul li {
+          margin: 1rem !important; }
+    .fr #recos {
       display: none; } }

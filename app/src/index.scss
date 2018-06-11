@@ -149,4 +149,54 @@ body {
     }
   }
 
+  .fr {
+
+    display: inline-block;
+
+    #technos {
+      display: inline-block;
+      width: 30%;
+      padding: 0;
+      vertical-align: top;
+
+      .list {
+        width: 100%;
+      }
+    }
+
+    #experiences {
+      display: inline-block;
+      width: 70%;
+      padding: 0;
+
+      .timeline-list {
+
+        margin-top: 0 !important;
+
+        li {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      .timeline {
+
+        padding-top: 0 !important;
+
+        h3,
+        h5 {
+          left: 53%;
+        }
+
+        ul li {
+          margin: 1rem !important;
+        }
+      }
+    }
+    
+    #recos {
+      display: none;
+    }
+  }
+
 }
