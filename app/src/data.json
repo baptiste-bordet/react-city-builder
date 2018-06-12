@@ -404,6 +404,7 @@
             "soatTimeline": {
                 "title": "Soat",
                 "duration": "septembre 2015 - aujourd'hui",
+                "lieu": "Paris, France",
                 "list": [
                     {
                         "title": "Front-end developpeur",
@@ -436,6 +437,7 @@
             "sopraTimeline": {
                 "title": "Sopra Steria",
                 "duration": "février 2012 - septembre 2015",
+                "lieu": "Paris, France",
                 "list": [
                     {
                         "title": "Full-stack developpeur",

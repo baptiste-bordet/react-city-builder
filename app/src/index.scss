@@ -35,7 +35,7 @@ body {
     #footer {
       display: none;
     }
-    
+
     #infos,
     #technos {
       padding: 0 10%;
@@ -60,7 +60,8 @@ body {
 
       p {
         width: 100%;
-        background-color: #F7F7F2;
+        background-color: #008291;
+        color: #FFFFFF;
         border-radius: 25px;
         padding: 1.5rem;
       }
@@ -194,7 +195,7 @@ body {
     #hobbies,
     #technos {
       width: 100%;
-      padding: 0 1rem 2rem;
+      padding: 0 1rem 4rem;
       overflow-y: hidden;
       display: block;
 
@@ -216,7 +217,7 @@ body {
     #experiences {
       display: inline-block;
       width: 70%;
-      padding: 0;
+      padding: 0 0 1rem;
       float: right;
       overflow-y: hidden;
 
@@ -234,56 +235,55 @@ body {
         font-size: 0.8rem;
       }
 
-      .timeline-list {
-
-        margin-top: 0 !important;
-
-        li {
-          padding-top: 0 !important;
-          padding-bottom: 0 !important;
-
-          &::before {
-            display: none;
-          }
-        }
-
-        &::before {
-          width: 40px !important;
-          height: 40px !important;
-          border-width: 2px;
-        }
-      }
-
       .timeline {
 
-        padding-top: 0!important;
+        padding-top: 0 !important;
 
         h3,
         h5 {
           left: 49%;
         }
 
-        ul li {
-          margin: 0.5rem !important;
-          padding: 0rem !important;
+        .timeline-list {
 
-          div {
-            padding: 0.1rem !important;
+          margin-top: 0 !important;
 
-            h4 {
-              margin: 0.1rem;
-              font-size: 1.1rem;
+          li {
+            margin: 0.2rem 0.5rem !important;
+            padding: 0rem !important;
+
+            div {
+              padding: 0.1rem !important;
+              text-align: left;
+
+              h4 {
+                margin: 0.1rem;
+                font-size: 1.1rem;
+              }
+            }
+
+            &::before {
+              display: none;
             }
           }
+
+          &::before {
+            width: 40px !important;
+            height: 40px !important;
+            border-width: 2px;
+            margin: 0.8rem 0;
+          }
+
         }
 
         span.techno {
           padding: 0.2rem 0.5rem !important;
-          margin: 0.2rem !important;
+          margin: 0.2rem 4rem !important;
+          width: auto;
         }
       }
     }
-    
+
     #recos {
       display: none;
     }
