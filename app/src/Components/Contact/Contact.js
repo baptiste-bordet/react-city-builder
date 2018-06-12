@@ -70,7 +70,7 @@ class Contact extends Component {
         if (this.isFormValid()) {
             this.setState({ envoiEnCours: true });
 
-            fetch('/api/devis', {
+            fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',

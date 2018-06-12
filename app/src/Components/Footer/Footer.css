@@ -11,3 +11,6 @@
       cursor: pointer; }
   #footer p {
     font-size: 0.8rem; }
+  #footer a {
+    text-decoration: none;
+    color: #e6e6e8; }
