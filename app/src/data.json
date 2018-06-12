@@ -144,9 +144,9 @@
                         "client": "Société Générale",
                         "icon": "fas fa-briefcase",
                         "list": [
-                            "Development of a web application that allows professionals to make international bank transfers"
+                            "Development of a web application that allows professionals to make international bank transfers, in a scrum team of 4 people"
                         ],
-                        "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
+                        "technos": "Backbone / Marionette, Java 7, HTML, CSS"
                     },
                     {
                         "title": "Full-stack developer",
@@ -156,7 +156,7 @@
                             "Realized the new ticket sells website of the Roland Garros tennis tournament, in a scrum team of 6 people",
                             "In charge of conception and development of the application"
                         ],
-                        "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
+                        "technos": "Backbone / Marionette, Play 2.4 (Java 8), HTML, CSS"
                     }
                 ]
             },
@@ -249,9 +249,9 @@
                     "mail": "thomas@anakrome.net"
                 },
                 {
-                    "nom": "Jean Marc",
-                    "title": "Lead tech",
-                    "mail": "jean-marc@leadtech.com"
+                    "nom": "Léa Hammon",
+                    "title": "Scrum master",
+                    "mail": "hammon.lea@gmail.com"
                 }
             ]
         },
@@ -410,9 +410,9 @@
                         "title": "Front-end développeur",
                         "client": "PMU",
                         "list": [
-                            "Developpement, maintenance et évolution des applications de gestion et d'ouverture de compte",
-                            "Developpement d'une application de connexion transverse",
-                            "Developpement d'une application de transfert d'argent entre les univers poker et paris"
+                            "Développement, maintenance et évolution des applications de gestion et d'ouverture de compte",
+                            "Développement d'une application de connexion transverse",
+                            "Développement d'une application de transfert d'argent entre les univers poker et paris"
                         ],
                         "technos": "Backbone / Marionette, HTML, SASS, Jest, NPM, webpack"
                     },
@@ -420,9 +420,9 @@
                         "title": "Full-stack développeur",
                         "client": "Société Générale",
                         "list": [
-                            "Développement d'une application permettant aux professionnels d'effectuer des virements internationaux"
+                            "Développement d'une application permettant aux professionnels d'effectuer des virements internationaux, dans une équipe Scrum de 4 personnes"
                         ],
-                        "technos": "Backbone JS, Marionette JS, Java 7, HTML, CSS"
+                        "technos": "Backbone / Marionette, Java 7, HTML, CSS"
                     },
                     {
                         "title": "Full-stack développeur",
@@ -430,7 +430,7 @@
                         "list": [
                             "Conception et développement du nouveau site de billeterie du tournoi de Roland Garros, dans une équipe Scrum de 6 personnes"
                         ],
-                        "technos": "Backbone JS, Marionette JS, Play 2.4 (Java 8), HTML, CSS"
+                        "technos": "Backbone / Marionette, Play 2.4 (Java 8), HTML, CSS"
                     }
                 ]
             },
@@ -443,7 +443,7 @@
                         "title": "Full-stack développeur",
                         "client": "RSI",
                         "list": [
-                            "Lead technique développeur dans une équipe de 3 personnes en charge de la réalisation d'une application batch de calcul d'indemnités journalièrespour les professionnels indépendants",
+                            "Lead technique développeur dans une équipe de 3 personnes, en charge de la réalisation d'une application batch de calcul d'indemnités journalières pour les professionnels indépendants",
                             "Ecriture des spécifications techniques, conception et développement"
                         ],
                         "technos": "Spring Batch, JEE 7, maven, JBoss, Oracle 11G"
@@ -452,9 +452,9 @@
                         "title": "Full-stack développeur",
                         "client": "Conseil Général des Hauts de Seines",
                         "list": [
-                            "Réalisation d'une application web d'inscriptionà la restauration scolaire pour les collégiens. En charge de la conception, développement et test de l'application, avec également un rôle de Scrum master.",
+                            "Réalisation d'une application web d'inscription à la restauration scolaire pour les collégiens. En charge de la conception, développement et test de l'application, avec également un rôle de Scrum master.",
                             "Conception et développement d'une application de gestion des demandes de cartes de transport",
-                            "Développement du nouvel intrant du conseil général pour l'ensemble des employés"
+                            "Développement du nouvel intranet du conseil général pour l'ensemble des employés"
                         ],
                         "technos": "Java 7 / JEE, Groovy, Grails, Liferay 6, MySQL, W4 workflow engine, HTML / CSS"
                     },
@@ -500,7 +500,7 @@
                         "technos": "SDK Android, librairies OpenCV et OpenGL"
                     },
                     {
-                        "title": "Faculté de mathématiques",
+                        "title": "Faculté de Mathématiques",
                         "client": "Université François Rabelais, Tours",
                         "icon": "fas fa-graduation-cap",
                         "list": [
@@ -520,9 +520,9 @@
                     "mail": "thomas@anakrome.net"
                 },
                 {
-                    "nom": "Jean Marc",
-                    "title": "Lead tech",
-                    "mail": "jean-marc@leadtech.com"
+                    "nom": "Léa Hammon",
+                    "title": "Scrum master",
+                    "mail": "hammon.lea@gmail.com"
                 }
             ]
         },

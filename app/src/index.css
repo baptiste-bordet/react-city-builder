@@ -44,7 +44,7 @@ body {
       background-color: #008291;
       color: #FFFFFF;
       border-radius: 25px;
-      padding: 1.5rem; }
+      padding: 1rem; }
     html #technos {
       display: block;
       padding-bottom: 1rem; }
@@ -96,10 +96,10 @@ body {
       padding: 0;
       float: right; }
       .fr #infos p {
-        width: 90%;
+        width: 95%;
         font-size: 1rem;
         padding: 0.5rem;
-        margin: 0.5rem auto; }
+        margin: 0.5rem 0.5rem auto; }
     .fr .left-side {
       display: inline-block;
       vertical-align: top;
