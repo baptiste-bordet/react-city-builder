@@ -62,3 +62,15 @@
   }
 
 }
+
+@media(max-width: 1100px) {
+
+  #technos {
+    padding: 0 10%;
+
+    .list {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}

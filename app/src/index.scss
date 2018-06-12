@@ -26,6 +26,14 @@ body {
 
 }
 
+@media(max-width: 1100px) {
+
+  html {
+    font-size: 80% !important;
+  }
+
+}
+
 @media print {
 
   html {
@@ -45,6 +53,10 @@ body {
 
       img {
         display: block;
+      }
+
+      h1 {
+        margin-top: 1.5rem;
       }
 
       &:after {

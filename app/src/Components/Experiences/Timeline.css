@@ -135,14 +135,17 @@
 @media (max-width: 1100px) {
   .timeline h3,
   .timeline h5 {
-    left: 35%; }
+    left: 25%; }
+  .timeline h3 {
+    margin-top: 10px;
+    font-size: 1.3rem; }
   .timeline h5 {
-    margin-top: 53px; }
+    margin-top: 38px; }
   .timeline ul li {
     position: relative;
     display: block;
     width: auto;
-    margin: 0.5rem 4rem !important;
+    margin: 0.5rem 1rem !important;
     background: none;
     padding-top: 20px; }
     .timeline ul li::after {
@@ -155,4 +158,6 @@
       .timeline ul li div::before {
         content: none; }
   .timeline ul.timeline-list::before {
-    left: 20%; } }
+    left: 13%;
+    width: 60px;
+    height: 60px; } }

@@ -166,18 +166,23 @@
 
     h3,
     h5 {
-      left: 35%;
+      left: 25%;
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 1.3rem;
     }
 
     h5 {
-      margin-top: 53px;
+      margin-top: 38px;
     }
 
     ul li {
       position: relative;
       display: block;
       width: auto;
-      margin: 0.5rem 4rem !important;
+      margin: 0.5rem 1rem !important;
       background: none;
       padding-top: 20px;
 
@@ -197,9 +202,10 @@
       }
     }
 
-
     ul.timeline-list::before {
-      left: 20%;
+      left: 13%;
+      width: 60px;
+      height: 60px;
     }
 
   }
