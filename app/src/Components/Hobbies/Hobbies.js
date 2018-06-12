@@ -1,32 +1,30 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import List from './List';
+import List from '../Technos/List';
 
-import './Techno.css';
+import './Hobbies.css';
 
-class Techno extends Component {
+class Hobbies extends Component {
 
     render() {
         return (
-            <div id="technos">
+            <div id="hobbies">
                 <h2>{this.props.data.label}</h2>
 
-                <div className="technos-wrapper">
+                <div className="hobbies-wrapper">
                     {this.props.data.list.map((elt) => {
                         return (
                             <List elt={elt} key={elt.label} />
                         )
                     })}
                 </div>
-
             </div>
         );
     }
 }
 
 const mapStateToProps = state => ({
-    data: state.data.technos
+    data: state.data.hobbies
 });
 
-export default connect(mapStateToProps, null)(Techno);
-
+export default connect(mapStateToProps, null)(Hobbies);

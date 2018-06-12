@@ -15,7 +15,7 @@ class Recommandations extends Component {
                 {this.props.data.list.map(reco => {
                     return (
                         <div className="reco">
-                            <i class="fas fa-angle-double-right"></i><h4>{reco.nom}</h4>
+                            <i className="fas fa-angle-double-right"></i><h4>{reco.nom}</h4>
                             <h5>{reco.title}</h5>
                             <span>{reco.mail}</span>
                         </div>

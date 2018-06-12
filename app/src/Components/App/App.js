@@ -4,6 +4,7 @@ import Flags from '../Flags/Flags';
 import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
 import Technos from '../Technos/Technos';
+import Hobbies from '../Hobbies/Hobbies';
 import Experiences from '../Experiences/Experiences';
 import Recommandations from '../Recommandations/Recommandations';
 import Contact from '../Contact/Contact';
@@ -21,7 +22,10 @@ class App extends Component {
                 <Flags />
                 <Header />
                 <Infos />
-                <Technos />
+                <div className="left-side">
+                    <Technos />
+                    <Hobbies />
+                </div>
                 <Experiences />
                 <Recommandations />
                 <Contact />

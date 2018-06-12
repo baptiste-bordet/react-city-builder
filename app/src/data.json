@@ -87,6 +87,40 @@
                 }
             ]
         },
+        "hobbies": {
+            "label": "Activités & intérêts",
+            "list": [
+                {
+                    "label": "Musique",
+                    "icon": "fa-music",
+                    "list": [
+                        "Trompettiste dans un groupe",
+                        "Concerts"
+                    ]
+                },
+                {
+                    "label": "Plongée sous-marine",
+                    "icon": "fa-anchor",
+                    "list": [
+                        "Advanced Open Water",
+                        "Nitrox certification"
+                    ]
+                },
+                {
+                    "label": "Voyages",
+                    "icon": "fa-plane",
+                    "list": [
+                        "Indonésie",
+                        "Costa-Rica",
+                        "Canada",
+                        "Etats-Unis",
+                        "Inde",
+                        "Sri Lanka",
+                        "..."
+                    ]
+                }
+            ]
+        },
         "experiences": {
             "label": "Experiences",
             "soatTimeline": {
@@ -327,6 +361,40 @@
                         "French (native language)",
                         "English (fluent, TOEIC: 890)",
                         "Spanish (basics)"
+                    ]
+                }
+            ]
+        },
+        "hobbies": {
+            "label": "Activités & intérêts",
+            "list": [
+                {
+                    "label": "Musique",
+                    "icon": "fa-music",
+                    "list": [
+                        "Trompettiste dans un groupe",
+                        "Concerts"
+                    ]
+                },
+                {
+                    "label": "Plongée sous-marine",
+                    "icon": "fa-anchor",
+                    "list": [
+                        "Advanced Open Water",
+                        "Nitrox certification"
+                    ]
+                },
+                {
+                    "label": "Voyages",
+                    "icon": "fa-plane",
+                    "list": [
+                        "Indonésie",
+                        "Costa-Rica",
+                        "Canada",
+                        "Etats-Unis",
+                        "Inde",
+                        "Sri Lanka",
+                        "..."
                     ]
                 }
             ]

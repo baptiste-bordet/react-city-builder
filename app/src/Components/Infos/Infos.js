@@ -10,7 +10,7 @@ class Infos extends Component {
             <div id="infos">
 
                 <div className="info-elt">
-                    <i class="far fa-calendar-alt"></i>
+                    <i className="far fa-calendar-alt"></i>
                     {this.props.data.birthdate}
                 </div>
 
@@ -25,7 +25,7 @@ class Infos extends Component {
                 </div>
 
                 <div className="info-elt">
-                    <i class="fas fa-mobile-alt"></i>{this.props.data.tel}
+                    <i className="fas fa-mobile-alt"></i>{this.props.data.tel}
                 </div>
 
                 <p>{this.props.data.apropos}</p>
