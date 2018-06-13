@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 
 const FormValidator = require('./formValidator');
+const MailUtils = require('./mailUtils');
 
 // **********************************************************
 //      Create express app
