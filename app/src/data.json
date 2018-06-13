@@ -271,9 +271,12 @@
                 "label": "MESSAGE",
                 "errorEmpty": "The field Message is mandatory"
             },
+            "captcha": {
+                "error": "The captcha is not valid"
+            },
             "send": "Send",
             "sending": "Sending...",
-            "succes": "Your message has been send"
+            "success": "Your message has been send"
 
         }
     },
@@ -542,9 +545,12 @@
                 "label": "MESSAGE",
                 "errorEmpty": "Le champs Message est obligatoire"
             },
+            "captcha": {
+                "error": "Le captcha n'est pas valide"
+            },
             "send": "Envoyer",
             "sending": "Envoie...",
-            "succes": "Votre message a bien été envoyé"
+            "success": "Votre message a bien été envoyé"
         }
     }
 }

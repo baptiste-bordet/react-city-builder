@@ -19,17 +19,19 @@ class Contact extends Component {
             nomError: '',
             emailError: '',
             messageError: '',
+            captchaError: '',
             envoiEnCours: false
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.onRecaptchaChange = this.onRecaptchaChange.bind(this);
+        this.closeMessage = this.closeMessage.bind(this);
     }
 
     isFormValid() {
 
-        let nomError = '', messageError = '', emailError = '';
+        let nomError = '', messageError = '', emailError = '', captchaError = '';
 
         if (this.state.nom.length === 0) {
             nomError = this.props.data.name.errorEmpty;
@@ -51,13 +53,18 @@ class Contact extends Component {
             messageError = this.props.data.message.errorEmpty;
         }
 
+        if (this.state.captcha === undefined) {
+            captchaError = this.props.data.captcha.error;
+        }
+
         this.setState({
             nomError: nomError,
             emailError: emailError,
-            messageError: messageError
+            messageError: messageError,
+            captchaError: captchaError
         });
 
-        return nomError.length === 0 && messageError.length === 0 && emailError.length === 0
+        return nomError.length === 0 && messageError.length === 0 && emailError.length === 0 && captchaError.length === 0
     }
 
     handleChange(event) {
@@ -98,10 +105,22 @@ class Contact extends Component {
         this.setState({ captcha: captcha });
     }
 
+    closeMessage() {
+        this.setState({ displaySuccess: false });
+    }
+
     render() {
         return (
             <div id="contact">
                 <h2>{this.props.data.label}</h2>
+
+                {this.state.displaySuccess ? (
+                    <div className="sendConfirmation">
+                        <i className="fas fa-check"></i>
+                        <span>{this.props.data.success}</span>
+                        <i onClick={this.closeMessage} className="close fas fa-window-close"></i>
+                    </div>
+                ) : ''}
 
                 <form onSubmit={this.handleSubmit}>
 
@@ -123,6 +142,7 @@ class Contact extends Component {
                             sitekey="6Ldnpl0UAAAAAIyCbP5DFungayLRv__JWnm_zDvG"
                             onChange={this.onRecaptchaChange}
                         />
+
                         <div className="button-container">
                             {this.state.envoiEnCours ? (
                                 <button type="submit" value="Submit" disabled="disabled"><div className="loader"></div><span> {this.props.data.sending}</span></button>
@@ -130,6 +150,8 @@ class Contact extends Component {
                                 <button type="submit" value="Submit" className="enable"><i className="far fa-envelope"></i>{this.props.data.send}</button>
                             )}
                         </div>
+
+                        {this.state.captchaError.length > 0 ? <div className="label-error">{this.state.captchaError}</div> : ''}
 
                     </div>
 

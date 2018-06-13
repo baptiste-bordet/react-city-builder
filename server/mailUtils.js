@@ -9,7 +9,7 @@ module.exports = {
             'message : ' + form.message + '<br/>';
 
         const transporter = nodemailer.createTransport({
-            host: 'smtp.control-air.fr',
+            host: 'smtp.baptistebordet.fr',
             port: 587,
             secure: false, // secure:true for port 465, secure:false for port 587
             auth: {
