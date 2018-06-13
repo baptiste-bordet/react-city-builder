@@ -9,7 +9,7 @@ module.exports = {
             'message : ' + form.message + '<br/>';
 
         const transporter = nodemailer.createTransport({
-            host: 'smtp.baptistebordet.fr',
+            host: 'smtp.control-air.fr',
             port: 587,
             secure: false, // secure:true for port 465, secure:false for port 587
             auth: {
@@ -22,8 +22,8 @@ module.exports = {
         });
 
         const mailOptions = {
-            from: '"Site Baptiste Bordet" <contact@baptistebordet.fr>', // sender address
-            to: 'contact@baptistebordet.fr', // list of receivers
+            from: '"Site Baptiste Bordet" <contact@control-air.fr>', // sender address
+            to: 'baptiste.bordet@gmail.com', // list of receivers
             subject: 'Contact', // Subject line
             html: htmlContent // plain text body
         };
