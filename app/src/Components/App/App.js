@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import CustomHelmet from '../Helmet/Helmet';
 import Flags from '../Flags/Flags';
 import Header from '../Header/Header';
 import Infos from '../Infos/Infos';
@@ -10,6 +11,7 @@ import Recommandations from '../Recommandations/Recommandations';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import './App.css';
+import metadata from '../../metadata/metadata.json';
 
 class App extends Component {
 
@@ -19,6 +21,11 @@ class App extends Component {
 
         return (
             <div className={className}>
+                <CustomHelmet
+                    name={metadata.name}
+                    description={metadata.description}
+                    url={metadata.url}
+                />
                 <Flags />
                 <Header />
                 <Infos />
