@@ -10,7 +10,6 @@ import Experiences from '../Experiences/Experiences';
 import Recommandations from '../Recommandations/Recommandations';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import './App.css';
 import metadata from '../../metadata/metadata.json';
 
 class App extends Component {
@@ -31,9 +30,10 @@ class App extends Component {
                 <Infos />
                 <div className="left-side">
                     <Technos />
-                    <Hobbies />
+                    <Hobbies id="printFRHobbies" />
                 </div>
                 <Experiences />
+                <Hobbies id="hobbies" />
                 <Recommandations />
                 <Contact />
                 <Footer />

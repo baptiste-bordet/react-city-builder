@@ -1,4 +1,20 @@
+.hobbies {
+  color: #F7F7F2;
+  overflow: auto;
+  display: none;
+}
+
 #hobbies {
+  background-color: #008291;
+  display: block;
+
+  li.elt {
+    background-color: #011638 !important;
+  }
+}
+
+#printFRHobbies {
+  background-color: #011638;
 
   li.elt {
     background-color: #008291 !important;

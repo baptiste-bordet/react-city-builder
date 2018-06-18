@@ -88,18 +88,18 @@
             ]
         },
         "hobbies": {
-            "label": "Activities & hobbies",
+            "label": "Special Skills and interests",
             "list": [
                 {
-                    "label": "Musique",
+                    "label": "Music",
                     "icon": "fa-music",
                     "list": [
-                        "Trompettiste dans un groupe",
-                        "Concerts"
+                        "Trumpet player in a band",
+                        "Records / Lives"
                     ]
                 },
                 {
-                    "label": "Plongée",
+                    "label": "Scuba diving",
                     "icon": "fa-anchor",
                     "list": [
                         "Advanced Open Water",
@@ -107,14 +107,14 @@
                     ]
                 },
                 {
-                    "label": "Voyages",
+                    "label": "Travels",
                     "icon": "fa-plane",
                     "list": [
-                        "Indonésie",
+                        "Indonesia",
                         "Costa-Rica",
                         "Canada",
-                        "Etats-Unis",
-                        "Inde",
+                        "USA",
+                        "India",
                         "Sri Lanka",
                         "..."
                     ]

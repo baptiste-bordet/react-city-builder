@@ -1,6 +1,8 @@
-#hobbies,
+.hobbies,
 #technos {
 
+  background-color: #008291;
+  overflow: auto;
   display: block;
   justify-content: center;
   align-items: center;
@@ -65,6 +67,7 @@
 
 @media(max-width: 1100px) {
 
+  #hobbies,
   #technos {
     padding: 0 10%;
 

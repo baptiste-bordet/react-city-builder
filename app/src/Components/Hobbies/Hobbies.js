@@ -8,7 +8,7 @@ class Hobbies extends Component {
 
     render() {
         return (
-            <div id="hobbies">
+            <div id={this.props.id} className="hobbies">
                 <h2>{this.props.data.label}</h2>
 
                 <div className="hobbies-wrapper">

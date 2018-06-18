@@ -83,6 +83,13 @@ body {
       display: none; }
   .en #info p {
     padding: 0.5rem; }
+  .en #hobbies {
+    padding: 0 10% 1rem 10%; }
+    .en #hobbies .title h3 {
+      margin-bottom: 0; }
+    .en #hobbies .list {
+      width: 50%;
+      display: inline-block; }
   .en #experiences {
     padding-top: 0; }
     .en #experiences .timeline ul li div {
@@ -120,20 +127,22 @@ body {
       vertical-align: top;
       float: left;
       width: 27%; }
-    .fr #hobbies,
+    .fr #hobbies {
+      display: none; }
+    .fr #printFRHobbies,
     .fr #technos {
       width: 100%;
       padding: 0 1rem 4rem;
       overflow-y: hidden;
       display: block; }
-      .fr #hobbies .list,
+      .fr #printFRHobbies .list,
       .fr #technos .list {
         width: 100%;
         margin: 0; }
-        .fr #hobbies .list ul,
+        .fr #printFRHobbies .list ul,
         .fr #technos .list ul {
           padding: 0; }
-        .fr #hobbies .list .elt,
+        .fr #printFRHobbies .list .elt,
         .fr #technos .list .elt {
           margin: 0.2rem;
           padding: 0.1rem 0.5rem; }

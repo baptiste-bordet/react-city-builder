@@ -12,7 +12,7 @@ class Header extends Component {
                 <h1>Baptiste Bordet</h1>
                 <h2>{this.props.data.titre}</h2>
 
-                <img src={portrait} />
+                <img src={portrait} alt="portrait" />
             </div>
         );
     }
