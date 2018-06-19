@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import portrait from '../../assets/portrait.png'
 
 import './Header.css';
 
@@ -9,10 +8,7 @@ class Header extends Component {
     render() {
         return (
             <div id="header">
-                <h1>Baptiste Bordet</h1>
-                <h2>{this.props.data.titre}</h2>
-
-                <img src={portrait} alt="portrait" />
+                <h1>City</h1>
             </div>
         );
     }
