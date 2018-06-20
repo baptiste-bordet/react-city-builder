@@ -14,11 +14,13 @@ class Grid extends Component {
 
         return (
             <div id="grid" style={sizeStyle}>
+                {this.props.update}
+
                 {this.props.cells.map((item, i) => {
                     return (
                         item.map((cell, j)  => {
                         return (
-                            <Cell key={`${i}-${j}`} data={cell} x={i} y={j} />
+                            <Cell key={`${i}-${j}`} data={this.props.cells[i][j]} x={i} y={j} />
                         )
                     }))
                 })}
@@ -28,7 +30,10 @@ class Grid extends Component {
 }
 
 const mapStateToProps = state => ({
-    cells: state.cells
+    cells: state.cells,
+    xNbCell: state.xNbCell,
+    yNbCell: state.yNbCell,
+    update: state.update
 });
 
 export default connect(mapStateToProps, null)(Grid);

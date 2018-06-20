@@ -8,9 +8,29 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 
-import form from './redux/reducers';
+import rootReducer from './redux/reducers';
 
-const store = createStore(form);
+const xNbCell = 50;
+const yNbCell = 40;
+const initialCell = {color: '#FFF'};
+
+const initState = () => {
+    let cells = [];
+
+    for (let i=0; i<yNbCell; i++) {
+        cells.push([{}]);
+        for (let j=0; j<xNbCell; j++) {
+            cells[i][j] = initialCell
+        }
+    }
+
+    return {xNbCell: xNbCell, yNbCell: yNbCell, cells: cells}
+};
+
+const store = createStore(
+    rootReducer,
+    initState()
+);
 
 ReactDOM.render(
     <Provider store={store}>

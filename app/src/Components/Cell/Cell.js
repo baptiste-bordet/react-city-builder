@@ -19,11 +19,11 @@ class Cell extends Component {
     render() {
 
         const cellStyle = {
-            color: this.props.data.color
+            backgroundColor: this.props.data.color
         };
 
         return (
-            <div className="cell" style={cellStyle} onClick={this.updateCell}>
+            <div className={`cell ${this.props.x}_${this.props.y}`} style={cellStyle} onClick={this.updateCell}>
             </div>
         );
     }
