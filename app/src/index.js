@@ -11,17 +11,15 @@ import './index.css';
 import rootReducer from './redux/reducers';
 
 const xNbCell = 50;
-const yNbCell = 40;
-const initialCell = {color: '#FFF'};
+const yNbCell = 50;
+const initialCell = {type: 'empty'};
 
 const initState = () => {
-    let cells = [];
+    let cells = new Map();
+    let nbCells = xNbCell * yNbCell;
 
-    for (let i=0; i<yNbCell; i++) {
-        cells.push([{}]);
-        for (let j=0; j<xNbCell; j++) {
-            cells[i][j] = initialCell
-        }
+    for (let i of Array(nbCells).keys()) {
+        cells.set(i, initialCell);
     }
 
     return {xNbCell: xNbCell, yNbCell: yNbCell, cells: cells}

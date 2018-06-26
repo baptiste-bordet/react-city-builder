@@ -12,18 +12,19 @@ class Grid extends Component {
             width: `${this.props.xNbCell*22}px`
         };
 
+        const nbCells = this.props.cells.size;
+
         return (
             <div id="grid" style={sizeStyle}>
                 {this.props.update}
 
-                {this.props.cells.map((item, i) => {
-                    return (
-                        item.map((cell, j)  => {
+                {
+                    [...Array(nbCells)].map((e, i) => {
                         return (
-                            <Cell key={`${i}-${j}`} data={this.props.cells[i][j]} x={i} y={j} />
+                            <Cell key={i} data={this.props.cells.get(i)} id={i} />
                         )
-                    }))
-                })}
+                    })
+                }
             </div>
         );
     }

@@ -13,17 +13,13 @@ class Cell extends Component {
     }
 
     updateCell() {
-        this.props.updateCell(this.props.x, this.props.y, {color: '#000'});
+        this.props.updateCell(this.props.id, {type: 'house_1'});
     }
 
     render() {
 
-        const cellStyle = {
-            backgroundColor: this.props.data.color
-        };
-
         return (
-            <div className={`cell ${this.props.x}_${this.props.y}`} style={cellStyle} onClick={this.updateCell}>
+            <div className={`cell ${this.props.id} ${this.props.data.type}`} onClick={this.updateCell}>
             </div>
         );
     }
