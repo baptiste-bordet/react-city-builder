@@ -9,7 +9,7 @@ class Grid extends Component {
     render() {
 
         const sizeStyle = {
-            width: `${this.props.xNbCell*22}px`
+            width: `${this.props.xNbCell*21}px`
         };
 
         return (

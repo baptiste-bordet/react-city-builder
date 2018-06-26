@@ -1,5 +1,6 @@
 .entity {
   background-color: #c1c1c1;
+  border: 2px solid #c1c1c1;
   border-radius: 4px;
   margin: 1rem;
   padding: 1rem; }
@@ -9,3 +10,6 @@
     height: 20px; }
   .entity.isSelected {
     border: 2px solid darkblue; }
+  .entity:hover {
+    border: 2px solid #000000;
+    cursor: pointer; }

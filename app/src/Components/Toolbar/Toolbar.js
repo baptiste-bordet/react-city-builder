@@ -15,7 +15,7 @@ class Toolbar extends Component {
                         const entity = this.props.entities[e];
 
                         return (
-                            <Entity key={i} entity={entity} isSelected={entity.type === this.props.currentSelection.type} />
+                            <Entity key={i} entity={entity} isSelected={entity.type === this.props.selectedEntity.type} />
                         )
                     })
                 }
@@ -26,7 +26,7 @@ class Toolbar extends Component {
 
 const mapStateToProps = state => ({
     entities: state.entities,
-    currentSelection: state.currentSelection
+    selectedEntity: state.selectedEntity
 });
 
 export default connect(mapStateToProps, null)(Toolbar);

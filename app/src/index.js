@@ -33,7 +33,7 @@ const initState = () => {
         cells: cells,
         money: money,
         entities: entities,
-        currentSelection: entities.house
+        selectedEntity: entities.house
     }
 };
 

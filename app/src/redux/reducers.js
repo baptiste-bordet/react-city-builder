@@ -1,4 +1,4 @@
-import { UPDATE_CELL } from './actions';
+import { UPDATE_CELL, SELECT_ENTITY } from './actions';
 
 const form = (state = {cells: new Map()}, action) => {
 
@@ -7,12 +7,15 @@ const form = (state = {cells: new Map()}, action) => {
             let newState = { ...state };
             let cells = newState.cells;
 
-            cells[action.key] = {type: state.currentSelection.type};
-            newState.money = state.money - state.currentSelection.price;
+            cells[action.key] = {type: state.selectedEntity.type};
+            newState.money = state.money - state.selectedEntity.price;
 
             newState.update = Math.random();
 
             return newState;
+        }
+        case SELECT_ENTITY: {
+            return Object.assign({}, state, {selectedEntity: action.entity});
         }
         default:
             return state;

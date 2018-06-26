@@ -8,14 +8,14 @@ class Dashboard extends Component {
     constructor(props) {
         super(props);
 
-        this.getNbHouse = this.getNbHouse.bind(this);
+        this.getNbEntities = this.getNbEntities.bind(this);
     }
 
-    getNbHouse() {
+    getNbEntities(type) {
         let houseCounter = 0;
 
         Object.keys(this.props.cells).map((cell, i) => {
-            if (this.props.cells[i].type.startsWith('house')) {
+            if (this.props.cells[i].type.startsWith(type)) {
                 houseCounter++;
             }
         });
@@ -27,7 +27,8 @@ class Dashboard extends Component {
         return (
             <div id="dashboard">
                 <p>money : {this.props.money} €</p>
-                <p>houses : {this.getNbHouse()}</p>
+                <p>houses : {this.getNbEntities('house')}</p>
+                <p>shops : {this.getNbEntities('shop')}</p>
             </div>
         );
     }
