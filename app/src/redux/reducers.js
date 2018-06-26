@@ -7,7 +7,9 @@ const form = (state = {cells: new Map()}, action) => {
             let newState = { ...state };
             let cells = newState.cells;
 
-            cells.set(action.key, action.data);
+            cells[action.key] = {type: state.currentSelection.type};
+            newState.money = state.money - state.currentSelection.price;
+
             newState.update = Math.random();
 
             return newState;

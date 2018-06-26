@@ -13,7 +13,7 @@ class Cell extends Component {
     }
 
     updateCell() {
-        this.props.updateCell(this.props.id, {type: 'house_1'});
+        this.props.updateCell(this.props.id);
     }
 
     render() {

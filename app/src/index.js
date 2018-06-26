@@ -11,18 +11,25 @@ import './index.css';
 import rootReducer from './redux/reducers';
 
 const xNbCell = 50;
-const yNbCell = 50;
+const yNbCell = 30;
 const initialCell = {type: 'empty'};
+const money = 10000;
 
 const initState = () => {
-    let cells = new Map();
+    let cells = {};
     let nbCells = xNbCell * yNbCell;
 
     for (let i of Array(nbCells).keys()) {
-        cells.set(i, initialCell);
+        cells[i] = initialCell;
     }
 
-    return {xNbCell: xNbCell, yNbCell: yNbCell, cells: cells}
+    return {
+        xNbCell: xNbCell,
+        yNbCell: yNbCell,
+        cells: cells,
+        money: money,
+        currentSelection: {type: 'house_1', price: 100}
+    }
 };
 
 const store = createStore(

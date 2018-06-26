@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
 
 import './Header.css';
 
@@ -14,8 +13,4 @@ class Header extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    data: state.data
-});
-
-export default connect(mapStateToProps, null)(Header);
+export default Header;

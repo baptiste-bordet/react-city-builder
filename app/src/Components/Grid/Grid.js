@@ -12,16 +12,12 @@ class Grid extends Component {
             width: `${this.props.xNbCell*22}px`
         };
 
-        const nbCells = this.props.cells.size;
-
         return (
             <div id="grid" style={sizeStyle}>
-                {this.props.update}
-
                 {
-                    [...Array(nbCells)].map((e, i) => {
+                    Object.keys(this.props.cells).map((cell, i) => {
                         return (
-                            <Cell key={i} data={this.props.cells.get(i)} id={i} />
+                            <Cell key={i} data={this.props.cells[i]} id={i} />
                         )
                     })
                 }
