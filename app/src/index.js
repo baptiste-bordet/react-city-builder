@@ -14,6 +14,10 @@ const xNbCell = 50;
 const yNbCell = 30;
 const initialCell = {type: 'empty'};
 const money = 10000;
+const entities = {
+  house: { type: 'house_1', price: 100 },
+  shop: { type: 'shop_1', price: 180 }
+};
 
 const initState = () => {
     let cells = {};
@@ -28,7 +32,8 @@ const initState = () => {
         yNbCell: yNbCell,
         cells: cells,
         money: money,
-        currentSelection: {type: 'house_1', price: 100}
+        entities: entities,
+        currentSelection: entities.house
     }
 };
 

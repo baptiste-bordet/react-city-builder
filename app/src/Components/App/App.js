@@ -3,15 +3,19 @@ import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import Grid from '../Grid/Grid';
 import Dashboard from '../Dashboard/Dashboard';
+import Toolbar from '../Toolbar/Toolbar';
+
+import './App.css';
 
 class App extends Component {
 
     render() {
 
         return (
-            <div>
+            <div id="app">
                 <Header />
                 <Dashboard />
+                <Toolbar />
                 <Grid />
             </div>
         );

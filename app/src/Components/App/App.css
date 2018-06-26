@@ -1,0 +1,10 @@
+#app .inline {
+  display: inline-block; }
+
+#app .picto.house_1,
+#app .cell.house_1 {
+  background-image: url("../../assets/house_1.png"); }
+
+#app .picto.shop_1,
+#app .cell.shop_1 {
+  background-image: url("../../assets/shop_1.png"); }
