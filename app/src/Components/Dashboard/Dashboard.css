@@ -13,3 +13,8 @@
     #dashboard p .money_infos {
       font-weight: 400;
       font-size: 0.9rem; }
+  #dashboard .time i {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #F7F7F2;
+    font-size: 0.8rem; }

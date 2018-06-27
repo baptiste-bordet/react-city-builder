@@ -14,7 +14,7 @@ import rootReducer from './redux/reducers';
 const xNbCell = 30;
 const yNbCell = 15;
 const initialCell = {type: 'empty'};
-const loopTime = 2000;
+const loopTime = 5000;
 const moneyValue = 10000;
 const date = moment().format("MMM Do YY");
 const entities = {
