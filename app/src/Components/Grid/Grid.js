@@ -17,7 +17,7 @@ class Grid extends Component {
                 {
                     Object.keys(this.props.cells).map((cell, i) => {
                         return (
-                            <Cell key={i} data={this.props.cells[i]} id={i} />
+                            <Cell key={i} data={this.props.cells[i]} id={i} update={this.props.update} />
                         )
                     })
                 }
@@ -32,5 +32,6 @@ const mapStateToProps = state => ({
     yNbCell: state.yNbCell,
     update: state.update
 });
+
 
 export default connect(mapStateToProps, null)(Grid);

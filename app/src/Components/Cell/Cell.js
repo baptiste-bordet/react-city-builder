@@ -13,7 +13,9 @@ class Cell extends Component {
     }
 
     updateCell() {
-        this.props.updateCell(this.props.id);
+        if (this.props.data.type === 'empty') {
+            this.props.updateCell(this.props.id);
+        }
     }
 
     render() {

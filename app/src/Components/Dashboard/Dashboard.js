@@ -12,15 +12,15 @@ class Dashboard extends Component {
     }
 
     getNbEntities(type) {
-        let houseCounter = 0;
+        let counter = 0;
 
         Object.keys(this.props.cells).map((cell, i) => {
             if (this.props.cells[i].type.startsWith(type)) {
-                houseCounter++;
+                counter++;
             }
         });
 
-        return houseCounter;
+        return counter;
     }
 
     render() {

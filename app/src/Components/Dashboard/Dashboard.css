@@ -5,4 +5,7 @@
   margin: 1rem; }
   #dashboard p {
     margin: 0 1rem;
-    display: inline-block; }
+    display: inline-block;
+    background-color: #008291;
+    padding: 0.2rem 1rem;
+    border-radius: 20px; }

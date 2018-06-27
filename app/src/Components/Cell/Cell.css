@@ -6,6 +6,16 @@
   border-bottom: 1px dotted #c1c1c1; }
   .cell.empty {
     background-color: #FFF; }
-  .cell:hover {
-    background-image: url("../../assets/house_1.png");
-    opacity: 0.2; }
+    .cell.empty:hover {
+      background-image: url("../../assets/house_1.png");
+      opacity: 0.2; }
+  .cell.house_1 {
+    background-image: url("../../assets/house_1.png"); }
+  .cell.shop_1 {
+    background-image: url("../../assets/shop_1.png"); }
+  .cell.road_vertical {
+    background-image: url("../../assets/road_vertical.png"); }
+  .cell.road_horizon {
+    background-image: url("../../assets/road_horizon.png"); }
+  .cell.road_center {
+    background-image: url("../../assets/road_center.png"); }

@@ -4,16 +4,4 @@
     display: inline-block;
   }
 
-  .picto,
-  .cell {
-
-    &.house_1 {
-      background-image: url("../../assets/house_1.png");
-    }
-
-    &.shop_1 {
-      background-image: url("../../assets/shop_1.png");
-    }
-  }
-
 }

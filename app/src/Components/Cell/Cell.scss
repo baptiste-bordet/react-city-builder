@@ -7,10 +7,30 @@
 
   &.empty {
     background-color: #FFF;
+
+    &:hover {
+      background-image: url("../../assets/house_1.png");
+      opacity: 0.2;
+    }
   }
 
-  &:hover {
+  &.house_1 {
     background-image: url("../../assets/house_1.png");
-    opacity: 0.2;
+  }
+
+  &.shop_1 {
+    background-image: url("../../assets/shop_1.png");
+  }
+
+  &.road_vertical {
+    background-image: url("../../assets/road_vertical.png");
+  }
+
+  &.road_horizon {
+    background-image: url("../../assets/road_horizon.png");
+  }
+
+  &.road_center {
+    background-image: url("../../assets/road_center.png");
   }
 }

@@ -1,3 +1,7 @@
 #toolbar {
   display: inline-block;
   vertical-align: top; }
+  #toolbar .picto.house_1 {
+    background-image: url("../../assets/house_1.png"); }
+  #toolbar .picto.shop_1 {
+    background-image: url("../../assets/shop_1.png"); }
