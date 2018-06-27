@@ -1,6 +1,7 @@
 #dashboard {
 
   background-color: #011638;
+  color: #FFFFFF;
   padding: 1rem;
   margin: 1rem 0;
 
@@ -11,7 +12,11 @@
     padding: 0.2rem 1rem;
     border-radius: 20px;
     font-weight: 600;
-    color: #FFFFFF;
+
+    .money_infos {
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
   }
 
 }

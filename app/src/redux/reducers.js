@@ -1,5 +1,6 @@
 import { UPDATE_CELL, SELECT_ENTITY, EXEC_LOOP_TIME } from './actions';
 import GridHelper from './GridHelper';
+import moment from 'moment';
 
 const form = (state = {cells: new Map()}, action) => {
 
@@ -10,7 +11,7 @@ const form = (state = {cells: new Map()}, action) => {
             const type = state.selectedEntity.type === 'road' ? getRoadType(state, action.key) : state.selectedEntity.type;
 
             cells[action.key] = {type: type};
-            newState.money = state.money - state.selectedEntity.price;
+            newState.money.value = state.money.value - state.selectedEntity.price;
 
             newState.cells = updateRoadCells(newState);
             newState.update = Math.random();
@@ -24,12 +25,19 @@ const form = (state = {cells: new Map()}, action) => {
             const reducer = (total, entity) => total + getNbEntities(state, entity.type) * entity.gain;
             const gain = Object.values(state.entities).reduce(reducer, 0);
 
-            const newMoney = state.money + gain;
-            const indice = newMoney > state.money ? 'up' : (newMoney < state.money ? 'down' : 'equal');
+            const oldMoney = state.money.value;
+            const newMoney = oldMoney + gain;
+            const indice = newMoney > oldMoney ? 'up' : (newMoney < oldMoney ? 'down' : 'equal');
+            const diff = newMoney - oldMoney;
+            const newDate = moment(state.date, 'MMM Do YY').add(1, 'd').format('MMM Do YY');
 
             return Object.assign({}, state, {
-                money: newMoney,
-                indice: indice
+                money: {
+                    value: newMoney,
+                    indice: indice,
+                    diff: diff
+                },
+                date: newDate
             });
         }
         default:

@@ -21,3 +21,11 @@
     background-image: url("../../assets/road_center.png"); }
   .cell.vegetation {
     background-image: url("../../assets/vegetation.png"); }
+  .cell .infos {
+    position: absolute;
+    display: none; }
+    .cell .infos:hover {
+      display: block;
+      background-color: #011638;
+      opacity: 0.5;
+      color: #FFFFFF; }

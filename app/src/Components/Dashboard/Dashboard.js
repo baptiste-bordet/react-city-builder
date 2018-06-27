@@ -26,14 +26,15 @@ class Dashboard extends Component {
     render() {
 
         const indiceClass = () => {
-            return this.props.indice === 'equal' ? 'fa-equals' : `fa-arrow-${this.props.indice}`;
+            return this.props.money.indice === 'equal' ? 'fa-equals' : `fa-arrow-${this.props.money.indice}`;
         };
 
         return (
             <div id="dashboard">
-                <p>money : {this.props.money} € <span class={`fas ${indiceClass()}`}></span></p>
+                <p>money : {this.props.money.value} € <span className="money_infos"><span class={`fas ${indiceClass()}`}></span> ({this.props.money.diff})</span></p>
                 <p>houses : {this.getNbEntities('house')}</p>
                 <p>shops : {this.getNbEntities('shop')}</p>
+                <span>{this.props.date}</span>
             </div>
         );
     }
@@ -43,7 +44,7 @@ const mapStateToProps = state => ({
     cells: state.cells,
     update: state.update,
     money: state.money,
-    indice: state.indice
+    date: state.date
 });
 
 export default connect(mapStateToProps, null)(Dashboard);

@@ -22,6 +22,11 @@ class Cell extends Component {
 
         return (
             <div className={`cell ${this.props.id} ${this.props.data.type}`} onClick={this.updateCell}>
+                <div className="infos">
+                    <p className="infos_type">${this.props.data.type}</p>
+                    <p className="infos_people">${this.props.data.people}</p>
+                    <p className="infos_gain">${this.props.data.gain}</p>
+                </div>
             </div>
         );
     }

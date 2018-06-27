@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import moment from 'moment';
 
 import App from './Components/App/App';
 import registerServiceWorker from './registerServiceWorker';
@@ -10,11 +11,12 @@ import './index.css';
 
 import rootReducer from './redux/reducers';
 
-const xNbCell = 40;
-const yNbCell = 20;
+const xNbCell = 30;
+const yNbCell = 15;
 const initialCell = {type: 'empty'};
-const loopTime = 10000;
-const money = 10000;
+const loopTime = 2000;
+const moneyValue = 10000;
+const date = moment().format("MMM Do YY");
 const entities = {
     house: { type: 'house_1', price: 100, gain: 1 },
     shop: { type: 'shop_1', price: 180, gain: 4 },
@@ -34,11 +36,15 @@ const initState = () => {
         xNbCell: xNbCell,
         yNbCell: yNbCell,
         cells: cells,
-        money: money,
-        indice: 'equal',
+        money: {
+            value: moneyValue,
+            indice: 'equal',
+            diff: 0,
+        },
         entities: entities,
         selectedEntity: entities.house,
-        loopTime: loopTime
+        loopTime: loopTime,
+        date: date
     }
 };
 

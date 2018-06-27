@@ -37,4 +37,17 @@
   &.vegetation {
     background-image: url("../../assets/vegetation.png");
   }
+
+  .infos {
+    position: absolute;
+    display: none;
+
+    &:hover {
+      display: block;
+      background-color: #011638;
+      opacity: 0.5;
+      color: #FFFFFF;
+    }
+  }
+
 }
