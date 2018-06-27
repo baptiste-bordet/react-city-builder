@@ -24,9 +24,14 @@ class Dashboard extends Component {
     }
 
     render() {
+
+        const indiceClass = () => {
+            return this.props.indice === 'equal' ? 'fa-equals' : `fa-arrow-${this.props.indice}`;
+        };
+
         return (
             <div id="dashboard">
-                <p>money : {this.props.money} €</p>
+                <p>money : {this.props.money} € <span class={`fas ${indiceClass()}`}></span></p>
                 <p>houses : {this.getNbEntities('house')}</p>
                 <p>shops : {this.getNbEntities('shop')}</p>
             </div>
@@ -37,7 +42,8 @@ class Dashboard extends Component {
 const mapStateToProps = state => ({
     cells: state.cells,
     update: state.update,
-    money: state.money
+    money: state.money,
+    indice: state.indice
 });
 
 export default connect(mapStateToProps, null)(Dashboard);

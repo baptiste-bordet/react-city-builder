@@ -10,15 +10,16 @@ import './index.css';
 
 import rootReducer from './redux/reducers';
 
-const xNbCell = 10;
-const yNbCell = 10;
+const xNbCell = 40;
+const yNbCell = 20;
 const initialCell = {type: 'empty'};
 const loopTime = 10000;
 const money = 10000;
 const entities = {
     house: { type: 'house_1', price: 100, gain: 1 },
     shop: { type: 'shop_1', price: 180, gain: 4 },
-    road: { type: 'road', price: 25, gain: -1 }
+    road: { type: 'road', price: 25, gain: -1 },
+    vegetation: { type: 'vegetation', price: 30, gain: -1 }
 };
 
 const initState = () => {
@@ -34,6 +35,7 @@ const initState = () => {
         yNbCell: yNbCell,
         cells: cells,
         money: money,
+        indice: 'equal',
         entities: entities,
         selectedEntity: entities.house,
         loopTime: loopTime

@@ -24,7 +24,7 @@ class Entity extends Component {
         return (
             <div className={classes} onClick={this.selectEntity} >
                 <span className={`picto inline ${entity.type}`}></span>
-                <p className="inline">{entity.type}</p>
+                <p className="inline type">{entity.type}</p>
                 <p>price : {entity.price} €</p>
             </div>
         );

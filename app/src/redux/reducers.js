@@ -24,7 +24,13 @@ const form = (state = {cells: new Map()}, action) => {
             const reducer = (total, entity) => total + getNbEntities(state, entity.type) * entity.gain;
             const gain = Object.values(state.entities).reduce(reducer, 0);
 
-            return Object.assign({}, state, {money: state.money += gain});
+            const newMoney = state.money + gain;
+            const indice = newMoney > state.money ? 'up' : (newMoney < state.money ? 'down' : 'equal');
+
+            return Object.assign({}, state, {
+                money: newMoney,
+                indice: indice
+            });
         }
         default:
             return state;

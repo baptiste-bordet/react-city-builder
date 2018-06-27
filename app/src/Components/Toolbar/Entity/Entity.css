@@ -1,15 +1,18 @@
 .entity {
-  background-color: #c1c1c1;
-  border: 2px solid #c1c1c1;
+  border: 2px solid #008291;
   border-radius: 4px;
-  margin: 1rem;
-  padding: 1rem; }
+  margin: 0.5rem;
+  padding: 0.2rem; }
+  .entity p {
+    margin: 0; }
+    .entity p.type {
+      font-weight: 600; }
   .entity .picto {
     display: block;
     width: 20px;
     height: 20px; }
   .entity.isSelected {
-    border: 2px solid darkblue; }
+    border: 2px solid #F7F7F2; }
   .entity:hover {
-    border: 2px solid #000000;
+    border: 2px solid #F7F7F2;
     cursor: pointer; }

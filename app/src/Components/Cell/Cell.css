@@ -19,3 +19,5 @@
     background-image: url("../../assets/road_horizon.png"); }
   .cell.road_center {
     background-image: url("../../assets/road_center.png"); }
+  .cell.vegetation {
+    background-image: url("../../assets/vegetation.png"); }

@@ -1,11 +1,12 @@
 #dashboard {
-  border: 1px solid #000;
-  border-radius: 4px;
+  background-color: #011638;
   padding: 1rem;
-  margin: 1rem; }
+  margin: 1rem 0; }
   #dashboard p {
     margin: 0 1rem;
     display: inline-block;
     background-color: #008291;
     padding: 0.2rem 1rem;
-    border-radius: 20px; }
+    border-radius: 20px;
+    font-weight: 600;
+    color: #FFFFFF; }

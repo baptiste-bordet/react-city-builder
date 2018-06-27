@@ -1,7 +1,20 @@
 #toolbar {
   display: inline-block;
-  vertical-align: top; }
-  #toolbar .picto.house_1 {
-    background-image: url("../../assets/house_1.png"); }
-  #toolbar .picto.shop_1 {
-    background-image: url("../../assets/shop_1.png"); }
+  vertical-align: top;
+  background-color: #008291;
+  padding: 1rem 1rem 1rem 0.2rem;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #FFFFFF; }
+  #toolbar .picto {
+    margin: 0.3rem;
+    vertical-align: middle;
+    border-radius: 3px; }
+    #toolbar .picto.house_1 {
+      background-image: url("../../assets/house_1.png"); }
+    #toolbar .picto.shop_1 {
+      background-image: url("../../assets/shop_1.png"); }
+    #toolbar .picto.road {
+      background-image: url("../../assets/road_horizon.png"); }
+    #toolbar .picto.vegetation {
+      background-image: url("../../assets/vegetation.png"); }
