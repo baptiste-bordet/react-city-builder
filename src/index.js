@@ -11,10 +11,9 @@ import './index.css';
 
 import rootReducer from './redux/reducers';
 
-const xNbCell = 300;
-const yNbCell = 150;
+const xNbCell = 30;
+const yNbCell = 15;
 const initialCell = {type: 'empty'};
-const loopTime = 5000;
 const moneyValue = 10000;
 const date = moment().format("MMM Do YY");
 const entities = {
@@ -43,7 +42,6 @@ const initState = () => {
         },
         entities: entities,
         selectedEntity: entities.house,
-        loopTime: loopTime,
         date: date
     }
 };
@@ -55,7 +53,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App loopTime={loopTime} />
+        <App />
     </Provider>,
     document.getElementById('root')
 );

@@ -1,62 +1,54 @@
-import React, {Component} from 'react';
+import * as React from "react";
 import { connect } from 'react-redux';
 import { addTime, setTime } from "../../redux/actions";
 
 import './Dashboard.css';
+import { LOOP_TIME } from "../../constants";
 
-class Dashboard extends Component {
+const Dashboard = ({ cells, date, money, setTimeFn, addTimeFn }) => {
 
-    constructor(props) {
-        super(props);
-
-        this.getNbEntities = this.getNbEntities.bind(this);
-        this.setTime = this.setTime.bind(this);
-    }
-
-    getNbEntities(type) {
+    const getNbEntities = (type) => {
         let counter = 0;
 
-        Object.keys(this.props.cells).map((cell, i) => {
-            if (this.props.cells[i].type.startsWith(type)) {
+        Object.keys(cells).map((cell, i) => {
+            if (cells[i].type.startsWith(type)) {
                 counter++;
             }
         });
 
         return counter;
-    }
+    };
 
-    setTime() {
-        if (this.props.loopTime === 99999999) {
-            this.props.setTime(10000);
+    const setTime = () => {
+        if (LOOP_TIME === 99999999) {
+            setTimeFn(10000);
         } else {
-            this.props.setTime(99999999);
+            setTimeFn(99999999);
         }
-    }
+    };
 
-    render() {
+    const indiceClass = () => {
+        return money.indice === 'equal' ? 'fa-equals' : `fa-arrow-${money.indice}`;
+    };
 
-        const indiceClass = () => {
-            return this.props.money.indice === 'equal' ? 'fa-equals' : `fa-arrow-${this.props.money.indice}`;
-        };
+    const timeClass = () => {
+        return LOOP_TIME === 99999999 ? 'fa-play' : 'fa-pause';
+    };
 
-        const timeClass = () => {
-            return this.props.loopTime === 99999999 ? 'fa-play' : 'fa-pause';
-        };
-
-        return (
-            <div id="dashboard">
-                <p>money : {this.props.money.value} € <span className="money_infos"><span class={`fas ${indiceClass()}`}></span> ({this.props.money.diff})</span></p>
-                <p>houses : {this.getNbEntities('house')}</p>
-                <p>shops : {this.getNbEntities('shop')}</p>
-                <span>{this.props.date}</span>
-                {/*<div className="time inline">
-                    <i onClick={this.props.addTime(5000)} className="fas fa-backward"></i>
-                    <i onClick={this.setTime()} className={`fas ${timeClass()}`}></i>
-                    <i onClick={this.props.addTime(-5000)} className="fas fa-forward"></i>
-                </div>*/}
-            </div>
-        );
-    }
+    return (
+        <div id="dashboard">
+            <p>money : {money.value} € <span className="money_infos"><span
+                class={`fas ${indiceClass()}`}></span> ({money.diff})</span></p>
+            <p>houses : {getNbEntities('house')}</p>
+            <p>shops : {getNbEntities('shop')}</p>
+            <span>{date}</span>
+            {/*<div className="time inline">
+                <i onClick={this.props.addTime(5000)} className="fas fa-backward"></i>
+                <i onClick={this.setTime()} className={`fas ${timeClass()}`}></i>
+                <i onClick={this.props.addTime(-5000)} className="fas fa-forward"></i>
+            </div>*/}
+        </div>
+    );
 }
 
 const mapStateToProps = state => ({
@@ -66,9 +58,9 @@ const mapStateToProps = state => ({
     date: state.date
 });
 
-const mapDispatchToProps = {
-    setTime,
-    addTime
-};
+const mapDispatchToProps = (dispatch) => ({
+    setTimeFn: () => dispatch(setTime()),
+    addTimeFn: () => dispatch(addTime())
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

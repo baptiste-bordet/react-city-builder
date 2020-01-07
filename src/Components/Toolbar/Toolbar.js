@@ -1,28 +1,26 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import { connect } from 'react-redux';
 import Entity from './Entity/Entity';
 
 import './Toolbar.css';
 
-class Toolbar extends Component {
+const Toolbar = ({ entities, selectedEntity }) => {
 
-    render() {
-        return (
-            <div id="toolbar">
-                {
-                    Object.keys(this.props.entities).map((e, i) => {
+    return (
+        <div id="toolbar">
+            {
+                Object.keys(entities).map((e, i) => {
 
-                        const entity = this.props.entities[e];
+                    const entity = entities[e];
 
-                        return (
-                            <Entity key={i} entity={entity} isSelected={entity.type === this.props.selectedEntity.type} />
-                        )
-                    })
-                }
-            </div>
-        );
-    }
-}
+                    return (
+                        <Entity key={i} entity={entity} isSelected={entity.type === selectedEntity.type}/>
+                    )
+                })
+            }
+        </div>
+    );
+};
 
 const mapStateToProps = state => ({
     entities: state.entities,

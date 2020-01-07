@@ -1,30 +1,27 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import { connect } from 'react-redux';
 import Cell from '../Cell/Cell';
 
 import './Grid.css';
 
-class Grid extends Component {
+const Grid = ({ cells, xNbCell, yNbCell, update }) => {
 
-    render() {
+    const sizeStyle = {
+        width: `${xNbCell*21}px`
+    };
 
-        const sizeStyle = {
-            width: `${this.props.xNbCell*21}px`
-        };
-
-        return (
-            <div id="grid" style={sizeStyle}>
-                {
-                    Object.keys(this.props.cells).map((cell, i) => {
-                        return (
-                            <Cell key={i} data={this.props.cells[i]} id={i} update={this.props.update} />
-                        )
-                    })
-                }
-            </div>
-        );
-    }
-}
+    return (
+        <div id="grid" style={sizeStyle}>
+            {
+                Object.keys(cells).map((cell, i) => {
+                    return (
+                        <Cell key={i} data={cells[i]} id={i} update={update} />
+                    )
+                })
+            }
+        </div>
+    );
+};
 
 const mapStateToProps = state => ({
     cells: state.cells,

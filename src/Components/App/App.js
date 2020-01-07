@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import * as React from "react";
+import { useEffect } from "react";
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import Grid from '../Grid/Grid';
@@ -7,32 +8,28 @@ import Toolbar from '../Toolbar/Toolbar';
 import { execLoopTime } from "../../redux/actions";
 
 import './App.css';
+import { LOOP_TIME } from "../../constants";
 
-class App extends Component {
+const App = ({ execLoopTimeFn }) => {
 
-    constructor(props) {
-        super(props);
-
+    useEffect(() => {
         setInterval(() => {
-            this.props.execLoopTime();
-        }, this.props.loopTime);
-    }
+            execLoopTimeFn();
+        }, LOOP_TIME);
+    }, []);
 
-    render() {
-
-        return (
-            <div id="app">
-                <Header />
-                <Dashboard />
-                <Toolbar />
-                <Grid />
-            </div>
-        );
-    }
-}
-
-const mapDispatchToProps = {
-    execLoopTime
+    return (
+        <div id="app">
+            <Header/>
+            <Dashboard/>
+            <Toolbar/>
+            <Grid/>
+        </div>
+    );
 };
+
+const mapDispatchToProps = (dispatch) => ({
+    execLoopTimeFn: () => dispatch(execLoopTime())
+});
 
 export default connect(null, mapDispatchToProps)(App);

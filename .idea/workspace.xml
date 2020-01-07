@@ -2,59 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3f33df-4bfe-407f-b723-5d4b322c4beb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/city-game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/App/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Cell/Cell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Cell/Cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Cell/Cell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Dashboard/Dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Grid/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Grid/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Grid/Grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Entity/Entity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Entity/Entity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Entity/Entity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Components/Toolbar/Toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/house_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/house_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/road_center.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/road_center.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/road_horizon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/road_horizon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/road_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/road_vertical.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/shop_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/shop_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/vegetation.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/vegetation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/metadata/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/redux/GridHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GridHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/redux/GridHelper.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GridHelper.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitbucket-pipelines.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/formValidator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mailUtils.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Grid/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +30,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578376856528</updated>
-      <workItem from="1578376857673" duration="576000" />
+      <workItem from="1578376857673" duration="1003000" />
+      <workItem from="1578377894349" duration="1685000" />
     </task>
     <servers />
   </component>
@@ -115,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
