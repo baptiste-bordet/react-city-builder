@@ -12,34 +12,8 @@ export const SET_TIME = 'SET_TIME';
  * action creators
  */
 
-export function updateCell(key) {
-    return {
-        type: UPDATE_CELL,
-        key: key
-    }
-};
-
-export function selectEntity(entity) {
-    return {
-        type: SELECT_ENTITY,
-        entity: entity
-    }
-};
-
-export function execLoopTime() {
-    return {
-        type: EXEC_LOOP_TIME
-    }
-};
-
-export function addTime() {
-    return {
-        type: ADD_TIME
-    }
-};
-
-export function setTime() {
-    return {
-        type: SET_TIME
-    }
-};
+export const updateCell = (key) => ({ type: UPDATE_CELL, key });
+export const selectEntity = (entity) => ({ type: EXEC_LOOP_TIME, entity });
+export const execLoopTime = () => ({ type: EXEC_LOOP_TIME });
+export const addTime = () => ({ type: ADD_TIME });
+export const setTime = () => ({ type: SET_TIME });

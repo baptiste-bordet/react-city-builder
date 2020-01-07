@@ -1,45 +1,49 @@
-import { UPDATE_CELL, SELECT_ENTITY, EXEC_LOOP_TIME } from './actions';
-import GridHelper from './GridHelper';
+import { EXEC_LOOP_TIME, SELECT_ENTITY, UPDATE_CELL } from './actions';
+import { produce } from "immer";
+
+import GridHelper from '../utils/GridHelper';
 import moment from 'moment';
 
-const form = (state = {cells: new Map()}, action) => {
+const initialState = { cells: new Map() };
+
+const form = (state = initialState, action) => {
 
     switch (action.type) {
-        case UPDATE_CELL: {
-            let newState = { ...state };
-            let cells = newState.cells;
-            const type = state.selectedEntity.type === 'road' ? getRoadType(state, action.key) : state.selectedEntity.type;
+        case UPDATE_CELL:
+            return produce(state, (draft) => {
+                const type = draft.selectedEntity.type === 'road' ? getRoadType(draft, action.key) : draft.selectedEntity.type;
 
-            cells[action.key] = {type: type};
-            newState.money.value = state.money.value - state.selectedEntity.price;
+                draft.cells[action.key] = { type: type };
+                draft.money.value = state.money.value - state.selectedEntity.price;
 
-            newState.cells = updateRoadCells(newState);
-            newState.update = Math.random();
+                draft.cells = updateRoadCells(draft);
+                draft.update = Math.random();
 
-            return newState;
-        }
+                return draft;
+            });
         case SELECT_ENTITY: {
-            return Object.assign({}, state, {selectedEntity: action.entity});
+            return Object.assign({}, state, { selectedEntity: action.entity });
         }
-        case EXEC_LOOP_TIME: {
-            const reducer = (total, entity) => total + getNbEntities(state, entity.type) * entity.gain;
-            const gain = Object.values(state.entities).reduce(reducer, 0);
+        case EXEC_LOOP_TIME:
+            return produce(state, (draft) => {
+                const reducer = (total, entity) => total + getNbEntities(state, entity.type) * entity.gain;
+                const gain = Object.values(state.entities).reduce(reducer, 0);
 
-            const oldMoney = state.money.value;
-            const newMoney = oldMoney + gain;
-            const indice = newMoney > oldMoney ? 'up' : (newMoney < oldMoney ? 'down' : 'equal');
-            const diff = newMoney - oldMoney;
-            const newDate = moment(state.date, 'MMM Do YY').add(1, 'd').format('MMM Do YY');
+                const oldMoney = state.money.value;
+                const newMoney = oldMoney + gain;
+                const indice = newMoney > oldMoney ? 'up' : (newMoney < oldMoney ? 'down' : 'equal');
+                const diff = newMoney - oldMoney;
 
-            return Object.assign({}, state, {
-                money: {
+                draft.money = {
                     value: newMoney,
                     indice: indice,
                     diff: diff
-                },
-                date: newDate
+                };
+
+                draft.date = moment(state.date, 'MMM Do YY').add(1, 'd').format('MMM Do YY');
+
+                return draft;
             });
-        }
         default:
             return state;
     }
@@ -83,9 +87,9 @@ const getRoadType = (state, cellId) => {
     }
 
     if (nearIdRoad.length === 2) {
-        if (nearIdRoad[0] === cellId-1 && nearIdRoad[1] === cellId+1) {
+        if (nearIdRoad[0] === cellId - 1 && nearIdRoad[1] === cellId + 1) {
             roadType = 'road_horizon';
-        } else if (nearIdRoad[0] === cellId-state.xNbCell && nearIdRoad[1] === cellId+state.xNbCell) {
+        } else if (nearIdRoad[0] === cellId - state.xNbCell && nearIdRoad[1] === cellId + state.xNbCell) {
             roadType = 'road_vertical';
         } else {
             roadType = 'road_center';
@@ -93,10 +97,10 @@ const getRoadType = (state, cellId) => {
     }
 
     if (nearIdRoad.length === 1) {
-        if (nearIdRoad[0] === cellId+1 || nearIdRoad[0] === cellId-1) {
+        if (nearIdRoad[0] === cellId + 1 || nearIdRoad[0] === cellId - 1) {
             roadType = 'road_horizon';
         }
-        if (nearIdRoad[0] === cellId+state.xNbCell || nearIdRoad[0] === cellId-state.xNbCell) {
+        if (nearIdRoad[0] === cellId + state.xNbCell || nearIdRoad[0] === cellId - state.xNbCell) {
             roadType = 'road_vertical';
         }
     }

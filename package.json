@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.1",
+    "immer": "^5.1.0",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "node-sass-chokidar": "0.0.3",
