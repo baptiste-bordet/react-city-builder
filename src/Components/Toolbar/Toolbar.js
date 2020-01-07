@@ -3,16 +3,17 @@ import { connect } from 'react-redux';
 import Entity from './Entity/Entity';
 
 import './Toolbar.css';
+import { ENTITIES } from "../../constants";
 
-const Toolbar = ({ entities, selectedEntity }) => {
+const Toolbar = ({ selectedEntity }) => {
 
     return (
         <div id="toolbar">
             {
-                Object.keys(entities).map((e, i) => {
-                    const entity = entities[e];
+                Object.keys(ENTITIES).map((e, i) => {
+                    const entity = ENTITIES[e];
                     return (
-                        <Entity key={i} entity={entity} isSelected={entity.type === selectedEntity.type}/>
+                        <Entity key={i} entity={entity} isSelected={entity.type === selectedEntity}/>
                     )
                 })
             }
@@ -21,7 +22,6 @@ const Toolbar = ({ entities, selectedEntity }) => {
 };
 
 const mapStateToProps = state => ({
-    entities: state.entities,
     selectedEntity: state.selectedEntity
 });
 

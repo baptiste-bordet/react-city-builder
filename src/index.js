@@ -16,12 +16,6 @@ const yNbCell = 15;
 const initialCell = {type: 'empty'};
 const moneyValue = 10000;
 const date = moment().format("MMM Do YY");
-const entities = {
-    house: { type: 'house_1', price: 100, gain: 1 },
-    shop: { type: 'shop_1', price: 180, gain: 4 },
-    road: { type: 'road', price: 25, gain: -1 },
-    vegetation: { type: 'vegetation', price: 30, gain: -1 }
-};
 
 const initState = () => {
     let cells = {};
@@ -40,8 +34,7 @@ const initState = () => {
             indice: 'equal',
             diff: 0,
         },
-        entities: entities,
-        selectedEntity: entities.house,
+        selectedEntity: 'house_1',
         date: date
     }
 };

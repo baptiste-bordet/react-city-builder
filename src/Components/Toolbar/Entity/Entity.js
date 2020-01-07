@@ -1,38 +1,24 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import React from 'react';
+import { connect } from 'react-redux';
 import { selectEntity } from "../../../redux/actions";
 
 import './Entity.css';
 
-class Entity extends Component {
+const Entity = ({ entity, isSelected, selectEntityFn }) => {
 
-    constructor(props) {
-        super(props);
+    const classes = `entity ${isSelected ? 'isSelected' : ''}`;
 
-        this.selectEntity = this.selectEntity.bind(this);
-    }
-
-    selectEntity() {
-        this.props.selectEntity(this.props.entity);
-    }
-
-    render() {
-
-        const classes = `entity ${this.props.isSelected ? 'isSelected' : ''}`;
-        const entity = this.props.entity;
-
-        return (
-            <div className={classes} onClick={this.selectEntity} >
-                <span className={`picto inline ${entity.type}`}></span>
-                <p className="inline type">{entity.type}</p>
-                <p>price : {entity.price} €</p>
-            </div>
-        );
-    }
+    return (
+        <div className={classes} onClick={() => selectEntityFn(entity.type)}>
+            <span className={`picto inline ${entity.type}`}/>
+            <p className="inline type">{entity.type}</p>
+            <p>price : {entity.price} €</p>
+        </div>
+    );
 }
 
-const mapDispatchToProps = {
-    selectEntity
-};
+const mapDispatchToProps = (dispatch) => ({
+    selectEntityFn: (type) => dispatch(selectEntity(type))
+});
 
 export default connect(null, mapDispatchToProps)(Entity);

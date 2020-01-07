@@ -3,6 +3,7 @@ import { produce } from "immer";
 
 import GridHelper from '../utils/GridHelper';
 import moment from 'moment';
+import { ENTITIES } from "../constants";
 
 const initialState = { cells: new Map() };
 
@@ -11,10 +12,10 @@ const form = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_CELL:
             return produce(state, (draft) => {
-                const type = draft.selectedEntity.type === 'road' ? getRoadType(draft, action.key) : draft.selectedEntity.type;
+                const type = draft.selectedEntity === 'road' ? getRoadType(draft, action.key) : draft.selectedEntity;
 
                 draft.cells[action.key] = { type: type };
-                draft.money.value = state.money.value - state.selectedEntity.price;
+                draft.money.value = state.money.value - Object.values(ENTITIES).find(entity => entity.type === state.selectedEntity).price;
 
                 draft.cells = updateRoadCells(draft);
                 draft.update = Math.random();
@@ -27,7 +28,7 @@ const form = (state = initialState, action) => {
         case EXEC_LOOP_TIME:
             return produce(state, (draft) => {
                 const reducer = (total, entity) => total + getNbEntities(state, entity.type) * entity.gain;
-                const gain = Object.values(state.entities).reduce(reducer, 0);
+                const gain = Object.values(ENTITIES).reduce(reducer, 0);
 
                 const oldMoney = state.money.value;
                 const newMoney = oldMoney + gain;
@@ -35,9 +36,7 @@ const form = (state = initialState, action) => {
                 const diff = newMoney - oldMoney;
 
                 draft.money = {
-                    value: newMoney,
-                    indice: indice,
-                    diff: diff
+                    value: newMoney, indice: indice, diff: diff
                 };
 
                 draft.date = moment(state.date, 'MMM Do YY').add(1, 'd').format('MMM Do YY');
