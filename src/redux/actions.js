@@ -13,7 +13,7 @@ export const SET_TIME = 'SET_TIME';
  */
 
 export const updateCell = (key) => ({ type: UPDATE_CELL, key });
-export const selectEntity = (entity) => ({ type: EXEC_LOOP_TIME, entity });
+export const selectEntity = (entity) => ({ type: SELECT_ENTITY, entity });
 export const execLoopTime = () => ({ type: EXEC_LOOP_TIME });
 export const addTime = () => ({ type: ADD_TIME });
 export const setTime = () => ({ type: SET_TIME });

@@ -10,9 +10,7 @@ const Toolbar = ({ entities, selectedEntity }) => {
         <div id="toolbar">
             {
                 Object.keys(entities).map((e, i) => {
-
                     const entity = entities[e];
-
                     return (
                         <Entity key={i} entity={entity} isSelected={entity.type === selectedEntity.type}/>
                     )
