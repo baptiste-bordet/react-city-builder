@@ -30,12 +30,12 @@ const Dashboard = ({ cells, money, date }: any) => {
 
     return (
         <div id="dashboard">
-            <p>money : {money.value} € <span className="money_infos">
+            <div className={"date"}>{date}</div>
+            <p>money : {money.value} € <span className={`money-infos ${money.indice}`}>
                 <span className={`fas ${indiceClass()}`}/> ({money.diff})</span>
             </p>
             <p>houses : {getNbEntities(EEntityType.HOUSE)}</p>
             <p>shops : {getNbEntities(EEntityType.SHOP)}</p>
-            <span>{date}</span>
             {/*<div className="time inline">
                 <i onClick={this.props.addTime(5000)} className="fas fa-backward"></i>
                 <i onClick={this.setTime()} className={`fas ${timeClass()}`}></i>

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw; }
   #app .grid-wrapper {
     display: flex; }

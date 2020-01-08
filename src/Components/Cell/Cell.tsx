@@ -21,8 +21,12 @@ const Cell = ({ updateCellFn, cell, id }: ICellProps) => {
         }
     };
 
+    const getCellClass = () => {
+        return cell.orientation ? `${cell.type.split('_')[0]}_${cell.orientation}` : cell.type;
+    };
+
     return (
-        <div className={`cell ${id} ${cell.type}`} onClick={updateCell}>
+        <div className={`cell ${id} ${getCellClass()}`} onClick={updateCell}>
             <div className="infos">
                 <p className="infos_type">${cell.type}</p>
                 <p className="infos_people">${cell.people}</p>

@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3f33df-4bfe-407f-b723-5d4b322c4beb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/road_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/gameUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Grid/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Grid/Grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Grid/Grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Entity/Entity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Toolbar/Toolbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
@@ -38,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -48,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -78,12 +70,22 @@
       <option name="presentableId" value="Default" />
       <updated>1578376856528</updated>
       <workItem from="1578376857673" duration="1003000" />
-      <workItem from="1578377894349" duration="23165000" />
+      <workItem from="1578377894349" duration="26190000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

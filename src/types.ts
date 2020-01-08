@@ -12,10 +12,10 @@ export enum EDiff {
     EQUAL = 'equal'
 }
 
-export enum ERoadType {
-    HORIZON,
-    CENTER,
-    VERTICAL
+export enum EOrientation {
+    HORIZON = 'horizon',
+    CENTER = 'center',
+    VERTICAL = 'vertical'
 }
 
 export interface IState {
@@ -28,8 +28,8 @@ export interface IState {
 
 export interface ICell {
     type: EEntityType,
-    // displayType: any,
-    people: number
+    people: number,
+    orientation?: EOrientation
 }
 
 export interface IEntity {

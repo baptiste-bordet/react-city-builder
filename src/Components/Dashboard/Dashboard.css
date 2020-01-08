@@ -1,7 +1,11 @@
 #dashboard {
   color: #FFFFFF;
   padding: 0 1rem 1rem 0;
-  margin-left: 120px; }
+  display: flex; }
+  #dashboard .date {
+    min-width: 120px;
+    display: flex;
+    justify-content: center; }
   #dashboard p {
     margin: 0 1rem;
     display: inline-block;
@@ -9,9 +13,13 @@
     padding: 0.2rem 0.6rem;
     border-radius: 20px;
     font-weight: 600; }
-    #dashboard p .money_infos {
+    #dashboard p .money-infos {
       font-weight: 400;
       font-size: 0.9rem; }
+      #dashboard p .money-infos.up {
+        color: lightgreen; }
+      #dashboard p .money-infos.down {
+        color: lightcoral; }
   #dashboard .time i {
     margin-left: 0.5rem;
     cursor: pointer;
