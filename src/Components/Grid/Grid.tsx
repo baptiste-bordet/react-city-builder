@@ -13,7 +13,8 @@ interface IGrid {
 const Grid = ({ cells }: any) => {
 
     const sizeStyle = {
-        width: `${X_NB_CELL * 21}px`
+        minWidth: `${X_NB_CELL * 21}px`,
+        maxWidth: `${X_NB_CELL * 21}px`
     };
 
     return (

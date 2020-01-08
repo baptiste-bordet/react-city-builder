@@ -4,11 +4,9 @@
   display: inline-block;
   border-right: 1px dotted #c1c1c1;
   border-bottom: 1px dotted #c1c1c1; }
-  .cell.empty {
-    background-color: #FFF; }
-    .cell.empty:hover {
-      background-image: url("../../assets/house_1.png");
-      opacity: 0.2; }
+  .cell.empty:hover {
+    background-image: url("../../assets/house_1.png");
+    opacity: 0.2; }
   .cell.house_1 {
     background-image: url("../../assets/house_1.png"); }
   .cell.shop_1 {

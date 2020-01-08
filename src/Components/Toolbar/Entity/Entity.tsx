@@ -19,7 +19,7 @@ const Entity = ({ entity, isSelected, selectEntityFn }: IEntityProps) => {
     return (
         <div className={classes} onClick={() => selectEntityFn(entity.type)}>
             <span className={`picto inline ${entity.type}`}/>
-            <p className="inline type">{entity.type}</p>
+            <p className="inline type">{entity.label}</p>
             <p>price : {entity.price} €</p>
         </div>
     );

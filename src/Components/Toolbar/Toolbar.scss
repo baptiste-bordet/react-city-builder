@@ -1,34 +1,30 @@
 #toolbar {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #008291;
-  padding: 1rem 1rem 1rem 0.2rem;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  color: #FFFFFF;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0.2rem;
+    color: #FFFFFF;
+    min-width: 120px;
 
-  .picto {
+    .picto {
+        margin: 0.3rem;
+        vertical-align: middle;
 
-    margin: 0.3rem;
-    vertical-align: middle;
-    border-radius: 3px;
+        &.house_1 {
+            background-image: url("../../assets/house_1.png");
+        }
 
-    &.house_1 {
-      background-image: url("../../assets/house_1.png");
+        &.shop_1 {
+            background-image: url("../../assets/shop_1.png");
+        }
+
+        &.road {
+            background-image: url("../../assets/road_horizon.png");
+        }
+
+        &.vegetation_1 {
+            background-image: url("../../assets/vegetation_1.png");
+        }
+
     }
-
-    &.shop_1 {
-      background-image: url("../../assets/shop_1.png");
-    }
-
-    &.road {
-      background-image: url("../../assets/road_horizon.png");
-    }
-
-    &.vegetation_1 {
-      background-image: url("../../assets/vegetation_1.png");
-    }
-
-  }
 
 }

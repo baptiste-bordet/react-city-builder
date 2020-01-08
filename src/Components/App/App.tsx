@@ -25,10 +25,12 @@ const App = ({execLoopTimeFn}: IApp) => {
 
     return (
         <div id="app">
-            <Header/>
+            {/*<Header/>*/}
             <Dashboard/>
-            <Toolbar/>
-            <Grid/>
+            <div className={"grid-wrapper"}>
+                <Toolbar/>
+                <Grid/>
+            </div>
         </div>
     );
 };

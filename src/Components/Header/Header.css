@@ -1,2 +1,4 @@
-#header h1 {
-  margin-left: 2rem; }
+#header {
+  padding: 2rem; }
+  #header h1 {
+    margin: 0; }

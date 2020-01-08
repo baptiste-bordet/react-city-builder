@@ -1,9 +1,9 @@
 import { EEntityType, ICell, IEntity } from "./types";
 
-export const LOOP_TIME = 5000;
+export const LOOP_TIME = 1000;
 
-export const X_NB_CELL = 30;
-export const Y_NB_CELL = 15;
+export const X_NB_CELL = 60;
+export const Y_NB_CELL = 35;
 
 export const INITIAL_MONEY = 10000;
 

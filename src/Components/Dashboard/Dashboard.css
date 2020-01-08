@@ -1,13 +1,12 @@
 #dashboard {
-  background-color: #011638;
   color: #FFFFFF;
-  padding: 1rem;
-  margin: 1rem 0; }
+  padding: 0 1rem 1rem 0;
+  margin-left: 120px; }
   #dashboard p {
     margin: 0 1rem;
     display: inline-block;
     background-color: #008291;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 20px;
     font-weight: 600; }
     #dashboard p .money_infos {

@@ -28,6 +28,7 @@ export interface IState {
 
 export interface ICell {
     type: EEntityType,
+    // displayType: any,
     people: number
 }
 

@@ -16,7 +16,7 @@ const Toolbar = ({ selectedEntity }: any) => {
         <div id="toolbar">
             {
                 Object.keys(ENTITIES).map((key, index) => {
-                    return (
+                    return key !== EEntityType.EMPTY && (
                         <Entity key={index} entity={ENTITIES[key as EEntityType]} isSelected={key === selectedEntity}/>
                     )
                 })

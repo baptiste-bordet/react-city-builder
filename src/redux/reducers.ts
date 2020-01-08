@@ -3,8 +3,7 @@ import { produce } from "immer";
 
 import moment from 'moment';
 import { ENTITIES, INITIAL_CELL, INITIAL_MONEY, X_NB_CELL, Y_NB_CELL } from "../constants";
-import { EDiff, EEntityType, ERoadType, ICell, IEntity } from "../types";
-import { getNearId } from "../utils/GridHelper";
+import { EDiff, EEntityType, ICell, IEntity } from "../types";
 
 const date = moment().format("MMM Do YY");
 
@@ -51,13 +50,13 @@ const form = (state = initialState(), action: any) => {
         }
         case EXEC_LOOP_TIME:
             return produce(state, (draft) => {
+                const { value } = state.money;
                 const reducer = (total: number, entity: IEntity) => total + getNbEntities(state.cells, entity.type) * entity.gain;
                 const gain = Object.values(ENTITIES).reduce(reducer, 0);
 
-                const oldMoney = state.money.value;
-                const newMoney = oldMoney + gain;
-                const indice = newMoney > oldMoney ? EDiff.UP : (newMoney < oldMoney ? EDiff.DOWN : EDiff.EQUAL);
-                const diff = newMoney - oldMoney;
+                const newMoney = value + gain;
+                const indice = newMoney > value ? EDiff.UP : (newMoney < value ? EDiff.DOWN : EDiff.EQUAL);
+                const diff = newMoney - value;
 
                 draft.money = {
                     value: newMoney,
