@@ -19,8 +19,8 @@
     background-image: url("../../assets/road_horizon.png"); }
   .cell.road_center {
     background-image: url("../../assets/road_center.png"); }
-  .cell.vegetation {
-    background-image: url("../../assets/vegetation.png"); }
+  .cell.vegetation_1 {
+    background-image: url("../../assets/vegetation_1.png"); }
   .cell .infos {
     position: absolute;
     display: none; }
