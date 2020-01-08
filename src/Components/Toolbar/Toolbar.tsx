@@ -4,7 +4,7 @@ import Entity from './Entity/Entity';
 
 import './Toolbar.css';
 import { ENTITIES } from "../../constants";
-import { EEntityType, IEntity, IState } from "../../types";
+import { EEntityType, IState } from "../../types";
 
 interface IToolbar {
     selectedEntity: EEntityType
@@ -21,6 +21,8 @@ const Toolbar = ({ selectedEntity }: any) => {
                     )
                 })
             }
+            {/*<h4>Tools</h4>*/}
+            {/*<Tools selectedEntity={selectedEntity} />*/}
         </div>
     );
 };

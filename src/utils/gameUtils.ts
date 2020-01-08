@@ -1,7 +1,27 @@
 import { EDiff, EEntityType, EOrientation, ICell, IEntity, IMoney } from "../types";
-import { ENTITIES, X_NB_CELL } from "../constants";
+import { ENTITIES, INITIAL_CELL, ORIGIN_CELL_ID, X_NB_CELL, Y_NB_CELL } from "../constants";
 import moment from "moment";
-import { getNearId } from "./GridHelper";
+import { getNearId } from "./gridUtils";
+
+export const createInitCells = () => {
+    let cells = [] as ICell[];
+    let nbCells = X_NB_CELL * Y_NB_CELL;
+
+    [...Array(nbCells)].forEach((_, i) => {
+        cells[i] = INITIAL_CELL;
+    });
+
+    cells[ORIGIN_CELL_ID] = {
+        type: EEntityType.ROAD,
+        orientation: EOrientation.VERTICAL,
+        people: 0,
+        electricity: true,
+        water: true,
+        connected: true
+    };
+
+    return cells;
+};
 
 export const calculateNewMoney = (money: IMoney, cells: ICell[]) => {
     const reducer = (total: number, entity: IEntity) => total + getNbEntities(cells, entity.type) * entity.gain;
@@ -19,18 +39,24 @@ export const calculateNewMoney = (money: IMoney, cells: ICell[]) => {
 };
 
 export const calculateNewDate = (date: string) => {
-    return moment(date, 'MMM Do YY').add(1, 'd').format('MMM Do YY');
+    return moment(date, 'MMM Do YY').add(1, 'd').format('MMM Do YYYY');
 };
 
 export const updateCells = (cells: ICell[]) => {
-    cells.map((cell, i) => {
+    cells.map((cell, id) => {
         if (cell.type === EEntityType.ROAD) {
-            console.log('====> ', cell);
-            cell.orientation = getRoadType(cells, i);
+            cell.orientation = getRoadType(cells, id);
+        }
+        if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
+            cell.connected = isConnected(cells, id);
         }
     });
 
     return cells;
+};
+
+const isConnected = (cells: ICell[], id: number) => {
+    return getNearId(id).some(id => cells[id].connected);
 };
 
 const getNbEntities = (cells: ICell[], type: EEntityType) => {
@@ -46,14 +72,10 @@ const getNbEntities = (cells: ICell[], type: EEntityType) => {
 };
 
 const getRoadType = (cells: ICell[], cellId: number) => {
-    let roadType = EOrientation.HORIZON;
+    let roadType = cellId === ORIGIN_CELL_ID ? EOrientation.VERTICAL : EOrientation.HORIZON;
     const nearIdRoad = getRoadNear(cells, cellId);
 
-    if (nearIdRoad.length === 4) {
-        roadType = EOrientation.CENTER;
-    }
-
-    if (nearIdRoad.length === 3) {
+    if (nearIdRoad.length === 4 || nearIdRoad.length === 3) {
         roadType = EOrientation.CENTER;
     }
 

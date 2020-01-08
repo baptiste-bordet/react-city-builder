@@ -36,6 +36,15 @@
         background-image: url("../../assets/vegetation_1.png");
     }
 
+    &.connected {
+        //border-color: green;
+        //border-width: 4px;
+        border-right: 4px solid green;
+        border-bottom: 4px solid green;
+        width: 17px;
+        height: 17px;
+    }
+
     .infos {
         position: absolute;
         display: none;

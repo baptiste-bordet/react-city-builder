@@ -19,6 +19,11 @@
     background-image: url("../../assets/road_center.png"); }
   .cell.vegetation_1 {
     background-image: url("../../assets/vegetation_1.png"); }
+  .cell.connected {
+    border-right: 4px solid green;
+    border-bottom: 4px solid green;
+    width: 17px;
+    height: 17px; }
   .cell .infos {
     position: absolute;
     display: none; }

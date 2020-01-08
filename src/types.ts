@@ -4,6 +4,7 @@ export enum EEntityType {
     ROAD = 'road_1',
     VEGETATION = 'vegetation_1',
     EMPTY = 'empty',
+    ERASE = 'erase',
 }
 
 export enum EDiff {
@@ -29,6 +30,9 @@ export interface IState {
 export interface ICell {
     type: EEntityType,
     people: number,
+    electricity: boolean,
+    water: boolean,
+    connected: boolean,
     orientation?: EOrientation
 }
 
