@@ -1,7 +1,8 @@
 #dashboard {
   color: #FFFFFF;
   padding: 0 1rem 1rem 0;
-  display: flex; }
+  display: flex;
+  align-items: center; }
   #dashboard .date {
     min-width: 120px;
     display: flex;

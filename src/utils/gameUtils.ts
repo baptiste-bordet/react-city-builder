@@ -47,16 +47,45 @@ export const updateCells = (cells: ICell[]) => {
         if (cell.type === EEntityType.ROAD) {
             cell.orientation = getRoadType(cells, id);
         }
-        if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
-            cell.connected = isConnected(cells, id);
-        }
+        // if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
+        //     cell.connected = isConnected(cells, id);
+        // }
     });
+
+    connectionLoop(cells);
 
     return cells;
 };
 
+const connectionLoop = (cells: ICell[]) => {
+    let updating = X_NB_CELL * Y_NB_CELL;
+
+    cells.map((cell: ICell, id: number) => {
+        if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
+            cell.connected = false;
+        }
+    });
+
+    while (updating > 0) {
+        updating = X_NB_CELL * Y_NB_CELL;
+
+        cells.map((cell: ICell, id: number) => {
+            if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
+                const connected = isConnected(cells, id);
+
+                if (connected === cell.connected) {
+                    updating--;
+                }
+                cell.connected = connected;
+            } else {
+                updating--;
+            }
+        });
+    }
+};
+
 const isConnected = (cells: ICell[], id: number) => {
-    return getNearId(id).some(id => cells[id].connected);
+    return getNearId(id).some(id => cells[id].type === EEntityType.ROAD && cells[id].connected);
 };
 
 const getNbEntities = (cells: ICell[], type: EEntityType) => {

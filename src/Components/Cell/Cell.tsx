@@ -28,7 +28,7 @@ const Cell = ({ updateCellFn, cell, id, selectedEntity }: ICellProps) => {
     };
 
     return (
-        <div className={`cell ${id} ${getCellClass()} ${cell.connected ? 'connected' : 'tata'}`} onClick={updateCell}>
+        <div className={`cell ${id} ${getCellClass()} ${cell.connected ? 'connected' : ''}`} onClick={updateCell}>
             <div className="infos">
                 <p className="infos_type">${cell.type}</p>
                 <p className="infos_people">${cell.people}</p>
