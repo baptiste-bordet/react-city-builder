@@ -49,3 +49,4 @@ export interface IMoney {
     indice: EDiff,
     diff: number
 }
+

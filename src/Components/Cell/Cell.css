@@ -30,16 +30,18 @@
       color: #FFFFFF; }
   .cell .not-connected {
     position: absolute;
-    width: 5px;
-    height: 5px;
-    background: red;
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+    top: -2px;
+    left: -2px;
+    width: 8px;
+    height: 8px;
+    background: #7F7F7F;
+    animation: blink-animation 1s linear infinite;
+    -webkit-animation: blink-animation 1s linear infinite; }
 
 @keyframes blink-animation {
-  to {
-    visibility: hidden; } }
+  50% {
+    opacity: 0; } }
 
 @-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden; } }
+  50% {
+    opacity: 0; } }

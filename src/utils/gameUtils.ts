@@ -1,4 +1,4 @@
-import { EDiff, EEntityType, EOrientation, ICell, IEntity, IMoney } from "../types";
+import { EDiff, EEntityType, EOrientation, ICell, IMoney } from "../types";
 import { ENTITIES, INITIAL_CELL, ORIGIN_CELL_ID, X_NB_CELL, Y_NB_CELL } from "../constants";
 import moment from "moment";
 import { getNearId } from "./gridUtils";
@@ -24,8 +24,16 @@ export const createInitCells = () => {
 };
 
 export const calculateNewMoney = (money: IMoney, cells: ICell[]) => {
-    const reducer = (total: number, entity: IEntity) => total + getNbEntities(cells, entity.type) * entity.gain;
-    const gain = Object.values(ENTITIES).reduce(reducer, 0);
+    // const reducer = (total: number, entity: IEntity) => total + getNbEntities(cells, entity.type) * entity.gain;
+    // const gain = Object.values(ENTITIES).reduce(reducer, 0);
+
+    let gain = 0;
+
+    Object.keys(cells).map((cell, i) => {
+        if (cells[i].connected || cells[i].type === EEntityType.ROAD && !cells[i].connected) {
+            gain += ENTITIES[cells[i].type as EEntityType].gain;
+        }
+    });
 
     const newMoney = money.value + gain;
     const indice = newMoney > money.value ? EDiff.UP : (newMoney < money.value ? EDiff.DOWN : EDiff.EQUAL);
@@ -132,9 +140,7 @@ const getRoadType = (cells: ICell[], cellId: number) => {
 
 
 const getRoadNear = (cells: ICell[], cellId: number) => {
-
     let roadNearId: number[] = [];
-
     const nearId = getNearId(cellId);
 
     nearId.map((id: number) => {
@@ -144,5 +150,4 @@ const getRoadNear = (cells: ICell[], cellId: number) => {
     });
 
     return roadNearId;
-
 };
