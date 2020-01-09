@@ -7,19 +7,19 @@
     min-width: 120px;
     display: flex;
     justify-content: center; }
-  #dashboard p {
+  #dashboard p.rounded {
     margin: 0 1rem;
     display: inline-block;
     background-color: #008291;
     padding: 0.2rem 0.6rem;
     border-radius: 20px;
     font-weight: 600; }
-    #dashboard p .money-infos {
+    #dashboard p.rounded .money-infos {
       font-weight: 400;
       font-size: 0.9rem; }
-      #dashboard p .money-infos.up {
+      #dashboard p.rounded .money-infos.up {
         color: lightgreen; }
-      #dashboard p .money-infos.down {
+      #dashboard p.rounded .money-infos.down {
         color: lightcoral; }
   #dashboard .time i {
     margin-left: 0.5rem;

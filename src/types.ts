@@ -24,7 +24,8 @@ export interface IState {
     money: IMoney,
     update: number,
     date: number,
-    selectedEntity: EEntityType
+    selectedEntity: EEntityType,
+    infoId: number | null
 }
 
 export interface ICell {

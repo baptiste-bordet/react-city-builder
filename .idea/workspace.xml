@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3f33df-4bfe-407f-b723-5d4b322c4beb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Cell/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell/Cell.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/gameUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gameUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578376856528</updated>
       <workItem from="1578376857673" duration="1003000" />
-      <workItem from="1578377894349" duration="35843000" />
+      <workItem from="1578377894349" duration="38246000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { updateCell } from "../../redux/actions";
+import { displayCellInfo, updateCell } from "../../redux/actions";
 
 import './Cell.css';
 import { Dispatch } from "redux";
@@ -12,14 +12,17 @@ interface ICellProps {
     id: number,
     selectedEntity: EEntityType,
     updateCellFn: (id: number) => void
+    displayInfoFn: (id: number) => void
 }
 
-const Cell = ({ updateCellFn, cell, id, selectedEntity }: ICellProps) => {
+const Cell = ({ updateCellFn, displayInfoFn, cell, id, selectedEntity }: ICellProps) => {
 
-    const updateCell = () => {
+    const handleClick = () => {
         if (cell.type === EEntityType.EMPTY && selectedEntity !== EEntityType.ERASE ||
             cell.type !== EEntityType.EMPTY && id != ORIGIN_CELL_ID && selectedEntity === EEntityType.ERASE) {
             updateCellFn(id);
+        } else {
+            displayInfoFn(id)
         }
     };
 
@@ -28,12 +31,13 @@ const Cell = ({ updateCellFn, cell, id, selectedEntity }: ICellProps) => {
     };
 
     return (
-        <div className={`cell ${id} ${getCellClass()} ${cell.connected ? 'connected' : ''}`} onClick={updateCell}>
-            <div className="infos">
-                <p className="infos_type">${cell.type}</p>
-                <p className="infos_people">${cell.people}</p>
-                <p className="infos_gain">${ENTITIES[cell.type].gain}</p>
-            </div>
+        <div className={`cell ${id} ${getCellClass()} ${cell.connected ? 'connected' : ''}`} onClick={handleClick}>
+            {/*<div className="infos">*/}
+            {/*    <p className="infos_type">${cell.type}</p>*/}
+            {/*    <p className="infos_people">${cell.people}</p>*/}
+            {/*    <p className="infos_gain">${ENTITIES[cell.type].gain}</p>*/}
+            {/*</div>*/}
+            {!cell.connected && cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && cell.type !== EEntityType.ROAD && <div className={'not-connected'} />}
         </div>
     );
 };
@@ -43,7 +47,8 @@ const mapStateToProps = (state: IState) => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-    updateCellFn: (id: number) => dispatch(updateCell(id))
+    updateCellFn: (id: number) => dispatch(updateCell(id)),
+    displayInfoFn: (id: number) => dispatch(displayCellInfo(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cell);

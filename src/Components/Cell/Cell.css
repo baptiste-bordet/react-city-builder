@@ -3,7 +3,8 @@
   height: 20px;
   display: inline-block;
   border-right: 1px dotted #c1c1c1;
-  border-bottom: 1px dotted #c1c1c1; }
+  border-bottom: 1px dotted #c1c1c1;
+  position: relative; }
   .cell.empty:hover {
     background-image: url("../../assets/house_1.png");
     opacity: 0.2; }
@@ -19,11 +20,6 @@
     background-image: url("../../assets/road_center.png"); }
   .cell.vegetation_1 {
     background-image: url("../../assets/vegetation_1.png"); }
-  .cell.connected {
-    border-right: 4px solid green;
-    border-bottom: 4px solid green;
-    width: 17px;
-    height: 17px; }
   .cell .infos {
     position: absolute;
     display: none; }
@@ -32,3 +28,18 @@
       background-color: #011638;
       opacity: 0.5;
       color: #FFFFFF; }
+  .cell .not-connected {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden; } }

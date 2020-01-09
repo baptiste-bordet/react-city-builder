@@ -4,6 +4,7 @@
     display: inline-block;
     border-right: 1px dotted #c1c1c1;
     border-bottom: 1px dotted #c1c1c1;
+    position: relative;
 
     &.empty {
         &:hover {
@@ -36,14 +37,14 @@
         background-image: url("../../assets/vegetation_1.png");
     }
 
-    &.connected {
-        //border-color: green;
-        //border-width: 4px;
-        border-right: 4px solid green;
-        border-bottom: 4px solid green;
-        width: 17px;
-        height: 17px;
-    }
+    //&.connected {
+    //    //border-color: green;
+    //    //border-width: 4px;
+    //    border-right: 4px solid green;
+    //    border-bottom: 4px solid green;
+    //    width: 17px;
+    //    height: 17px;
+    //}
 
     .infos {
         position: absolute;
@@ -57,4 +58,23 @@
         }
     }
 
+    .not-connected {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: red;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
 }
