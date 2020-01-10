@@ -1,15 +1,18 @@
-import { EDiff, EEntityType, EOrientation, ICell, IMoney } from "../types";
+import { EDiff, EEmptyType, EEntityType, EOrientation, ICell, IMoney } from "../types";
 import { ENTITIES, INITIAL_CELL, ORIGIN_CELL_ID, X_NB_CELL, Y_NB_CELL } from "../constants";
 import moment from "moment";
 import { getNearId } from "./gridUtils";
+import { cloneDeep } from 'lodash';
 
 export const createInitCells = () => {
     let cells = [] as ICell[];
     let nbCells = X_NB_CELL * Y_NB_CELL;
 
-    [...Array(nbCells)].forEach((_, i) => {
-        cells[i] = INITIAL_CELL;
-    });
+    for (let i = 0; i < nbCells; i++) {
+        cells[i] = cloneDeep(INITIAL_CELL);
+        // @ts-ignore
+        cells[i].emptyType = EEmptyType[`LAND_${Math.floor(Math.random() * 5) + 1  }`];
+    }
 
     cells[ORIGIN_CELL_ID] = {
         type: EEntityType.ROAD,
@@ -17,16 +20,14 @@ export const createInitCells = () => {
         people: 0,
         electricity: true,
         water: true,
-        connected: true
+        connected: true,
+        emptyType: EEmptyType.LAND_1
     };
 
     return cells;
 };
 
 export const calculateNewMoney = (money: IMoney, cells: ICell[]) => {
-    // const reducer = (total: number, entity: IEntity) => total + getNbEntities(cells, entity.type) * entity.gain;
-    // const gain = Object.values(ENTITIES).reduce(reducer, 0);
-
     let gain = 0;
 
     Object.keys(cells).map((cell, i) => {
@@ -55,9 +56,6 @@ export const updateCells = (cells: ICell[]) => {
         if (cell.type === EEntityType.ROAD) {
             cell.orientation = getRoadType(cells, id);
         }
-        // if (cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && id !== ORIGIN_CELL_ID) {
-        //     cell.connected = isConnected(cells, id);
-        // }
     });
 
     connectionLoop(cells);

@@ -1,4 +1,4 @@
-import { EEntityType, ICell, IEntity } from "./types";
+import { EEmptyType, EEntityType, ICell, IEntity } from "./types";
 
 export const LOOP_TIME = 5000;
 
@@ -15,6 +15,7 @@ export const INITIAL_CELL: ICell = {
     electricity: false,
     water: false,
     connected: false,
+    emptyType: EEmptyType.LAND_1
 };
 
 type EntityMap = { [key in EEntityType]: IEntity }

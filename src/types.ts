@@ -19,6 +19,15 @@ export enum EOrientation {
     VERTICAL = 'vertical'
 }
 
+export enum EEmptyType {
+    LAND_1 = 'land_1',
+    LAND_2 = 'land_2',
+    LAND_3 = 'land_3',
+    LAND_4 = 'land_4',
+    LAND_5 = 'land_5',
+    SEA = 'sea'
+}
+
 export interface IState {
     cells: ICell[],
     money: IMoney,
@@ -34,6 +43,7 @@ export interface ICell {
     electricity: boolean,
     water: boolean,
     connected: boolean,
+    emptyType: EEmptyType,
     orientation?: EOrientation
 }
 

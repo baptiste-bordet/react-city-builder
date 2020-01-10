@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { displayCellInfo, updateCell } from "../../redux/actions";
+import * as pictos from '../../assets';
 
 import './Cell.css';
 import { Dispatch } from "redux";
@@ -28,25 +29,29 @@ const Cell = ({ updateCellFn, displayInfoFn, cell, id, selectedEntity }: ICellPr
 
     const handleMouseOver = (event: React.MouseEvent) => {
         if (event.buttons === 1 && cell.type === EEntityType.EMPTY && selectedEntity !== EEntityType.ERASE ||
-            cell.type !== EEntityType.EMPTY && id != ORIGIN_CELL_ID && selectedEntity === EEntityType.ERASE) {
+            event.buttons === 1 && cell.type !== EEntityType.EMPTY && id != ORIGIN_CELL_ID && selectedEntity === EEntityType.ERASE) {
             updateCellFn(id);
         }
     };
 
-    const getCellClass = () => {
-        return cell.orientation ? `${cell.type.split('_')[0]}_${cell.orientation}` : cell.type;
+    const getStyle = () => {
+        let pictoName = null;
+
+        if (cell.type === EEntityType.EMPTY) {
+            pictoName = cell.emptyType;
+        } else {
+            pictoName = cell.orientation ? `${cell.type.split('_')[0]}_${cell.orientation}` : cell.type;
+        }
+
+        // @ts-ignore
+        return { backgroundImage: `url(${pictos[pictoName]})` };
     };
 
     return (
-        <div className={`cell ${id} ${getCellClass()} ${cell.connected ? 'connected' : ''}`}
+        <div style={getStyle()} className={`cell ${id} ${cell.connected ? 'connected' : ''}`}
              onMouseOver={(e) => handleMouseOver(e)} onMouseDown={handleClick}>
-            {/*<div className="infos">*/}
-            {/*    <p className="infos_type">${cell.type}</p>*/}
-            {/*    <p className="infos_people">${cell.people}</p>*/}
-            {/*    <p className="infos_gain">${ENTITIES[cell.type].gain}</p>*/}
-            {/*</div>*/}
             {!cell.connected && cell.type !== EEntityType.EMPTY && cell.type !== EEntityType.VEGETATION && cell.type !== EEntityType.ROAD &&
-            <div className={'not-connected'}/>}
+            <span className={'not-connected'}/>}
         </div>
     );
 };
