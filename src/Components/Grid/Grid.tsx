@@ -19,13 +19,7 @@ const Grid = ({ cells }: any) => {
 
     return (
         <div id="grid" style={sizeStyle}>
-            {
-                Object.keys(cells).map((cell, i) => {
-                    return (
-                        <Cell key={i} cell={cells[i]} id={i} />
-                    )
-                })
-            }
+            { Object.keys(cells).map((cell, i) => <Cell key={i} cell={cells[i]} id={i} />) }
         </div>
     );
 };
