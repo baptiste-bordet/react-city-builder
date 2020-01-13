@@ -4,15 +4,18 @@ import moment from "moment";
 import { getNearId } from "./gridUtils";
 import { cloneDeep } from 'lodash';
 
+enum EPosition { TOP, BOTTOM, LEFT, RIGHT }
+interface IEntryPoint { id: number, position: EPosition }
+
 export const createInitCells = () => {
     let cells = [] as ICell[];
     let nbCells = X_NB_CELL * Y_NB_CELL;
 
-    for (let i = 0; i < nbCells; i++) {
+    [...Array(nbCells)].map((_, i) => {
         cells[i] = cloneDeep(INITIAL_CELL);
         // @ts-ignore
         cells[i].emptyType = EEmptyType[`LAND_${Math.floor(Math.random() * 5) + 1  }`];
-    }
+    });
 
     cells[ORIGIN_CELL_ID] = {
         type: EEntityType.ROAD,
@@ -24,7 +27,95 @@ export const createInitCells = () => {
         emptyType: EEmptyType.LAND_1
     };
 
+    generateRiver(cells);
+
     return cells;
+};
+
+const generateRiver = (cells: ICell[]) => {
+    // border entry point
+
+
+    const borderCells: IEntryPoint[] = [];
+    [...Array(Y_NB_CELL)].map((_, i) => {
+        borderCells.push({ id: i, position: EPosition.TOP });
+        borderCells.push({ id: X_NB_CELL * i, position: EPosition.LEFT });
+        borderCells.push({ id: (X_NB_CELL * i) -1, position: EPosition.RIGHT });
+        borderCells.push({ id: ((X_NB_CELL * Y_NB_CELL) - Y_NB_CELL) + i, position: EPosition.BOTTOM });
+    });
+
+    const entryPoint = borderCells[Math.floor(Math.random() * borderCells.length) + 1];
+
+    let waterCells: number[] = [];
+
+    [...Array(10)].map((_, i) => {
+        switch (entryPoint.position) {
+            case EPosition.TOP:
+                entryPoint.id = entryPoint.id + (i * X_NB_CELL);
+                waterCells = waterCells.concat(getBar(entryPoint));
+                break;
+            case EPosition.BOTTOM:
+                entryPoint.id = entryPoint.id - (i * X_NB_CELL);
+                waterCells = waterCells.concat(getBar(entryPoint));
+                break;
+            case EPosition.LEFT:
+                entryPoint.id = entryPoint.id + i;
+                waterCells = waterCells.concat(getBar(entryPoint));
+                break;
+            case EPosition.RIGHT:
+                entryPoint.id = entryPoint.id - i;
+                waterCells = waterCells.concat(getBar(entryPoint));
+                break;
+        }
+    });
+
+    (waterCells as number[]).forEach(id => {
+        cells[id].emptyType = EEmptyType.SEA;
+    });
+};
+
+const getBar = (entryPoint: IEntryPoint) => {
+    const bar = [entryPoint.id] as number[];
+
+    [...Array(3)].map((_, i) => {
+        switch (entryPoint.position) {
+            case EPosition.TOP:
+                if (entryPoint.id + i < X_NB_CELL) {
+                    bar.push(entryPoint.id + i);
+                }
+                if (entryPoint.id - i > 0 ) {
+                    bar.push(entryPoint.id - i);
+                }
+                break;
+            case EPosition.BOTTOM:
+                if (entryPoint.id + i < X_NB_CELL * Y_NB_CELL) {
+                    bar.push(entryPoint.id + i);
+                }
+                if (entryPoint.id - i > (X_NB_CELL * Y_NB_CELL) - X_NB_CELL) {
+                    bar.push(entryPoint.id - i);
+                }
+                break;
+            case EPosition.LEFT:
+                if (entryPoint.id + (i * X_NB_CELL) <= (X_NB_CELL * Y_NB_CELL) - X_NB_CELL) {
+                    bar.push(entryPoint.id + (i * X_NB_CELL));
+                }
+                if (entryPoint.id - (i * X_NB_CELL) > 0) {
+                    bar.push(entryPoint.id - (i * X_NB_CELL));
+                }
+                break;
+            case EPosition.RIGHT:
+                if (entryPoint.id + (i * X_NB_CELL) <= (X_NB_CELL * Y_NB_CELL)) {
+                    bar.push(entryPoint.id + (i * X_NB_CELL));
+                }
+                if (entryPoint.id - (i * X_NB_CELL) >= X_NB_CELL) {
+                    bar.push(entryPoint.id - (i * X_NB_CELL));
+                }
+                break;
+        }
+    });
+
+    // @ts-ignore
+    return [...new Set(bar)];
 };
 
 export const calculateNewMoney = (money: IMoney, cells: ICell[]) => {
