@@ -1,11 +1,15 @@
-import { EDiff, EEmptyType, EEntityType, EOrientation, ICell, IMoney } from "../types";
-import { ENTITIES, INITIAL_CELL, ORIGIN_CELL_ID, X_NB_CELL, Y_NB_CELL } from "../constants";
+import {EDiff, EEmptyType, EEntityType, EOrientation, ICell, IMoney} from "../types";
+import {ENTITIES, INITIAL_CELL, ORIGIN_CELL_ID, X_NB_CELL, Y_NB_CELL} from "../constants";
 import moment from "moment";
-import { getNearId } from "./gridUtils";
-import { cloneDeep } from 'lodash';
+import {getNearId} from "./gridUtils";
+import {cloneDeep} from 'lodash';
 
 enum EPosition { TOP, BOTTOM, LEFT, RIGHT }
-interface IEntryPoint { id: number, position: EPosition }
+
+interface IEntryPoint {
+    id: number,
+    position: EPosition
+}
 
 export const createInitCells = () => {
     let cells = [] as ICell[];
@@ -14,7 +18,7 @@ export const createInitCells = () => {
     [...Array(nbCells)].map((_, i) => {
         cells[i] = cloneDeep(INITIAL_CELL);
         // @ts-ignore
-        cells[i].emptyType = EEmptyType[`LAND_${Math.floor(Math.random() * 5) + 1  }`];
+        cells[i].emptyType = EEmptyType[`LAND_${Math.floor(Math.random() * 5) + 1}`];
     });
 
     cells[ORIGIN_CELL_ID] = {
@@ -38,38 +42,52 @@ const generateRiver = (cells: ICell[]) => {
 
     const borderCells: IEntryPoint[] = [];
     [...Array(Y_NB_CELL)].map((_, i) => {
-        borderCells.push({ id: i, position: EPosition.TOP });
-        borderCells.push({ id: X_NB_CELL * i, position: EPosition.LEFT });
-        borderCells.push({ id: (X_NB_CELL * i) -1, position: EPosition.RIGHT });
-        borderCells.push({ id: ((X_NB_CELL * Y_NB_CELL) - Y_NB_CELL) + i, position: EPosition.BOTTOM });
+        borderCells.push({id: i, position: EPosition.TOP});
+        borderCells.push({id: X_NB_CELL * i, position: EPosition.LEFT});
+        borderCells.push({id: (X_NB_CELL * i) - 1, position: EPosition.RIGHT});
+        borderCells.push({id: ((X_NB_CELL * Y_NB_CELL) - Y_NB_CELL) + i, position: EPosition.BOTTOM});
     });
+
+    console.log('borderCells', JSON.stringify(borderCells));
+    console.log('random id', Math.floor(Math.random() * borderCells.length) + 1);
 
     const entryPoint = borderCells[Math.floor(Math.random() * borderCells.length) + 1];
 
-    let waterCells: number[] = [];
+    console.log('entryPoint', JSON.stringify(entryPoint));
 
-    [...Array(10)].map((_, i) => {
+    let waterCells: number[] = [];
+    const arrayLength = entryPoint.position === EPosition.TOP || entryPoint.position === EPosition.BOTTOM ? Y_NB_CELL : X_NB_CELL;
+
+    [...Array(arrayLength)].map((_, i) => {
         switch (entryPoint.position) {
             case EPosition.TOP:
-                entryPoint.id = entryPoint.id + (i * X_NB_CELL);
-                waterCells = waterCells.concat(getBar(entryPoint));
+                waterCells = waterCells.concat(getBar({
+                    id: entryPoint.id + (i * X_NB_CELL),
+                    position: entryPoint.position
+                }));
                 break;
             case EPosition.BOTTOM:
-                entryPoint.id = entryPoint.id - (i * X_NB_CELL);
-                waterCells = waterCells.concat(getBar(entryPoint));
+                waterCells = waterCells.concat(getBar({
+                    id: entryPoint.id - (i * X_NB_CELL),
+                    position: entryPoint.position
+                }));
                 break;
             case EPosition.LEFT:
-                entryPoint.id = entryPoint.id + i;
-                waterCells = waterCells.concat(getBar(entryPoint));
+                waterCells = waterCells.concat(getBar({id: entryPoint.id + i, position: entryPoint.position}));
                 break;
             case EPosition.RIGHT:
-                entryPoint.id = entryPoint.id - i;
-                waterCells = waterCells.concat(getBar(entryPoint));
+                waterCells = waterCells.concat(getBar({id: entryPoint.id - i, position: entryPoint.position}));
                 break;
         }
     });
 
+    console.log('waterCells', JSON.stringify(waterCells));
+
+
     (waterCells as number[]).forEach(id => {
+        if (cells[id] === undefined) {
+            console.log('undifined', id)
+        }
         cells[id].emptyType = EEmptyType.SEA;
     });
 };
@@ -80,19 +98,21 @@ const getBar = (entryPoint: IEntryPoint) => {
     [...Array(3)].map((_, i) => {
         switch (entryPoint.position) {
             case EPosition.TOP:
-                if (entryPoint.id + i < X_NB_CELL) {
+                if (entryPoint.id + i < (X_NB_CELL * (i + 1))) {
                     bar.push(entryPoint.id + i);
                 }
-                if (entryPoint.id - i > 0 ) {
+                if (entryPoint.id - i > X_NB_CELL * i) {
                     bar.push(entryPoint.id - i);
                 }
                 break;
             case EPosition.BOTTOM:
                 if (entryPoint.id + i < X_NB_CELL * Y_NB_CELL) {
                     bar.push(entryPoint.id + i);
+                    console.log('+', entryPoint.id + i)
                 }
                 if (entryPoint.id - i > (X_NB_CELL * Y_NB_CELL) - X_NB_CELL) {
                     bar.push(entryPoint.id - i);
+                    console.log('-', entryPoint.id - i)
                 }
                 break;
             case EPosition.LEFT:

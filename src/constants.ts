@@ -2,8 +2,8 @@ import { EEmptyType, EEntityType, ICell, IEntity } from "./types";
 
 export const LOOP_TIME = 5000;
 
-export const X_NB_CELL = 30;
-export const Y_NB_CELL = 25;
+export const X_NB_CELL = 60;
+export const Y_NB_CELL = 60;
 
 export const ORIGIN_CELL_ID = X_NB_CELL / 2;
 

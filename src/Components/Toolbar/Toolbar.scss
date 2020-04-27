@@ -1,9 +1,10 @@
 #toolbar {
     display: inline-block;
     vertical-align: top;
-    padding: 0 0.2rem;
     color: #FFFFFF;
     min-width: 120px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 
     .picto {
         margin: 0.3rem;
